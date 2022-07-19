@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "17plus",
+    "slug": "17plus",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
