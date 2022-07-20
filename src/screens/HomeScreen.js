@@ -43,30 +43,61 @@ export default function HomeScreen() {
 
         <Image style={styles.backgroundImage} source={require('../assets/background_bubble_home.png')} />
         <ScrollView bounces={true} showsHorizontalScrollIndicator={false} horizontal={true} style={styles.cardsetSelectionCardScrollView}>
-            <CardsetSelectionCard
-                mainText="Classic"
-                type="classic" 
-                subText="Free Cardset to get your party started."
-                icon={require('../assets/classicIconSmall.png')} 
-                style={{backgroundColor: '#903BFF'}} 
-                onPress={() => onCardsetClick("classic")}
-                currentCardSet={cardset}
-            />
-            <CardsetSelectionCard 
-                mainText="Sex"
-                type="sex"
-                subText="To make your party even hotter!" 
-                icon={require('../assets/sexIconSmall.png')}
-                style={{backgroundColor: '#FF3A68'}} 
-                onPress={() => onCardsetClick("sex")}
-                currentCardSet={cardset}
-            />
+            <View style={styles.cards}>
+                <CardsetSelectionCard
+                    mainText="Classic"
+                    type="classic" 
+                    subText="Free Cardset to get your party started."
+                    icon={require('../assets/classicIconSmall.png')} 
+                    style={{backgroundColor: '#903BFF'}} 
+                    onPress={() => onCardsetClick("classic")}
+                    currentCardSet={cardset}
+                />
+                <CardsetSelectionCard 
+                    mainText="Sex"
+                    type="sex"
+                    subText="To make your party even hotter!" 
+                    icon={require('../assets/sexIconSmall.png')}
+                    style={{backgroundColor: '#FF3A68'}} 
+                    onPress={() => onCardsetClick("sex")}
+                    currentCardSet={cardset}
+                />
+                <CardsetSelectionCard 
+                    mainText="Sex"
+                    type="sex"
+                    subText="To make your party even hotter!" 
+                    icon={require('../assets/sexIconSmall.png')}
+                    style={{backgroundColor: 'purple'}} 
+                    onPress={() => onCardsetClick("sex")}
+                    currentCardSet={cardset}
+                />
+                <CardsetSelectionCard 
+                    mainText="Sex"
+                    type="sex"
+                    subText="To make your party even hotter!" 
+                    icon={require('../assets/sexIconSmall.png')}
+                    style={{backgroundColor: 'green'}} 
+                    onPress={() => onCardsetClick("sex")}
+                    currentCardSet={cardset}
+                />
+                <CardsetSelectionCard 
+                    mainText="Sex"
+                    type="sex"
+                    subText="To make your party even hotter!" 
+                    icon={require('../assets/sexIconSmall.png')}
+                    style={{backgroundColor: 'blue'}} 
+                    onPress={() => onCardsetClick("sex")}
+                    currentCardSet={cardset}
+                />
+            </View>
+            
         </ScrollView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,  
     backgroundColor: '#111111',
@@ -113,7 +144,6 @@ const styles = StyleSheet.create({
   cardsetSelectionCardScrollView: {
     position: 'absolute',
     bottom: 128,
-    width: '80%'
   },
   backgroundImage: {
     position: 'absolute',
@@ -125,4 +155,8 @@ const styles = StyleSheet.create({
     top: '55%',
     width: '80%',
   },
+  cards: {
+    flexDirection: 'row',
+    marginHorizontal: 36
+  },    
 });
