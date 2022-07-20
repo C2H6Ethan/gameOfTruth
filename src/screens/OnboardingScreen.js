@@ -1,29 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity } from 'react-native';
-import AppLoading from 'expo-app-loading';
-import * as Font from 'expo-font';
+import CustomButton from '../components/CustomButton';
 
-export default function App() {
-  const [fontsLoaded, setFontsLoaded] = useState();
+export default function OnboardingScreen({navigation}) {
 
-  useEffect(async() => {
-    loadFonts();
-  }, []);
-
-  let customFonts = {
-    'Gilroy-Heavy': require('../assets/fonts/Gilroy-Heavy.ttf'),
-    'Gilroy-Regular': require('../assets/fonts/Gilroy-Regular.ttf'),
-    'Gilroy-Bold': require('../assets/fonts/Gilroy-Bold.ttf'),
-  };
-
-  const loadFonts = async() => {
-    await Font.loadAsync(customFonts);
-    setFontsLoaded(true);
-  }
-
-  if (!fontsLoaded) {
-    return <AppLoading />;
+  const buttonPress = () => {
+    navigation.navigate('HomeScreen')
   }
 
   return (
@@ -35,9 +18,10 @@ export default function App() {
         <Text style={styles.mainText}>Let's gather</Text>
         <Text style={styles.subText}>17+ was born from the idea to bring more life into the get-together. The goal of the app is to create a bridge between boring small talk and exciting deep conversations.</Text>
       </View>
-      <TouchableOpacity activeOpacity={.7} style={styles.buttonContainer}>
-        <Text style={styles.buttonText}>Let's go</Text>
-      </TouchableOpacity>
+      <View style={styles.buttonContainer}>
+        <CustomButton text="Let's go" onPressFunction={buttonPress}/>
+      </View>
+      
     </View>
   );
 }
@@ -79,12 +63,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     position: 'absolute',
     width: '80%',
-    height: 58,
     top: '85%',
-    backgroundColor: 'white',
-    borderRadius: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   buttonText: {
     fontFamily: 'Gilroy-Bold',
@@ -92,5 +71,5 @@ const styles = StyleSheet.create({
     fontSize: 17,
     lineHeight: 22,
     color: '#111111',
-  },
+  }
 });
