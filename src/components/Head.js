@@ -9,10 +9,10 @@ const Head = (props) => {
         <Image style={styles.classicBackgroundBig} source={props.background1} />
         <Image style={styles.classicBackgroundBig2} source={props.background2} />
         <View style={styles.head}>
-            <TouchableOpacity style={styles.questionmark} activeOpacity={.7}>
-                <Image source={require('../assets/tutorial_questionmark.png')} />
+            <TouchableOpacity onPress={props.onSettingsButtonPress} style={styles.settingsButton} activeOpacity={.7}>
+                <Image style={{width: 32, height: 32}} source={require('../assets/settingsButton.png')} />
             </TouchableOpacity>
-            <Image source={props.icon} />
+            <Image style={styles.icon} source={props.icon} />
             <Text style={styles.mainText}>{props.mainText}</Text>
             <Text style={styles.subText}>{props.subText}</Text>
             <CustomButton style={styles.headButton} text="Start Game"/>
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         bottom: 0,
         width: '100%',
       },
-      questionmark: {
+      settingsButton: {
         position: 'absolute',
         top: 0,
         right: 0,
@@ -75,5 +75,9 @@ const styles = StyleSheet.create({
         lineHeight: 22,
         color: 'white',
         marginBottom: 28
+      },
+      icon: {
+        width: 41,
+        height: 41
       },
   });

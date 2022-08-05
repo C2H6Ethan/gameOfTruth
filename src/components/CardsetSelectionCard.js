@@ -12,7 +12,7 @@ const CardsetSelectionCard = (props) => {
                 }
                 <View style={styles.textContainer}>
                     <View style={styles.title}>
-                        <Image source={props.icon} />
+                        <Image style={styles.icon} source={props.icon} />
                         <Text style={styles.mainText}>{props.mainText}</Text>
                     </View>
                     <Text style={styles.subText}>{props.subText}</Text>
@@ -44,7 +44,9 @@ const styles = StyleSheet.create({
     checkbox: {
         position: 'absolute',
         right: 0,
-        margin: 16
+        margin: 16,
+        width: 24,
+        height: 24
     },
     mainText: {
         fontFamily: 'Gilroy-Heavy',
@@ -88,4 +90,8 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 10
     },
+    icon: {
+        height: 24,
+        width: 24
+    }
   });

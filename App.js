@@ -3,10 +3,13 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import {
   OnboardingScreen,
-  HomeScreen
+  HomeScreen,
+  SettingsScreen,
+  LanguageSettingsScreen
 } from './src/screens'
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Stack = createStackNavigator()
 
@@ -14,6 +17,8 @@ let customFonts = {
   'Gilroy-Heavy': require('./src/assets/fonts/Gilroy-Heavy.ttf'),
   'Gilroy-Regular': require('./src/assets/fonts/Gilroy-Regular.ttf'),
   'Gilroy-Bold': require('./src/assets/fonts/Gilroy-Bold.ttf'),
+  'Gilroy-SemiBold': require('./src/assets/fonts/Gilroy-SemiBold.ttf'),
+
 };
 export default class App extends Component {
 
@@ -21,12 +26,17 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-        fontsLoaded: false
+        fontsLoaded: false,
+        hasBeenOnboarded: false
     };
   }
 
-  componentDidMount() {
+  componentDidMount = async() => {
     this.loadFonts();
+    var hasBeenOnboarded = await AsyncStorage.getItem('hasBeenOnboarded')
+    if (hasBeenOnboarded == 'true') {
+      await this.setState({hasBeenOnboarded: true})
+    }
   }
 
 
@@ -35,23 +45,47 @@ export default class App extends Component {
     this.setState({ fontsLoaded: true });
   }
 
-
  
   render(){
+    const forFade = ({ current }) => ({
+      cardStyle: {
+        opacity: current.progress,
+      },
+    });
+
     if (!this.state.fontsLoaded) {
       return <AppLoading />;
+    }
+
+    if (this.state.hasBeenOnboarded){
+      return (
+        <NavigationContainer>
+          <Stack.Navigator
+            screenOptions={{
+              headerShown: false,
+              cardStyleInterpolator: forFade,
+            }}
+          >
+            <Stack.Screen name="HomeScreen" component={HomeScreen} />
+            <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
+            <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
+          </Stack.Navigator>
+        </NavigationContainer>
+      )
     }
 
     return (
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="OnboardingScreen"
           screenOptions={{
             headerShown: false,
+            cardStyleInterpolator: forFade,
           }}
         >
           <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} />
           <Stack.Screen name="HomeScreen" component={HomeScreen} />
+          <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
+          <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
         </Stack.Navigator>
       </NavigationContainer>
     )

@@ -6,6 +6,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "description": ""
+    "description": "",
+    "orientation": "portrait"
   }
 }

@@ -1,17 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Animated } from 'react-native';
 import Head from '../components/Head';
 import CardsetSelectionCard from '../components/CardsetSelectionCard';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default function HomeScreen() {
-    const [cardset, setCardset] = useState("classic");
 
+export default function HomeScreen({ navigation }) {
+  const [cardset, setCardset] = useState("classic");
+  const [helpModalVisible, setHelpModalVisible] = useState(false);
 
-    const onCardsetClick = (type) => {
-        setCardset(type)
-    }
+  const onCardsetClick = (type) => {
+    setCardset(type)
+  }
+
+  const onQuestionmarkPress = () => {
+    setHelpModalVisible(!helpModalVisible)
+  }
 
 
   return (
@@ -19,6 +24,7 @@ export default function HomeScreen() {
         <StatusBar style="auto" />
         {cardset == 'classic'? 
         <Head 
+            onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Classic Cardset" 
             subText="Free Cardset to get your party started." 
             background1={require('../assets/classicBackgroundBig.png')}
@@ -26,7 +32,8 @@ export default function HomeScreen() {
             icon={require('../assets/classicIcon.png')}
         />
         : cardset == 'sex'?
-        <Head 
+        <Head
+            onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Sex" 
             subText="To make your party even hotter!" 
             background1={require('../assets/sexBackgroundBig.png')}
@@ -159,4 +166,36 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginHorizontal: 36
   },    
+
+
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalView: {
+    position: 'absolute',
+    backgroundColor: "#4D4D4D",
+    width: '100%',
+    height: '57%',
+    borderBottomLeftRadius: 40,
+    borderBottomRightRadius: 40,
+    top: 0,
+
+    alignItems: "center",
+  },
+  modalText: {
+    textAlign: "center"
+  },
+  closeModalButton: {
+    height: 46,
+    width: 46,
+    left: 0,
+    marginBottom: 36
+  },
+  modalContent: {
+    width: '80%',
+    height: '100%',
+    top: 69
+  }
 });
