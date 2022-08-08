@@ -5,7 +5,8 @@ import {
   OnboardingScreen,
   HomeScreen,
   SettingsScreen,
-  LanguageSettingsScreen
+  LanguageSettingsScreen,
+  AddPlayersScreen
 } from './src/screens'
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
@@ -18,7 +19,7 @@ let customFonts = {
   'Gilroy-Regular': require('./src/assets/fonts/Gilroy-Regular.ttf'),
   'Gilroy-Bold': require('./src/assets/fonts/Gilroy-Bold.ttf'),
   'Gilroy-SemiBold': require('./src/assets/fonts/Gilroy-SemiBold.ttf'),
-
+  'Gilroy-Medium': require('./src/assets/fonts/Gilroy-Medium.ttf'),
 };
 export default class App extends Component {
 
@@ -69,6 +70,7 @@ export default class App extends Component {
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
             <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
             <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
+            <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
           </Stack.Navigator>
         </NavigationContainer>
       )
@@ -86,6 +88,7 @@ export default class App extends Component {
           <Stack.Screen name="HomeScreen" component={HomeScreen} />
           <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
           <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
+          <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
         </Stack.Navigator>
       </NavigationContainer>
     )

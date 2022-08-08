@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
 
 const CustomButton = (props) => {
     return (
-        <TouchableOpacity disabled={props.disabled} activeOpacity={.7} style={[styles.buttonContainer, props.style, props.disabled? styles.disabled : null]} onPress={props.onPressFunction}>
+        <TouchableOpacity disabled={props.disabled} activeOpacity={.7} style={[styles.buttonContainer, props.style, props.disabled? styles.disabled : null]} onPress={props.onPress}>
             <View style={styles.children}>
                 <Text style={styles.buttonText}>{props.text}</Text>
                 <Image style={{width: 26, height: 26}} source={require('../assets/arrow.png')} />

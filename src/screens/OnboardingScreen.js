@@ -105,7 +105,7 @@ export default function OnboardingScreen({navigation}) {
         <OnboardingDot index={3} pageIndex={pageIndex}/>
       </View>
       <View style={styles.buttonContainer}>
-        <CustomButton disabled={isButtonDisabled}  text="Let's go" onPressFunction={buttonPress} />
+        <CustomButton disabled={isButtonDisabled}  text="Let's go" onPress={() => buttonPress()} />
       </View>
       
     </View>

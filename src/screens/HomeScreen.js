@@ -24,6 +24,7 @@ export default function HomeScreen({ navigation }) {
         <StatusBar style="auto" />
         {cardset == 'classic'? 
         <Head 
+            onStartGameButtonPress={() => navigation.navigate('AddPlayersScreen', {cardset: cardset})}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Classic Cardset" 
             subText="Free Cardset to get your party started." 
@@ -33,6 +34,7 @@ export default function HomeScreen({ navigation }) {
         />
         : cardset == 'sex'?
         <Head
+            onStartGameButtonPress={() => navigation.navigate('AddPlayersScreen', {cardset: cardset})}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Sex" 
             subText="To make your party even hotter!" 
