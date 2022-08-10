@@ -7,6 +7,7 @@ export default function AddPlayersScreen({ route, navigation }) {
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   const [names, setNames] = useState([])
   const [inputText, onInputTextChange] = useState("");
+  const [dummyValue, setDummyValue] = useState(null)
   const { cardset } = route.params;
 
   const onNameEnter = (name) => {
@@ -19,8 +20,12 @@ export default function AddPlayersScreen({ route, navigation }) {
   }
 
   const removeName = (index) => {
-    setNames(names.splice(index, 1))
-    console.warn(names)
+
+    var newNames = names
+    newNames.splice(index, 1)
+    setNames(newNames)
+    if (dummyValue == 69){setDummyValue(420)}
+    else {setDummyValue(69)} 
   }
 
   return (
@@ -33,9 +38,9 @@ export default function AddPlayersScreen({ route, navigation }) {
       </View>
       <View style={styles.content}>
         
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16}}>Who are u playing with?</Text>
-        <Text style={{fontFamily: 'Gilroy-Medium', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56}}>Remove or Add players down below.</Text>
-        <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 14, lineHeight: 21, color: 'white',}}>Name</Text>
+        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>Who are u playing with?</Text>
+        <Text style={{fontFamily: 'Gilroy-Medium', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>Remove or Add players down below.</Text>
+        <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 14, lineHeight: 21, color: 'white', width: '80%'}}>Name</Text>
         <TextInput
           style={styles.input}
           onChangeText={onInputTextChange}
@@ -49,9 +54,9 @@ export default function AddPlayersScreen({ route, navigation }) {
           {names.map((name, index) => {
             return (
                 <View style={styles.name}>
-                  <Text style={{fontFamily: 'Gilroy-SemiBold', fontSize: 14, lineHeight: 20, color: 'white', marginHorizontal: 12}}>{name}</Text>
-                  <TouchableOpacity onPress={() => removeName(index)} activeOpacity={.7}>
-                    <Image style={{height: 10.5, width: 10.5, marginRight: 12}} source={require('../assets/remove.png')}/>
+                  <Text style={{fontFamily: 'Gilroy-SemiBold', fontSize: 14, lineHeight: 20, color: 'white', marginLeft: 12}}>{name}</Text>
+                  <TouchableOpacity onPress={() => removeName(index)} style={{height: 35, width: 35,  alignItems: 'center', justifyContent: 'center',}} activeOpacity={.7}>
+                    <Image style={{height: 10.5, width: 10.5}} source={require('../assets/remove.png')}/>
                   </TouchableOpacity>
                 </View>
             )
@@ -62,7 +67,7 @@ export default function AddPlayersScreen({ route, navigation }) {
 
       </View>
       <View style={styles.buttonContainer}>
-        <CustomButton disabled={isButtonDisabled}  text="Start game" onPress={() => console.warn("press")} />
+        <CustomButton  text="Start game" onPress={() => console.warn(names)} />
       </View>
     </View>
   );
@@ -78,9 +83,10 @@ const styles = StyleSheet.create({
   },
   content: {
     position: 'absolute',
-    height: '100%',
-    width: '80%',
-    top: '30%'
+    top: '30%',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   closeButton: {
     height: 46,
@@ -101,7 +107,7 @@ const styles = StyleSheet.create({
   },
   input:{
     height: 56,
-    width: '100%',
+    width: '80%',
     borderWidth: 1,
     borderStyle: 'solid',
     borderColor: '#374151',
@@ -115,7 +121,6 @@ const styles = StyleSheet.create({
   names: {
     flexDirection: 'row',
     marginHorizontal: 36,
-    justifyContent: 'space-between',
   },
   name: {
     flexDirection: 'row',

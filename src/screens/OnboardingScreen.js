@@ -40,7 +40,7 @@ export default function OnboardingScreen({navigation}) {
         pages={[
           {
             title: "Let's gather",
-            subtitle: 'The Game of Truth was born from the idea to bring more life into the get-together. The goal of the app is to create a bridge between boring small talk and exciting deep conversations.',
+            subtitle: 'Game of Truth was born from the idea to bring more life into the get-together. The goal of the app is to create a bridge between boring small talk and exciting deep conversations.',
             titleStyles: 
             {
               fontFamily: 'Gilroy-Heavy',

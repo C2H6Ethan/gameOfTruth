@@ -166,7 +166,7 @@ const styles = StyleSheet.create({
   },
   cards: {
     flexDirection: 'row',
-    marginHorizontal: 36
+    marginHorizontal: 36,
   },    
 
 
