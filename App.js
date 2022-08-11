@@ -6,7 +6,10 @@ import {
   HomeScreen,
   SettingsScreen,
   LanguageSettingsScreen,
-  AddPlayersScreen
+  AddPlayersScreen,
+  GameTransitionScreen,
+  GameMainScreen,
+  GameMenuScreen
 } from './src/screens'
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
@@ -71,6 +74,9 @@ export default class App extends Component {
             <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
             <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
             <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
+            <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
+            <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
+            <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
           </Stack.Navigator>
         </NavigationContainer>
       )
@@ -89,6 +95,9 @@ export default class App extends Component {
           <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
           <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
           <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
+          <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
+          <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
+          <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
         </Stack.Navigator>
       </NavigationContainer>
     )

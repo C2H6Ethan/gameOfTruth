@@ -5,7 +5,7 @@ import CustomButton from '../components/CustomButton';
 
 export default function AddPlayersScreen({ route, navigation }) {
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
-  const [names, setNames] = useState([])
+  const [players, setPlayers] = useState([])
   const [inputText, onInputTextChange] = useState("");
   const [dummyValue, setDummyValue] = useState(null)
   const { cardset } = route.params;
@@ -14,19 +14,38 @@ export default function AddPlayersScreen({ route, navigation }) {
     if(name == ''){return}
     onInputTextChange('')
 
-    var newNames = names
-    newNames.push(name)
-    setNames(newNames)
+    var newPlayers = players
+    var player = {name: name}
+    newPlayers.push(player)
+    setPlayers(newPlayers)
+
+    // check if start game button should be disabled
+    if(players.length >= 1){setIsButtonDisabled(false)}
+    else {setIsButtonDisabled(true)}
   }
 
   const removeName = (index) => {
 
-    var newNames = names
-    newNames.splice(index, 1)
-    setNames(newNames)
+    var newPlayers = players
+    newPlayers.splice(index, 1)
+    setPlayers(newPlayers)
+
+    // check if start game button should be disabled
+    if(players.length >= 1){setIsButtonDisabled(false)}
+    else {setIsButtonDisabled(true)}
+
+    //added this because component wasn't updating (forces component update)
     if (dummyValue == 69){setDummyValue(420)}
     else {setDummyValue(69)} 
   }
+
+  const startGame = () => {
+    var player = players[Math.floor(Math.random()*players.length)];
+    var name = player['name']
+
+    navigation.navigate('GameTransitionScreen', {cardset: cardset, name: name, players: players})
+  }
+
 
   return (
     <View style={styles.container}>
@@ -51,10 +70,10 @@ export default function AddPlayersScreen({ route, navigation }) {
         />
         <ScrollView bounces={true} showsHorizontalScrollIndicator={false} horizontal={true} style={styles.cardsetSelectionCardScrollView}>
           <View style={styles.names}>
-          {names.map((name, index) => {
+          {players.map((player, index) => {
             return (
                 <View style={styles.name}>
-                  <Text style={{fontFamily: 'Gilroy-SemiBold', fontSize: 14, lineHeight: 20, color: 'white', marginLeft: 12}}>{name}</Text>
+                  <Text style={{fontFamily: 'Gilroy-SemiBold', fontSize: 14, lineHeight: 20, color: 'white', marginLeft: 12}}>{player['name']}</Text>
                   <TouchableOpacity onPress={() => removeName(index)} style={{height: 35, width: 35,  alignItems: 'center', justifyContent: 'center',}} activeOpacity={.7}>
                     <Image style={{height: 10.5, width: 10.5}} source={require('../assets/remove.png')}/>
                   </TouchableOpacity>
@@ -67,7 +86,7 @@ export default function AddPlayersScreen({ route, navigation }) {
 
       </View>
       <View style={styles.buttonContainer}>
-        <CustomButton  text="Start game" onPress={() => console.warn(names)} />
+        <CustomButton disabled={isButtonDisabled}  text="Start game" onPress={() => startGame()} />
       </View>
     </View>
   );
@@ -117,6 +136,9 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
   },
   cardsetSelectionCardScrollView: {
+    position: 'absolute',
+    bottom: -24,
+    width: '100%'
   },
   names: {
     flexDirection: 'row',
