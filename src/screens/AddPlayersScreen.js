@@ -8,6 +8,7 @@ export default function AddPlayersScreen({ route, navigation }) {
   const [players, setPlayers] = useState([])
   const [inputText, onInputTextChange] = useState("");
   const [dummyValue, setDummyValue] = useState(null)
+  const [totalAddedPlayers, setTotalAddedPlayers] = useState(0)
   const { cardset } = route.params;
 
   const onNameEnter = (name) => {
@@ -15,13 +16,15 @@ export default function AddPlayersScreen({ route, navigation }) {
     onInputTextChange('')
 
     var newPlayers = players
-    var player = {name: name}
+    var player = {id: totalAddedPlayers, name: name, points: 0}
     newPlayers.push(player)
     setPlayers(newPlayers)
 
     // check if start game button should be disabled
     if(players.length >= 1){setIsButtonDisabled(false)}
     else {setIsButtonDisabled(true)}
+
+    setTotalAddedPlayers(totalAddedPlayers + 1)
   }
 
   const removeName = (index) => {
@@ -39,11 +42,14 @@ export default function AddPlayersScreen({ route, navigation }) {
     else {setDummyValue(69)} 
   }
 
+  const textChanged = (text) => {
+    console.warn
+  }
+
   const startGame = () => {
     var player = players[Math.floor(Math.random()*players.length)];
-    var name = player['name']
 
-    navigation.navigate('GameTransitionScreen', {cardset: cardset, name: name, players: players})
+    navigation.navigate('GameTransitionScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers})
   }
 
 

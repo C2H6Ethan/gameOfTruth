@@ -4,14 +4,15 @@ import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, Tex
 
 export default function GameTransitionScreen({ route, navigation }) {
   const { cardset } = route.params;
-  const { name } = route.params;
+  const { player } = route.params;
   const { players } = route.params;
+  const { totalAddedPlayers } = route.params;
 
   useEffect(() => {
     // Start counting when the page is loaded
     const timeoutHandle = setTimeout(()=>{
       // Add your logic for the transition
-      navigation.navigate('GameMainScreen', {cardset: cardset, name: name, players: players})
+      navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers})
     }, 2500);
   }, []);
 
@@ -24,7 +25,7 @@ export default function GameTransitionScreen({ route, navigation }) {
       <View style={styles.header}>
         <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
       </View>
-      <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 24, lineHeight: 29, color: 'white', }}>{name}</Text>
+      <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 24, lineHeight: 29, color: 'white', }}>{player['name']}</Text>
     </View>
   );
 }
