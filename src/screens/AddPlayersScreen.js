@@ -16,7 +16,7 @@ export default function AddPlayersScreen({ route, navigation }) {
     onInputTextChange('')
 
     var newPlayers = players
-    var player = {id: totalAddedPlayers, name: name, points: 0}
+    var player = {id: totalAddedPlayers, name: name, points: 0, timesPlayed: 0}
     newPlayers.push(player)
     setPlayers(newPlayers)
 
@@ -49,7 +49,9 @@ export default function AddPlayersScreen({ route, navigation }) {
   const startGame = () => {
     var player = players[Math.floor(Math.random()*players.length)];
 
-    navigation.navigate('GameTransitionScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers})
+    player['timesPlayed'] = 1;
+
+    navigation.navigate('GameTransitionScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: 1})
   }
 
 

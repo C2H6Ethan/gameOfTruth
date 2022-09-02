@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 
-export default function GameYesScreen({ route, navigation }) {
+export default function GameNoScreen({ route, navigation }) {
   const { cardset } = route.params;
   const { player } = route.params;
   const { players } = route.params;
@@ -21,7 +21,7 @@ export default function GameYesScreen({ route, navigation }) {
 
   return (
     <View style={styles.container}>
-      <Image style={{width: 144, height: 144}} source={require('../assets/checkedBig.png')}/>
+      <Image style={{width: 144, height: 144}} source={require('../assets/noBig.png')}/>
     </View>
   );
 }

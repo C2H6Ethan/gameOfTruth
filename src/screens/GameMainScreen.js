@@ -9,10 +9,12 @@ export default function GameMainScreen({ route, navigation }) {
   const { player } = route.params;
   const { players } = route.params;
   const { totalAddedPlayers } = route.params;
+  const { round } = route.params;
   const [cardText, setCardText] = useState("");
 
   useEffect(() => {
     getQuestion()
+
   }, []);
 
   const getQuestion = () => {
@@ -27,9 +29,13 @@ export default function GameMainScreen({ route, navigation }) {
   }
 
   const onNoButtonPress = () => {
-    console.warn("no")
+    // pick new player
+    var newPlayer = getNewPlayer()
 
-    // show screen
+    // show screen if game hasn't finished yet
+    if (newPlayer != null){
+      navigation.navigate('GameNoScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: round + 1})
+    }
   }
 
   const onYesButtonPress = () => {
@@ -38,10 +44,48 @@ export default function GameMainScreen({ route, navigation }) {
       var currentPlayer = players[i];
       if(currentPlayer['id'] == player['id']) {currentPlayer['points'] += 1; console.warn(currentPlayer)}
     }
+    // pick new player
+    var newPlayer = getNewPlayer()
 
-    // show screen
-    navigation.navigate('GameYesScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers})
+    // show screen if game hasn't finished yet
+    if (newPlayer != null){
+      navigation.navigate('GameYesScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: round + 1})
+    }
+    
   }
+
+  const getNewPlayer = () => {
+    var shuffledPlayers = shuffle(players)
+    // find player that hasn't played maximum amount of times
+
+    for (var i = 0; i < shuffledPlayers.length; i++) {
+      const player = shuffledPlayers[i];
+      if(player['timesPlayed'] < 3){
+        player['timesPlayed'] += 1
+
+        // check if on last round
+        var maxRounds = players.length * 3
+        console.warn(round)
+        if (round == maxRounds){break}
+
+        return(player)
+      }
+    }
+    console.warn("all players have played 3 times")
+    return null
+  }
+
+  const shuffle = (cleanArray) => {
+    var array = cleanArray.slice(0)
+    let i = array.length - 1;
+    for (; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  };
 
 
   return (

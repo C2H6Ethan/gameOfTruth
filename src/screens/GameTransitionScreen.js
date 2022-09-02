@@ -6,15 +6,18 @@ export default function GameTransitionScreen({ route, navigation }) {
   const { cardset } = route.params;
   const { player } = route.params;
   const { players } = route.params;
+  const { round } = route.params;
   const { totalAddedPlayers } = route.params;
 
   useEffect(() => {
     // Start counting when the page is loaded
     const timeoutHandle = setTimeout(()=>{
       // Add your logic for the transition
-      navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers})
+      navigation.replace('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round})
     }, 2500);
   }, []);
+
+  
 
 
   return (

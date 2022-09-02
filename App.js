@@ -10,7 +10,9 @@ import {
   GameTransitionScreen,
   GameMainScreen,
   GameMenuScreen,
-  GameYesScreen
+  GameYesScreen,
+  GameNoScreen,
+  GameFinishWinnerScreen
 } from './src/screens'
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
@@ -71,6 +73,7 @@ export default class App extends Component {
               cardStyleInterpolator: forFade,
             }}
           >
+            <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
             <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
             <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
@@ -79,6 +82,8 @@ export default class App extends Component {
             <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
             <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
             <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
+            <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
+            
           </Stack.Navigator>
         </NavigationContainer>
       )
@@ -100,6 +105,9 @@ export default class App extends Component {
           <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
           <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
           <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
+          <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
+          <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
+          <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
         </Stack.Navigator>
       </NavigationContainer>
     )
