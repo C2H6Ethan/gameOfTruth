@@ -4,7 +4,8 @@ import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, Tex
 import CustomButton from '../components/CustomButton';
 
 export default function GameFinishWinnerScreen({ route, navigation }) {
-  // const { player } = route.params;
+  // const { winners } = route.params;
+  const [dummyWinners, setDummyWinners] = useState([{name: "Pablo"}, {name: "Ben"}, {name: "Joe"}]);
 
 
 
@@ -14,12 +15,24 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
       <Image style={{position: 'absolute', width: 142, height: 264, bottom: '30%'}} source={require('../assets/award.png')}/>
 
       <View style={styles.content}>
-        <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
-          <Image style={styles.closeButton} source={require('../assets/closeButtonWinnerScreen.png')} /> 
-        </TouchableOpacity>
-        <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 24, lineHeight: 29, color: '#191919', textAlign: 'center'}}>Most answered</Text>
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 36, lineHeight: 44, color: '#191919', marginBottom: 32,  textAlign: 'center'}}>Supermegalol30</Text>
+        <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 24, lineHeight: 29, color: '#191919', textAlign: 'center', top: '20%'}}>Most answered</Text>
+
+        
+        <ScrollView bounces={true} showsHorizontalScrollIndicator={false} horizontal={true} style={styles.winnersScrollView} contentContainerStyle={{ flexGrow: 1, justifyContent: 'center'}}>
+          <View style={styles.names}>
+          {dummyWinners.map((player, index) => {
+            return (
+                <View style={styles.name}>
+                  <Text style={{fontFamily: 'Gilroy-SemiBold', fontSize: 14, lineHeight: 20, marginHorizontal: 12}}>{player['name']}</Text>
+                </View>
+            )
+          })}
+          </View>
+        </ScrollView>
+
+        
         <View style={styles.buttonContainer}>
+          <CustomButton text="Restart" onPress={() => navigation.navigate('HomeScreen')} style={{marginBottom: 15}} inverted={true}/>
           <CustomButton text="Back to Home" onPress={() => navigation.navigate('HomeScreen')} />
         </View>
       </View>
@@ -34,12 +47,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  closeButton: {
-    height: 46,
-    width: 46,
-    marginTop: 60,
-    marginBottom: 58
-  },
   content: {
     width: '80%',
     height: '100%'
@@ -48,6 +55,23 @@ const styles = StyleSheet.create({
   buttonContainer: {
     position: 'absolute',
     width: '100%',
-    top: '85%',
+    top: '75%',
+  },
+  winnersScrollView: {
+    position: 'absolute',
+    top: '25%',
+    width: '100%',
+  },
+  names: {
+    flexDirection: 'row',
+  },
+  name: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: 5,
+    borderWidth: 1,
+    borderRadius: 8,
+    borderColor: 'black',
   },
 });

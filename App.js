@@ -83,7 +83,6 @@ export default class App extends Component {
             <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
             <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
             <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
-            
           </Stack.Navigator>
         </NavigationContainer>
       )

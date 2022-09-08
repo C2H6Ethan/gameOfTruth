@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "17plus",
-    "slug": "17plus",
+    "name": "game of truth",
+    "slug": "gameOfTruth",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

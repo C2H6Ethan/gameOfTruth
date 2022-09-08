@@ -42,7 +42,7 @@ export default function GameMainScreen({ route, navigation }) {
     // add point to player
     for (var i = 0; i < players.length; i++) {
       var currentPlayer = players[i];
-      if(currentPlayer['id'] == player['id']) {currentPlayer['points'] += 1; console.warn(currentPlayer)}
+      if(currentPlayer['id'] == player['id']) {currentPlayer['points'] += 1;}
     }
     // pick new player
     var newPlayer = getNewPlayer()
@@ -65,13 +65,15 @@ export default function GameMainScreen({ route, navigation }) {
 
         // check if on last round
         var maxRounds = players.length * 3
-        console.warn(round)
         if (round == maxRounds){break}
 
         return(player)
       }
     }
-    console.warn("all players have played 3 times")
+    // all players have played 3 times
+    var mostPoints = players.reduce((acc, player) => acc = acc > player.points ? acc : player.points, 0);
+    var winners = players.filter(function(player) { return player.points == mostPoints; });
+    navigation.navigate('GameFinishWinnerScreen', {winners: winners})
     return null
   }
 
