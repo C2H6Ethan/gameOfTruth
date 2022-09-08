@@ -7,6 +7,7 @@ import {
   SettingsScreen,
   LanguageSettingsScreen,
   AddPlayersScreen,
+  AdjustPlayersScreen,
   GameTransitionScreen,
   GameMainScreen,
   GameMenuScreen,
@@ -78,6 +79,7 @@ export default class App extends Component {
             <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
             <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
             <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
+            <Stack.Screen name="AdjustPlayersScreen" component={AdjustPlayersScreen}/>
             <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
             <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
             <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
@@ -101,6 +103,7 @@ export default class App extends Component {
           <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
           <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
           <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
+          <Stack.Screen name="AdjustPlayersScreen" component={AdjustPlayersScreen}/>
           <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
           <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
           <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>

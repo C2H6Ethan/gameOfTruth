@@ -6,7 +6,10 @@ import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, A
 export default function GameMenuScreen({ navigation, route }) {
 
   const endGame = () => {
-    navigation.navigate('HomeScreen')
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'HomeScreen' }],
+    });
   }
 
   return (

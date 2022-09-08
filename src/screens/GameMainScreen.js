@@ -61,6 +61,8 @@ export default function GameMainScreen({ route, navigation }) {
     for (var i = 0; i < shuffledPlayers.length; i++) {
       const player = shuffledPlayers[i];
       if(player['timesPlayed'] < 3){
+        //
+
         player['timesPlayed'] += 1
 
         // check if on last round
@@ -79,6 +81,26 @@ export default function GameMainScreen({ route, navigation }) {
 
   const shuffle = (cleanArray) => {
     var array = cleanArray.slice(0)
+    // makes it not possible for a player to play twice in a row
+    // it is possible though for a player to play twice incase another player was added later in the game
+    var otherValidPlayers = cleanArray.slice(0)
+    for (let i = otherValidPlayers.length - 1; i > -1; i--) {
+      if (otherValidPlayers[i].id == player['id'] || otherValidPlayers[i].timesPlayed == 3) {
+        otherValidPlayers.splice(i, 1);
+      }
+    }
+
+    if(otherValidPlayers.length > 0) {
+      let i = otherValidPlayers.length - 1;
+      for (; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = otherValidPlayers[i];
+        otherValidPlayers[i] = otherValidPlayers[j];
+        otherValidPlayers[j] = temp;
+      }
+      return otherValidPlayers
+    }
+
     let i = array.length - 1;
     for (; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));

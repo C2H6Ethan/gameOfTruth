@@ -13,7 +13,10 @@ export default function GameTransitionScreen({ route, navigation }) {
     // Start counting when the page is loaded
     const timeoutHandle = setTimeout(()=>{
       // Add your logic for the transition
-      navigation.replace('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round})
+      navigation.reset({
+        index: 0,
+        routes: [{ name: 'GameMainScreen', params:  {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round}}],
+      });
     }, 2500);
   }, []);
 

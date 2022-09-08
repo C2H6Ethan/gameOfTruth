@@ -4,8 +4,7 @@ import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, Tex
 import CustomButton from '../components/CustomButton';
 
 export default function GameFinishWinnerScreen({ route, navigation }) {
-  // const { winners } = route.params;
-  const [dummyWinners, setDummyWinners] = useState([{name: "Pablo"}, {name: "Ben"}, {name: "Joe"}]);
+  const { winners } = route.params;
 
 
 
@@ -20,7 +19,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
         
         <ScrollView bounces={true} showsHorizontalScrollIndicator={false} horizontal={true} style={styles.winnersScrollView} contentContainerStyle={{ flexGrow: 1, justifyContent: 'center'}}>
           <View style={styles.names}>
-          {dummyWinners.map((player, index) => {
+          {winners.map((player, index) => {
             return (
                 <View style={styles.name}>
                   <Text style={{fontFamily: 'Gilroy-SemiBold', fontSize: 14, lineHeight: 20, marginHorizontal: 12}}>{player['name']}</Text>
@@ -33,7 +32,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
         
         <View style={styles.buttonContainer}>
           <CustomButton text="Restart" onPress={() => navigation.navigate('HomeScreen')} style={{marginBottom: 15}} inverted={true}/>
-          <CustomButton text="Back to Home" onPress={() => navigation.navigate('HomeScreen')} />
+          <CustomButton text="Back to Home" onPress={() => navigation.navigate('HomeScreen')} inverted={true} />
         </View>
       </View>
     </View>
