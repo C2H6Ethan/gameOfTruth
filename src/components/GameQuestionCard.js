@@ -10,7 +10,7 @@ const GameSelectionCard = (props) => {
                 <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 31, lineHeight: 35, color: props.textColor, top: '25%'}}>{props.cardText}</Text>
 
                 <View style={styles.cardFooter}>
-                    <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 16, lineHeight: 22, color: props.textColor, textTransform: 'uppercase'}}>{props.cardset}</Text>
+                    <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 16, lineHeight: 22, color: props.textColor, textTransform: 'uppercase'}}>{props.cardset}</Text>
                     <Image style={{height: 41, width: 41}} source={props.icon} />
                 </View>
             </View>

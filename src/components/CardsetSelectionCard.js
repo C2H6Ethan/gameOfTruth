@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         height: 24
     },
     mainText: {
-        fontFamily: 'Gilroy-Heavy',
+        fontFamily: 'Gilroy-ExtraBold',
         fontStyle: 'normal',
         fontSize: 26,
         lineHeight: 33,

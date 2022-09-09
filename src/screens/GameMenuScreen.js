@@ -30,11 +30,11 @@ export default function GameMenuScreen({ navigation, route }) {
         <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
       </View>
       <View style={styles.content}>
 
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Game Menu</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Game Menu</Text>
 
         <TouchableOpacity onPress={() => adjustPlayers()}  style={[styles.settingsButton, {marginBottom: 20}]}  activeOpacity={.7}>
           <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>Adjust Players</Text>
@@ -45,7 +45,7 @@ export default function GameMenuScreen({ navigation, route }) {
           <Image style={{width: 26, height: 26, marginRight: 24}} source={require('../assets/arrowWhite.png')} /> 
         </TouchableOpacity>
 
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 30, lineHeight: 36, color: 'white'}}>How it's played</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white'}}>How it's played</Text>
         <Text style={{fontFamily: 'Gilroy-Regular', fontSize: 17, lineHeight: 22, color: 'white'}}>
           <Text>A </Text>
           <Text style={{fontFamily: 'Gilroy-Bold'}}>random </Text>
@@ -55,9 +55,9 @@ export default function GameMenuScreen({ navigation, route }) {
           <Text style={{fontFamily: 'Gilroy-Bold'}}>task </Text>
           <Text>appears on the screen</Text>
         </Text>
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you answer:</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you answer:</Text>
         <Text style={{fontFamily: 'Gilroy-Regular', fontSize: 17, lineHeight: 22, color: 'white'}}>You get a point.</Text>
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you pass:</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you pass:</Text>
         <Text style={{fontFamily: 'Gilroy-Regular', fontSize: 17, lineHeight: 22, color: 'white'}}>You get punished MUHAHAHA!</Text>
 
       </View>

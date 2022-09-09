@@ -22,7 +22,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const Stack = createStackNavigator()
 
 let customFonts = {
-  'Gilroy-Heavy': require('./src/assets/fonts/Gilroy-Heavy.ttf'),
+  'Gilroy-ExtraBold': require('./src/assets/fonts/Gilroy-ExtraBold.ttf'),
   'Gilroy-Regular': require('./src/assets/fonts/Gilroy-Regular.ttf'),
   'Gilroy-Bold': require('./src/assets/fonts/Gilroy-Bold.ttf'),
   'Gilroy-SemiBold': require('./src/assets/fonts/Gilroy-SemiBold.ttf'),

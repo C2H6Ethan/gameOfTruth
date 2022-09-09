@@ -30,7 +30,8 @@ export default function GameNoScreen({ route, navigation }) {
 
   return (
     <View style={styles.container}>
-      <Image style={{width: 144, height: 144}} source={require('../assets/noBig.png')}/>
+      <Image style={{width: 144, height: 144, marginBottom: 40}} source={require('../assets/noBig.png')}/>
+      <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 31, lineHeight: 35, color: 'white'}}>Skipped</Text>
     </View>
   );
 }

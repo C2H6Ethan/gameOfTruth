@@ -60,7 +60,20 @@ export default function AdjustPlayersScreen({ route, navigation }) {
       newPlayer['timesPlayed'] = 1;
       navigation.navigate('GameTransitionScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: 1})
     }
-    navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round, question: question})
+    else {
+      // check if player has been deleted
+      if(players.includes(player)){
+        navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round, question: question})
+      }
+      else {
+        // pick a new player
+        var newPlayer = players[Math.floor(Math.random()*players.length)];
+        newPlayer['timesPlayed'] += 1;
+        navigation.navigate('GameTransitionScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: 1})
+      }
+      
+    }
+
   }
 
   const cleanPlayers = () => {
@@ -81,11 +94,11 @@ export default function AdjustPlayersScreen({ route, navigation }) {
         <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
       </View>
       <View style={styles.content}>
         
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>Adjust players</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>Adjust players</Text>
         <Text style={{fontFamily: 'Gilroy-Medium', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>Remove or Add players down below.</Text>
         <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 14, lineHeight: 21, color: 'white', width: '80%'}}>Name</Text>
         <TextInput

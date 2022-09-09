@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     right: 0,
   },
   mainText: {
-    fontFamily: 'Gilroy-Heavy',
+    fontFamily: 'Gilroy-ExtraBold',
     fontStyle: 'normal',
     fontSize: 26,
     lineHeight: 33,

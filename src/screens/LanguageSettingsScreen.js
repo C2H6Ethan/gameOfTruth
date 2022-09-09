@@ -43,7 +43,7 @@ export default function LanguageSettingsScreen({ navigation }) {
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
 
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Language</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Language</Text>
         
         <LanguageButton text="English" selected={english} onPress={() => select('english')}></LanguageButton>
         <LanguageButton text="Deutsch" selected={detusch} onPress={() => select('deutsch')}></LanguageButton>

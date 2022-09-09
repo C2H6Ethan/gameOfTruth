@@ -43,7 +43,7 @@ export default function OnboardingScreen({navigation}) {
             subtitle: 'Game of Truth was born from the idea to bring more life into the get-together. The goal of the app is to create a bridge between boring small talk and exciting deep conversations.',
             titleStyles: 
             {
-              fontFamily: 'Gilroy-Heavy',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 84,
               lineHeight: 76,
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   mainText: {
-    fontFamily: 'Gilroy-Heavy',
+    fontFamily: 'Gilroy-ExtraBold',
     fontStyle: 'normal',
     fontSize: 84,
     lineHeight: 76,
