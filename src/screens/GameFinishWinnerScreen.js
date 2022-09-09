@@ -5,7 +5,8 @@ import CustomButton from '../components/CustomButton';
 
 export default function GameFinishWinnerScreen({ route, navigation }) {
   const { winners } = route.params;
-
+  const { cardset } = route.params;
+  const { players } = route.params;
 
 
   return (
@@ -31,7 +32,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
 
         
         <View style={styles.buttonContainer}>
-          <CustomButton text="Restart" onPress={() => navigation.navigate('HomeScreen')} style={{marginBottom: 15}} inverted={true}/>
+          <CustomButton text="Restart" onPress={() => navigation.navigate('AdjustPlayersScreen', {cardset: cardset, oldPlayers: players, restartGame: true})} style={{marginBottom: 15}} inverted={true}/>
           <CustomButton text="Back to Home" onPress={() => navigation.navigate('HomeScreen')} inverted={true} />
         </View>
       </View>

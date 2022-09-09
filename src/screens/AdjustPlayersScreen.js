@@ -3,13 +3,24 @@ import React, { useEffect, useState } from "react";
 import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 import CustomButton from '../components/CustomButton';
 
-export default function AddPlayersScreen({ route, navigation }) {
-  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+export default function AdjustPlayersScreen({ route, navigation }) {
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [players, setPlayers] = useState([])
   const [inputText, onInputTextChange] = useState("");
   const [dummyValue, setDummyValue] = useState(null)
   const [totalAddedPlayers, setTotalAddedPlayers] = useState(0)
   const { cardset } = route.params;
+  const { oldPlayers } = route.params;
+  const { oldTotalAddedPlayers } = route.params;
+  const { question } = route.params;
+  const { player } = route.params;
+  const { round } = route.params;
+  const { restartGame } = route.params;
+
+  useEffect(() => {
+    setPlayers(oldPlayers)
+    setTotalAddedPlayers(oldTotalAddedPlayers)
+  }, []);
 
   const onNameEnter = (name) => {
     if(name == ''){return}
@@ -41,13 +52,26 @@ export default function AddPlayersScreen({ route, navigation }) {
     if (dummyValue == 69){setDummyValue(420)}
     else {setDummyValue(69)} 
   }
-  
-  const startGame = () => {
-    var player = players[Math.floor(Math.random()*players.length)];
 
-    player['timesPlayed'] = 1;
+  const finishAdjustingPlayers = () => {
+    if (restartGame) {
+      cleanPlayers()
+      var newPlayer = players[Math.floor(Math.random()*players.length)];
+      newPlayer['timesPlayed'] = 1;
+      navigation.navigate('GameTransitionScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: 1})
+    }
+    navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round, question: question})
+  }
 
-    navigation.navigate('GameTransitionScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: 1})
+  const cleanPlayers = () => {
+    // make the players ready for a new game
+    var cleanPlayers = players.slice(0)
+    cleanPlayers.forEach(player => {
+      player['points'] = 0
+      player['timesPlayed'] = 0
+    });
+
+    setPlayers(cleanPlayers)
   }
 
 
@@ -61,7 +85,7 @@ export default function AddPlayersScreen({ route, navigation }) {
       </View>
       <View style={styles.content}>
         
-        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>Who are u playing with?</Text>
+        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>Adjust players</Text>
         <Text style={{fontFamily: 'Gilroy-Medium', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>Remove or Add players down below.</Text>
         <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 14, lineHeight: 21, color: 'white', width: '80%'}}>Name</Text>
         <TextInput
@@ -90,7 +114,7 @@ export default function AddPlayersScreen({ route, navigation }) {
 
       </View>
       <View style={styles.buttonContainer}>
-        <CustomButton disabled={isButtonDisabled}  text="Start game" onPress={() => startGame()} />
+        <CustomButton disabled={isButtonDisabled}  text="Finished" onPress={() => finishAdjustingPlayers()} />
       </View>
     </View>
   );

@@ -4,6 +4,11 @@ import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, A
 
 
 export default function GameMenuScreen({ navigation, route }) {
+  const { cardset } = route.params;
+  const { question } = route.params; 
+  const { round } = route.params;
+  const { player } = route.params;
+  const { players } = route.params;
 
   const endGame = () => {
     navigation.reset({
@@ -12,19 +17,27 @@ export default function GameMenuScreen({ navigation, route }) {
     });
   }
 
+  const adjustPlayers = () => {
+    navigation.navigate('AdjustPlayersScreen', {cardset: cardset, question: question, player: player, round: round, oldPlayers: players})
+  }
+
   return (
     <View style={styles.container}>
       <Image style={{position: 'absolute', top: 0, left: 0}} source={require('../assets/gameTransitionScreenBackground1.png')}/>
       <Image style={{position: 'absolute', bottom: 0, width: '100%'}} source={require('../assets/gameMenuBackground2.png')}/>
-      <View style={styles.content}>
+      
+      <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
+        <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
+      </View>
+      <View style={styles.content}>
 
         <Text style={{fontFamily: 'Gilroy-Heavy', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Game Menu</Text>
 
-        <TouchableOpacity  style={[styles.settingsButton, {marginBottom: 20}]}  activeOpacity={.7}>
-          <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>Edit Players</Text>
+        <TouchableOpacity onPress={() => adjustPlayers()}  style={[styles.settingsButton, {marginBottom: 20}]}  activeOpacity={.7}>
+          <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>Adjust Players</Text>
           <Image style={{width: 26, height: 26, marginRight: 24}} source={require('../assets/arrowWhite.png')} /> 
         </TouchableOpacity>
         <TouchableOpacity onPress={() => endGame()} style={[styles.settingsButton, {marginBottom: 58}]}  activeOpacity={.7}>
@@ -63,12 +76,11 @@ const styles = StyleSheet.create({
   closeButton: {
     height: 46,
     width: 46,
-    marginTop: 60,
-    marginBottom: 58
   },
   content: {
+    position: 'absolute',
+    top: '20%',
     width: '80%',
-    height: '100%'
   },
   settingsButton: {
     display: 'flex',
@@ -89,5 +101,13 @@ const styles = StyleSheet.create({
     justifyContent:  'space-between',
     width: '100%',
     marginTop: 66
-  }
+  },
+  header: {
+    position: 'absolute',
+    width: '80%',
+    top: 60,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  },
 });

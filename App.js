@@ -74,7 +74,6 @@ export default class App extends Component {
               cardStyleInterpolator: forFade,
             }}
           >
-            <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
             <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
             <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
@@ -85,6 +84,7 @@ export default class App extends Component {
             <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
             <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
             <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
+            <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
           </Stack.Navigator>
         </NavigationContainer>
       )

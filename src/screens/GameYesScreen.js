@@ -8,13 +8,22 @@ export default function GameYesScreen({ route, navigation }) {
   const { players } = route.params;
   const { round } = route.params;
   const { totalAddedPlayers } = route.params;
+  const { isGameFinished } = route.params;
+  const { winners } = route.params;
 
   useEffect(() => {
     // Start counting when the page is loaded
     const timeoutHandle = setTimeout(()=>{
       // Add your logic for the transition
-
-      navigation.replace('GameTransitionScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round})
+      if (isGameFinished) {
+        navigation.reset({
+          index: 0,
+          routes: [{ name: 'GameFinishWinnerScreen', params:  {winners: winners, cardset: cardset, players: players}}],
+        });
+      }
+      else {
+        navigation.replace('GameTransitionScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round})
+      }
     }, 1250);
   }, []);
 

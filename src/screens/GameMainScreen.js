@@ -6,15 +6,20 @@ import GameQuestionCard from '../components/GameQuestionCard';
 
 export default function GameMainScreen({ route, navigation }) {
   const { cardset } = route.params;
-  const { player } = route.params;
+  const { player = {name: ''} } = route.params;
   const { players } = route.params;
   const { totalAddedPlayers } = route.params;
   const { round } = route.params;
+  const { question } = route.params;
   const [cardText, setCardText] = useState("");
 
   useEffect(() => {
-    getQuestion()
-
+    if (question) {
+      setCardText(question)
+    }
+    else {
+      getQuestion()
+    }
   }, []);
 
   const getQuestion = () => {
@@ -36,6 +41,12 @@ export default function GameMainScreen({ route, navigation }) {
     if (newPlayer != null){
       navigation.navigate('GameNoScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: round + 1})
     }
+    else {
+      // all players have played 3 times
+      var mostPoints = players.reduce((acc, player) => acc = acc > player.points ? acc : player.points, 0);
+      var winners = players.filter(function(player) { return player.points == mostPoints; });
+      navigation.navigate('GameNoScreen', {cardset: cardset, players: players, winners: winners, isGameFinished: true})
+    }
   }
 
   const onYesButtonPress = () => {
@@ -50,6 +61,12 @@ export default function GameMainScreen({ route, navigation }) {
     // show screen if game hasn't finished yet
     if (newPlayer != null){
       navigation.navigate('GameYesScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: round + 1})
+    }
+    else {
+      // all players have played 3 times
+      var mostPoints = players.reduce((acc, player) => acc = acc > player.points ? acc : player.points, 0);
+      var winners = players.filter(function(player) { return player.points == mostPoints; });
+      navigation.navigate('GameYesScreen', {cardset: cardset, players: players, winners: winners, isGameFinished: true})
     }
     
   }
@@ -72,10 +89,7 @@ export default function GameMainScreen({ route, navigation }) {
         return(player)
       }
     }
-    // all players have played 3 times
-    var mostPoints = players.reduce((acc, player) => acc = acc > player.points ? acc : player.points, 0);
-    var winners = players.filter(function(player) { return player.points == mostPoints; });
-    navigation.navigate('GameFinishWinnerScreen', {winners: winners})
+    // navigation.navigate('GameFinishWinnerScreen', {winners: winners, cardset: cardset, players: players})
     return null
   }
 
@@ -116,7 +130,7 @@ export default function GameMainScreen({ route, navigation }) {
     <View style={styles.container}>
 
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.navigate('GameMenuScreen')} style={styles.settingsButton} activeOpacity={.7}>
+        <TouchableOpacity onPress={() => navigation.navigate('GameMenuScreen', {cardset: cardset, question: cardText, player: player, round: round, players: players})} style={styles.settingsButton} activeOpacity={.7}>
           <Image style={{width: 32, height: 32}} source={require('../assets/settingsButton.png')} />
         </TouchableOpacity>
       </View>
