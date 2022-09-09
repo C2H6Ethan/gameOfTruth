@@ -7,6 +7,9 @@
       "**/*"
     ],
     "description": "",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "android": {
+      "package": "com.c2h6.gameOfTruth"
+    }
   }
 }

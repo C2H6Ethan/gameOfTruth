@@ -1,4 +1,4 @@
-package com.17plus.newarchitecture;
+package com.c2h6.gameOfTruth.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -18,10 +18,11 @@ import com.facebook.react.fabric.ComponentFactory;
 import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
+import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.17plus.BuildConfig;
-import com.17plus.newarchitecture.components.MainComponentsRegistry;
-import com.17plus.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.c2h6.gameOfTruth.BuildConfig;
+import com.c2h6.gameOfTruth.newarchitecture.components.MainComponentsRegistry;
+import com.c2h6.gameOfTruth.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -105,7 +106,7 @@ public class MainApplicationReactNativeHost extends ReactNativeHost {
                 return new FabricJSIModuleProvider(
                     reactApplicationContext,
                     componentFactory,
-                    new EmptyReactNativeConfig(),
+                    ReactNativeConfig.DEFAULT_CONFIG,
                     viewManagerRegistry);
               }
             });

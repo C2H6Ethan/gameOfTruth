@@ -1,4 +1,4 @@
-package com.17plus.newarchitecture.components;
+package com.c2h6.gameOfTruth.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
