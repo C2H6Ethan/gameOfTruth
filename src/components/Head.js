@@ -62,14 +62,14 @@ const styles = StyleSheet.create({
         right: 0,
       },
       mainText: {
-        fontFamily: 'Gilroy-Heavy',
+        fontFamily: 'Gilroy-ExtraBold',
         fontStyle: 'normal',
         fontSize: 36,
         lineHeight: 46,
         color: 'white',
       },
       subText: {
-        fontFamily: 'Gilroy-Regular',
+        fontFamily: 'Gilroy-ExtraBold',
         fontStyle: 'normal',
         fontSize: 17,
         lineHeight: 22,

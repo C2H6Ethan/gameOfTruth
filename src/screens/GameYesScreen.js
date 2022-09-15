@@ -31,7 +31,7 @@ export default function GameYesScreen({ route, navigation }) {
   return (
     <View style={styles.container}>
       <Image style={{width: 144, height: 144, marginBottom: 40}} source={require('../assets/checkedBig.png')}/>
-      <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 31, lineHeight: 35, color: 'white'}}>Well done!</Text>
+      <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 31, lineHeight: 35, color: 'white'}}>Well done!</Text>
     </View>
   );
 }

@@ -8,6 +8,7 @@
     ],
     "description": "",
     "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
     "android": {
       "package": "com.c2h6.gameOfTruth"
     }

@@ -17,27 +17,27 @@ export default function SettingsScreen({ navigation }) {
 
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Settings</Text>
         <TouchableOpacity onPress={() => navigation.navigate('LanguageSettingsScreen')} style={styles.languageSettingsButton}  activeOpacity={.7}>
-          <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>Language Settings</Text>
+          <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>Language Settings</Text>
           <Image style={{width: 26, height: 26, marginRight: 24}} source={require('../assets/languageSettingsButton.png')} /> 
         </TouchableOpacity>
 
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white'}}>How it's played</Text>
-        <Text style={{fontFamily: 'Gilroy-Regular', fontSize: 17, lineHeight: 22, color: 'white'}}>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white'}}>
           <Text>A </Text>
-          <Text style={{fontFamily: 'Gilroy-Bold'}}>random </Text>
+          <Text style={{fontFamily: 'Gilroy-ExtraBold'}}>random </Text>
           <Text>card with a </Text>
-          <Text style={{fontFamily: 'Gilroy-Bold'}}>question </Text>
+          <Text style={{fontFamily: 'Gilroy-ExtraBold'}}>question </Text>
           <Text>or </Text>
-          <Text style={{fontFamily: 'Gilroy-Bold'}}>task </Text>
+          <Text style={{fontFamily: 'Gilroy-ExtraBold'}}>task </Text>
           <Text>appears on the screen</Text>
         </Text>
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you answer:</Text>
-        <Text style={{fontFamily: 'Gilroy-Regular', fontSize: 17, lineHeight: 22, color: 'white'}}>You get a point.</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white'}}>You get a point.</Text>
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you pass:</Text>
-        <Text style={{fontFamily: 'Gilroy-Regular', fontSize: 17, lineHeight: 22, color: 'white'}}>You get punished MUHAHAHA!</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white'}}>You get punished MUHAHAHA!</Text>
 
         <TouchableOpacity style={styles.termsButton} activeOpacity={.7}>
-          <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 17, lineHeight: 20, color: 'white'}}>Terms of use & Privacy policy</Text>
+          <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 20, color: 'white'}}>Terms of use & Privacy policy</Text>
           <Image style={{width: 26, height: 26}} source={require('../assets/arrowWhite.png')} /> 
         </TouchableOpacity>
       </View>

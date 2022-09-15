@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
       marginBottom: 20
     },
     buttonTextSelected: {
-      fontFamily: 'Gilroy-Bold',
+      fontFamily: 'Gilroy-ExtraBold',
       fontStyle: 'normal',
       fontSize: 17,
       lineHeight: 21,
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
       marginLeft: 24,
     },
     buttonText: {
-      fontFamily: 'Gilroy-Bold',
+      fontFamily: 'Gilroy-ExtraBold',
       fontStyle: 'normal',
       fontSize: 17,
       lineHeight: 21,

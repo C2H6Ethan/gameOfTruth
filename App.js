@@ -18,15 +18,12 @@ import {
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as InAppPurchases from 'expo-in-app-purchases';
 
 const Stack = createStackNavigator()
 
 let customFonts = {
   'Gilroy-ExtraBold': require('./src/assets/fonts/Gilroy-ExtraBold.ttf'),
-  'Gilroy-Regular': require('./src/assets/fonts/Gilroy-Regular.ttf'),
-  'Gilroy-Bold': require('./src/assets/fonts/Gilroy-Bold.ttf'),
-  'Gilroy-SemiBold': require('./src/assets/fonts/Gilroy-SemiBold.ttf'),
-  'Gilroy-Medium': require('./src/assets/fonts/Gilroy-Medium.ttf'),
 };
 export default class App extends Component {
 
@@ -40,6 +37,22 @@ export default class App extends Component {
   }
 
   componentDidMount = async() => {
+    const items = Platform.select({
+      ios: [
+        'com.gameOfTruth.premium',
+      ],
+      // android: ['gas', 'premium', 'gold_yearly', 'gold_monthly'],
+    });
+
+    await InAppPurchases.connectAsync()
+
+    // Get product details
+    const { responseCode, results } = await getProductsAsync(items);
+    if (responseCode === IAPResponseCode.OK) {
+      this.setState({ items: results, history: history.results });
+    }
+
+
     this.loadFonts();
     var hasBeenOnboarded = await AsyncStorage.getItem('hasBeenOnboarded')
     if (hasBeenOnboarded == 'true') {

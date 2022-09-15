@@ -15,7 +15,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
       <Image style={{position: 'absolute', width: 142, height: 264, bottom: '30%'}} source={require('../assets/award.png')}/>
 
       <View style={styles.content}>
-        <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 24, lineHeight: 29, color: '#191919', textAlign: 'center', top: '20%'}}>Most answered</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: '#191919', textAlign: 'center', top: '20%'}}>Most answered</Text>
 
         
         <ScrollView bounces={true} showsHorizontalScrollIndicator={false} horizontal={true} style={styles.winnersScrollView} contentContainerStyle={{ flexGrow: 1, justifyContent: 'center'}}>
@@ -23,7 +23,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
           {winners.map((player, index) => {
             return (
                 <View style={styles.name}>
-                  <Text style={{fontFamily: 'Gilroy-SemiBold', fontSize: 14, lineHeight: 20, marginHorizontal: 12}}>{player['name']}</Text>
+                  <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 14, lineHeight: 20, marginHorizontal: 12}}>{player['name']}</Text>
                 </View>
             )
           })}

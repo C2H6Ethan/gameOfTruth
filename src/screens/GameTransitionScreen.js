@@ -31,7 +31,7 @@ export default function GameTransitionScreen({ route, navigation }) {
       <View style={styles.header}>
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
       </View>
-      <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 24, lineHeight: 29, color: 'white', }}>{player['name']}</Text>
+      <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white', }}>{player['name']}</Text>
     </View>
   );
 }

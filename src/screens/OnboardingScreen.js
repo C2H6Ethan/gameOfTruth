@@ -53,7 +53,7 @@ export default function OnboardingScreen({navigation}) {
             },
             subTitleStyles: 
             {
-              fontFamily: 'Gilroy-Regular',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 17,
               lineHeight: 22,
@@ -65,7 +65,7 @@ export default function OnboardingScreen({navigation}) {
             title: 'Choose Cardset',
             titleStyles: 
             {
-              fontFamily: 'Gilroy-SemiBold',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -77,7 +77,7 @@ export default function OnboardingScreen({navigation}) {
             title: 'Add people. Or play alone',
             titleStyles: 
             {
-              fontFamily: 'Gilroy-SemiBold',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -89,7 +89,7 @@ export default function OnboardingScreen({navigation}) {
             title: 'Start playing',
             titleStyles: 
             {
-              fontFamily: 'Gilroy-SemiBold',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
     top: '35%',
   },
   subText: {
-    fontFamily: 'Gilroy-Regular',
+    fontFamily: 'Gilroy-ExtraBold',
     fontStyle: 'normal',
     fontSize: 17,
     lineHeight: 22,
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     top: '85%',
   },
   buttonText: {
-    fontFamily: 'Gilroy-Bold',
+    fontFamily: 'Gilroy-ExtraBold',
     fontStyle: 'normal',
     fontSize: 17,
     lineHeight: 22,

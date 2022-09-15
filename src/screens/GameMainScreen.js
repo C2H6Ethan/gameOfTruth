@@ -142,7 +142,7 @@ export default function GameMainScreen({ route, navigation }) {
       }
 
       <View style={styles.choice}>
-        <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 16, lineHeight: 22, color: 'white'}}>Was the question answered?</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 16, lineHeight: 22, color: 'white'}}>Was the question answered?</Text>
         <View style={styles.choiceButtonsContainer}>
           <TouchableOpacity onPress={() => onNoButtonPress()} style={styles.choiceButton} activeOpacity={.7}>
             <Image style={{width: 24, height: 24}} source={require('../assets/no.png')} />

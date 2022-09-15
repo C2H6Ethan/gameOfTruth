@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   subText: {
-    fontFamily: 'Gilroy-Regular',
+    fontFamily: 'Gilroy-ExtraBold',
     fontStyle: 'normal',
     fontSize: 17,
     lineHeight: 22,

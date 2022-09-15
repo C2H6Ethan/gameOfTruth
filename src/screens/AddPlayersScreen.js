@@ -62,8 +62,8 @@ export default function AddPlayersScreen({ route, navigation }) {
       <View style={styles.content}>
         
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>Who are u playing with?</Text>
-        <Text style={{fontFamily: 'Gilroy-Medium', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>Remove or Add players down below.</Text>
-        <Text style={{fontFamily: 'Gilroy-Bold', fontSize: 14, lineHeight: 21, color: 'white', width: '80%'}}>Name</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>Remove or Add players down below.</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 14, lineHeight: 21, color: 'white', width: '80%'}}>Name</Text>
         <TextInput
           style={styles.input}
           onChangeText={onInputTextChange}
@@ -77,7 +77,7 @@ export default function AddPlayersScreen({ route, navigation }) {
           {players.map((player, index) => {
             return (
                 <View style={styles.name}>
-                  <Text style={{fontFamily: 'Gilroy-SemiBold', fontSize: 14, lineHeight: 20, color: 'white', marginLeft: 12}}>{player['name']}</Text>
+                  <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 14, lineHeight: 20, color: 'white', marginLeft: 12}}>{player['name']}</Text>
                   <TouchableOpacity onPress={() => removeName(index)} style={{height: 35, width: 35,  alignItems: 'center', justifyContent: 'center',}} activeOpacity={.7}>
                     <Image style={{height: 10.5, width: 10.5}} source={require('../assets/remove.png')}/>
                   </TouchableOpacity>
