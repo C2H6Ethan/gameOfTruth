@@ -15,7 +15,11 @@ const Head = (props) => {
             <Image style={styles.icon} source={props.icon} />
             <Text style={styles.mainText}>{props.mainText}</Text>
             <Text style={styles.subText}>{props.subText}</Text>
-            <CustomButton onPress={props.onStartGameButtonPress} style={styles.headButton} text="Start Game"/>
+            {props.hasUpgraded ? 
+              <CustomButton onPress={props.onStartGameButtonPress} style={styles.headButton} text="Start Game"/>
+            :
+              <CustomButton onPress={props.onStartGameButtonPress} style={styles.headButton} crown={true} text="Unlock all Packages"/>
+            }
         </View>
       </View>
     )

@@ -6,7 +6,7 @@ const CustomButton = (props) => {
         <TouchableOpacity disabled={props.disabled} activeOpacity={.7} style={[styles.buttonContainer, props.style, props.disabled? styles.disabled : null, props.inverted? styles.inverted: null]} onPress={props.onPress}>
             <View style={styles.children}>
                 <Text style={[styles.buttonText, props.inverted? styles.invertedText: null]}>{props.text}</Text>
-                <Image style={{width: 26, height: 26}} source={props.inverted? require('../assets/arrowWhite.png') : require('../assets/arrow.png')} />
+                <Image style={{width: 26, height: 26}} source={props.inverted? require('../assets/arrowWhite.png') : props.crown? require('../assets/crown.png') : require('../assets/arrow.png')} />
             </View>
         </TouchableOpacity>
     )

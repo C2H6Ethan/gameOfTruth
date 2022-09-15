@@ -13,12 +13,13 @@ import {
   GameMenuScreen,
   GameYesScreen,
   GameNoScreen,
-  GameFinishWinnerScreen
+  GameFinishWinnerScreen,
+  PaywallScreen
 } from './src/screens'
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as InAppPurchases from 'expo-in-app-purchases';
+import "expo-dev-client"
 
 const Stack = createStackNavigator()
 
@@ -37,22 +38,6 @@ export default class App extends Component {
   }
 
   componentDidMount = async() => {
-    const items = Platform.select({
-      ios: [
-        'com.gameOfTruth.premium',
-      ],
-      // android: ['gas', 'premium', 'gold_yearly', 'gold_monthly'],
-    });
-
-    await InAppPurchases.connectAsync()
-
-    // Get product details
-    const { responseCode, results } = await getProductsAsync(items);
-    if (responseCode === IAPResponseCode.OK) {
-      this.setState({ items: results, history: history.results });
-    }
-
-
     this.loadFonts();
     var hasBeenOnboarded = await AsyncStorage.getItem('hasBeenOnboarded')
     if (hasBeenOnboarded == 'true') {
@@ -98,6 +83,7 @@ export default class App extends Component {
             <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
             <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
             <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
+            <Stack.Screen name="PaywallScreen" component={PaywallScreen}/>
           </Stack.Navigator>
         </NavigationContainer>
       )
@@ -123,6 +109,7 @@ export default class App extends Component {
           <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
           <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
           <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
+          <Stack.Screen name="PaywallScreen" component={PaywallScreen}/>
         </Stack.Navigator>
       </NavigationContainer>
     )

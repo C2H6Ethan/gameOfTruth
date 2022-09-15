@@ -4,20 +4,21 @@ import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, A
 import Head from '../components/Head';
 import CardsetSelectionCard from '../components/CardsetSelectionCard';
 import { ScrollView } from 'react-native-gesture-handler';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function HomeScreen({ navigation }) {
   const [cardset, setCardset] = useState("classic");
-  const [helpModalVisible, setHelpModalVisible] = useState(false);
+  const [hasUpgraded, setHasUpgraded] = useState(false);
+
+  useEffect(async () => {
+    var temp = await AsyncStorage.getItem('hasUpgraded')
+    if (temp == 'true'){setHasUpgraded(true)}
+  }, []);
 
   const onCardsetClick = (type) => {
     setCardset(type)
   }
-
-  const onQuestionmarkPress = () => {
-    setHelpModalVisible(!helpModalVisible)
-  }
-
 
   return (
     <View style={styles.container}>
@@ -31,16 +32,18 @@ export default function HomeScreen({ navigation }) {
             background1={require('../assets/classicBackgroundBig.png')}
             background2={require('../assets/classicBackgroundBig2.png')}
             icon={require('../assets/classicIcon.png')}
+            hasUpgraded={true}
         />
         : cardset == 'sex'?
         <Head
-            onStartGameButtonPress={() => navigation.navigate('AddPlayersScreen', {cardset: cardset})}
+            onStartGameButtonPress={hasUpgraded? () => navigation.navigate('AddPlayersScreen', {cardset: cardset}) : () => navigation.navigate('PaywallScreen')}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Sex" 
             subText="To make your party even hotter!" 
             background1={require('../assets/sexBackgroundBig.png')}
             background2={require('../assets/sexBackgroundBig2.png')}
             icon={require('../assets/sexIcon.png')}
+            hasUpgraded={hasUpgraded}
         /> 
         : null
         }

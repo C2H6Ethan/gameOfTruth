@@ -11,6 +11,14 @@
     "icon": "./src/assets/icon.png",
     "android": {
       "package": "com.c2h6.gameOfTruth"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9d082a3f-b378-4d5f-a36b-6a875264b120"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.c2h6.gameOfTruth"
     }
   }
 }
