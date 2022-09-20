@@ -14,18 +14,25 @@ import {
   GameYesScreen,
   GameNoScreen,
   GameFinishWinnerScreen,
-  PaywallScreen
+  PaywallScreen,
+  PremiumThankYou
 } from './src/screens'
 import AppLoading from 'expo-app-loading';
 import * as Font from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import "expo-dev-client"
+import { AdEventType, InterstitialAd, TestIds } from 'react-native-google-mobile-ads';
 
 const Stack = createStackNavigator()
 
 let customFonts = {
   'Gilroy-ExtraBold': require('./src/assets/fonts/Gilroy-ExtraBold.ttf'),
+  'Poppins': require('./src/assets/fonts/Poppins-Regular.ttf')
 };
+
+const interstitial = InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL, {
+  requestNonPersonalizedAdsOnly: true
+})
 export default class App extends Component {
 
   constructor (props){
@@ -33,16 +40,49 @@ export default class App extends Component {
 
     this.state = {
         fontsLoaded: false,
-        hasBeenOnboarded: false
+        hasBeenOnboarded: false,
+        interstitialLoaded: false,
     };
   }
 
+  // IOS interstitial: ca-app-pub-9310152642296392/9817079723
+  // Android interstitial: ca-app-pub-9310152642296392/1921443681
+
+  loadInterstital = async() => {
+    const unsubscribeLoaded = interstitial.addAdEventListener(
+      AdEventType.LOADED,
+      async () => {
+        await this.setState({interstitialLoaded: true})
+        interstitial.show();
+      }
+    );
+
+    const unsubscribeClosed = interstitial.addAdEventListener(
+      AdEventType.CLOSED,
+      async () => {
+        await this.setState({interstitialLoaded: false})
+        interstitial.load()
+      }
+    );
+
+    interstitial.load();
+
+    return () => {
+      unsubscribeClosed();
+      unsubscribeLoaded();
+    }
+  }
+
   componentDidMount = async() => {
+    const unsubscribeInterstitalEvents = this.loadInterstital();
+
     this.loadFonts();
     var hasBeenOnboarded = await AsyncStorage.getItem('hasBeenOnboarded')
     if (hasBeenOnboarded == 'true') {
       await this.setState({hasBeenOnboarded: true})
     }
+
+    return unsubscribeInterstitalEvents;
   }
 
 
@@ -72,6 +112,7 @@ export default class App extends Component {
               cardStyleInterpolator: forFade,
             }}
           >
+            <Stack.Screen name="PremiumThankYou" component={PremiumThankYou}/>
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
             <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
             <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
@@ -110,6 +151,7 @@ export default class App extends Component {
           <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
           <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
           <Stack.Screen name="PaywallScreen" component={PaywallScreen}/>
+          <Stack.Screen name="PremiumThankYou" component={PremiumThankYou}/>
         </Stack.Navigator>
       </NavigationContainer>
     )
