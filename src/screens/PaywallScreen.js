@@ -84,9 +84,12 @@ export default function PaywallScreen({ navigation }) {
       await InAppPurchases.connectAsync();
 
       var results = await InAppPurchases.getPurchaseHistoryAsync();
+      results = results['results']
+      console.warn(results)
 
       for (var i = 0; i < results.length; i++) {
         var result = results[i];
+        console.warn(result)
         if(result.productId == "com.gameOfTruth.premium" && result.acknowledged) {
           onSuccess()
           await InAppPurchases.disconnectAsync();

@@ -1,30 +1,30 @@
 [
 	{
-		text: "question 0",
-		cardset: "classic"
+		"text": "question 0",
+		"cardset": "classic"
 	},
 	{
-		text: "question 1",
-		cardset: "classic"
+		"text": "question 1",
+		"cardset": "classic"
 	},
 	{
-		text: "question 2",
-		cardset: "classic"
+		"text": "question 2",
+		"cardset": "classic"
 	},
 	{
-		text: "question 3",
-		cardset: "classic"
+		"text": "question 3",
+		"cardset": "classic"
 	},
 	{
-		text: "question 4",
-		cardset: "classic"
+		"text": "question 4",
+		"cardset": "classic"
 	},
 	{
-		text: "question 5",
-		cardset: "classic"
+		"text": "question 5",
+		"cardset": "classic"
 	},
 	{
-		text: "question 6",
-		cardset: "classic"
+		"text": "question 6",
+		"cardset": "classic"
 	}
 ]

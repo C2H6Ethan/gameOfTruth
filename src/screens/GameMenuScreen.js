@@ -1,16 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Animated } from 'react-native';
+import CustomButton from '../components/CustomButton';
+import { MyContext } from "../context";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function GameMenuScreen({ navigation, route }) {
+  const [hasUpgraded, setHasUpgraded] = useState(false);
   const { cardset } = route.params;
   const { question } = route.params; 
   const { round } = route.params;
   const { player } = route.params;
   const { players } = route.params;
 
-  const endGame = () => {
+  useEffect(async () => {
+    var temp = await AsyncStorage.getItem('hasUpgraded')
+    if (temp == 'true'){setHasUpgraded(true)}
+  }, []);
+
+  const endGame = (interstitial) => {
+    if(!hasUpgraded) {interstitial.show()}
+    
     navigation.reset({
       index: 0,
       routes: [{ name: 'HomeScreen' }],
@@ -22,46 +33,37 @@ export default function GameMenuScreen({ navigation, route }) {
   }
 
   return (
-    <View style={styles.container}>
-      <Image style={{position: 'absolute', top: 0, left: 0}} source={require('../assets/gameTransitionScreenBackground1.png')}/>
-      <Image style={{position: 'absolute', bottom: 0, width: '100%'}} source={require('../assets/gameMenuBackground2.png')}/>
-      
-      <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
-          <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
-        </TouchableOpacity>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
-      </View>
-      <View style={styles.content}>
+    <MyContext.Consumer>
+      {context => (
+        <View style={styles.container}>
+          <Image style={{position: 'absolute', top: 0, left: 0}} source={require('../assets/gameTransitionScreenBackground1.png')}/>
+          <Image style={{position: 'absolute', bottom: 0, width: '100%'}} source={require('../assets/gameMenuBackground2.png')}/>
+          
+          <View style={styles.header}>
+            <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
+              <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
+            </TouchableOpacity>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
+          </View>
+          <View style={styles.content}>
 
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Game Menu</Text>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Game Menu</Text>
 
-        <TouchableOpacity onPress={() => adjustPlayers()}  style={[styles.settingsButton, {marginBottom: 20}]}  activeOpacity={.7}>
-          <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>Adjust Players</Text>
-          <Image style={{width: 26, height: 26, marginRight: 24}} source={require('../assets/arrowWhite.png')} /> 
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => endGame()} style={[styles.settingsButton, {marginBottom: 58}]}  activeOpacity={.7}>
-          <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>End Game</Text>
-          <Image style={{width: 26, height: 26, marginRight: 24}} source={require('../assets/arrowWhite.png')} /> 
-        </TouchableOpacity>
+            <CustomButton onPress={() => adjustPlayers()} style={{marginBottom: 20}} text="Adjust Players" inverted={true}/>
+            <CustomButton onPress={() => endGame(context.interstitial)} style={{marginBottom: 58}} text="End Game" inverted={true}/>
 
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white'}}>How it's played</Text>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white'}}>
-          <Text>A </Text>
-          <Text style={{fontFamily: 'Gilroy-ExtraBold'}}>random </Text>
-          <Text>card with a </Text>
-          <Text style={{fontFamily: 'Gilroy-ExtraBold'}}>question </Text>
-          <Text>or </Text>
-          <Text style={{fontFamily: 'Gilroy-ExtraBold'}}>task </Text>
-          <Text>appears on the screen</Text>
-        </Text>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you answer:</Text>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white'}}>You get a point.</Text>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you pass:</Text>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white'}}>You get punished MUHAHAHA!</Text>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white'}}>How it's played</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>A random card with a question or task appears on the screen.</Text>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you answer:</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>You get a point.</Text>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you pass:</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>You get punished MUHAHAHA!</Text>
 
-      </View>
-    </View>
+          </View>
+        </View>
+      )}
+    </MyContext.Consumer>
+    
   );
 }
 

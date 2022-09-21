@@ -2,7 +2,7 @@
   "expo": {
     "name": "game of truth",
     "slug": "gameOfTruth",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -10,7 +10,8 @@
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
     "android": {
-      "package": "com.c2h6.gameOfTruth"
+      "package": "com.c2h6.gameOfTruth",
+      "runtimeVersion": "1.0.0"
     },
     "extra": {
       "eas": {
@@ -18,7 +19,13 @@
       }
     },
     "ios": {
-      "bundleIdentifier": "com.c2h6.gameOfTruth"
+      "bundleIdentifier": "com.c2h6.gameOfTruth",
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9d082a3f-b378-4d5f-a36b-6a875264b120"
     }
   },
   "react-native-google-mobile-ads": {

@@ -22,12 +22,14 @@ import * as Font from 'expo-font';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import "expo-dev-client"
 import { AdEventType, InterstitialAd, TestIds } from 'react-native-google-mobile-ads';
+import { MyContext } from './src/context';
 
 const Stack = createStackNavigator()
 
 let customFonts = {
   'Gilroy-ExtraBold': require('./src/assets/fonts/Gilroy-ExtraBold.ttf'),
-  'Poppins': require('./src/assets/fonts/Poppins-Regular.ttf')
+  'Poppins': require('./src/assets/fonts/Poppins-Regular.ttf'),
+  'Poppins-SemiBold': require('./src/assets/fonts/Poppins-SemiBold.ttf')
 };
 
 const interstitial = InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL, {
@@ -73,6 +75,7 @@ export default class App extends Component {
   }
 
   componentDidMount = async() => {
+    //await AsyncStorage.clear()
     const unsubscribeInterstitalEvents = this.loadInterstital();
 
     this.loadFonts();
@@ -104,28 +107,30 @@ export default class App extends Component {
 
     if (this.state.hasBeenOnboarded){
       return (
-        <NavigationContainer>
-          <Stack.Navigator
-            screenOptions={{
-              headerShown: false,
-              cardStyleInterpolator: forFade,
-            }}
-          >
-            <Stack.Screen name="PremiumThankYou" component={PremiumThankYou}/>
-            <Stack.Screen name="HomeScreen" component={HomeScreen} />
-            <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
-            <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
-            <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
-            <Stack.Screen name="AdjustPlayersScreen" component={AdjustPlayersScreen}/>
-            <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
-            <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
-            <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
-            <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
-            <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
-            <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
-            <Stack.Screen name="PaywallScreen" component={PaywallScreen}/>
-          </Stack.Navigator>
-        </NavigationContainer>
+        <MyContext.Provider value={{interstitial: interstitial}}>
+          <NavigationContainer>
+            <Stack.Navigator
+              screenOptions={{
+                headerShown: false,
+                cardStyleInterpolator: forFade,
+              }}
+            >
+              <Stack.Screen name="HomeScreen" component={HomeScreen} />
+              <Stack.Screen name="SettingsScreen" component={SettingsScreen}/>
+              <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
+              <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
+              <Stack.Screen name="AdjustPlayersScreen" component={AdjustPlayersScreen}/>
+              <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
+              <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
+              <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
+              <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
+              <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
+              <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
+              <Stack.Screen name="PaywallScreen" component={PaywallScreen}/>
+              <Stack.Screen name="PremiumThankYou" component={PremiumThankYou}/>
+            </Stack.Navigator>
+          </NavigationContainer>
+        </MyContext.Provider>
       )
     }
 

@@ -44,11 +44,13 @@ export default function LanguageSettingsScreen({ navigation }) {
         </TouchableOpacity>
 
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Language</Text>
+
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Coming soon</Text>
         
-        <LanguageButton text="English" selected={english} onPress={() => select('english')}></LanguageButton>
+        {/* <LanguageButton text="English" selected={english} onPress={() => select('english')}></LanguageButton>
         <LanguageButton text="Deutsch" selected={detusch} onPress={() => select('deutsch')}></LanguageButton>
         <LanguageButton text="Francais" selected={francais} onPress={() => select('francais')}></LanguageButton>
-        <LanguageButton text="Espanol" selected={espanol} onPress={() => select('espanol')}></LanguageButton>
+        <LanguageButton text="Espanol" selected={espanol} onPress={() => select('espanol')}></LanguageButton> */}
 
       </View>
     </View>

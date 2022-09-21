@@ -74,33 +74,6 @@ export default function HomeScreen({ navigation }) {
                     onPress={() => onCardsetClick("sex")}
                     currentCardSet={cardset}
                 />
-                <CardsetSelectionCard 
-                    mainText="Sex"
-                    type="sex"
-                    subText="To make your party even hotter!" 
-                    icon={require('../assets/sexIconSmall.png')}
-                    style={{backgroundColor: 'purple'}} 
-                    onPress={() => onCardsetClick("sex")}
-                    currentCardSet={cardset}
-                />
-                <CardsetSelectionCard 
-                    mainText="Sex"
-                    type="sex"
-                    subText="To make your party even hotter!" 
-                    icon={require('../assets/sexIconSmall.png')}
-                    style={{backgroundColor: 'green'}} 
-                    onPress={() => onCardsetClick("sex")}
-                    currentCardSet={cardset}
-                />
-                <CardsetSelectionCard 
-                    mainText="Sex"
-                    type="sex"
-                    subText="To make your party even hotter!" 
-                    icon={require('../assets/sexIconSmall.png')}
-                    style={{backgroundColor: 'blue'}} 
-                    onPress={() => onCardsetClick("sex")}
-                    currentCardSet={cardset}
-                />
             </View>
             
         </ScrollView>

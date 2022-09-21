@@ -14,7 +14,7 @@ export default function PremiumThankYou({ navigation }) {
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', width: 200, marginBottom: 16}}>Thank you for the drink.</Text>
-        <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', width: '90%'}}>A big thank you for your support. With your purchase of Premium, we can continue to work on 17+ even stronger.</Text>
+        <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', width: '90%'}}>A big thank you for your support. With your purchase of Premium, we can continue to work on game of truth even stronger.</Text>
 
         <View style={styles.infoContainer}>
           <View style={styles.info}>

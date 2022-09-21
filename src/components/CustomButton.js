@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     buttonText: {
-      fontFamily: 'Poppins',
+      fontFamily: 'Poppins-SemiBold',
       fontStyle: 'normal',
       fontSize: 17,
       lineHeight: 22,

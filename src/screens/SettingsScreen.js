@@ -17,7 +17,7 @@ export default function SettingsScreen({ navigation }) {
 
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Settings</Text>
         <TouchableOpacity onPress={() => navigation.navigate('LanguageSettingsScreen')} style={styles.languageSettingsButton}  activeOpacity={.7}>
-          <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>Language Settings</Text>
+          <Text style={{fontFamily: 'Poppins-SemiBold', fontSize: 17, lineHeight: 21, color: 'white', marginLeft: 24}}>Language Settings</Text>
           <Image style={{width: 26, height: 26, marginRight: 24}} source={require('../assets/languageSettingsButton.png')} /> 
         </TouchableOpacity>
 
