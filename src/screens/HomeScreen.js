@@ -27,7 +27,7 @@ export default function HomeScreen({ navigation }) {
         <Head 
             onStartGameButtonPress={() => navigation.navigate('AddPlayersScreen', {cardset: cardset})}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
-            mainText="Classic Cardset" 
+            mainText="Classic" 
             subText="Free Cardset to get your party started." 
             background1={require('../assets/classicBackgroundBig.png')}
             background2={require('../assets/classicBackgroundBig2.png')}
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   subText: {
-    fontFamily: 'Gilroy-ExtraBold',
+    fontFamily: 'Poppins',
     fontStyle: 'normal',
     fontSize: 17,
     lineHeight: 22,

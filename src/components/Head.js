@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
         color: 'white',
       },
       subText: {
-        fontFamily: 'Gilroy-ExtraBold',
+        fontFamily: 'Poppins',
         fontStyle: 'normal',
         fontSize: 17,
         lineHeight: 22,

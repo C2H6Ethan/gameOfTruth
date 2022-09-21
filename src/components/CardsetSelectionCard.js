@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         marginLeft: 5,
     },
     subText: {
-        fontFamily: 'Gilroy-ExtraBold',
+        fontFamily: 'Poppins',
         fontStyle: 'normal',
         fontSize: 14,
         lineHeight: 17,

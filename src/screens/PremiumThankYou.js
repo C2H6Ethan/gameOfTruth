@@ -10,10 +10,11 @@ export default function PremiumThankYou({ navigation }) {
       <Image style={{position: 'absolute', width: '100%', height: '100%'}} source={require('../assets/premiumThankYouBackground1.png')}/>
       <Image style={{position: 'absolute', width: '100%', height: '100%'}} source={require('../assets/premiumThankYouBackground2.png')}/>
       <View style={styles.content}>
-        <TouchableOpacity onPress={() => console.warn("bruh")} activeOpacity={.7}>
+        <TouchableOpacity onPress={() => navigation.reset({index: 0,routes: [{ name: 'HomeScreen' }]})} activeOpacity={.7}>
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', width: 200}}>Thank you for the drink.</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', width: 200, marginBottom: 16}}>Thank you for the drink.</Text>
+        <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', width: '90%'}}>A big thank you for your support. With your purchase of Premium, we can continue to work on 17+ even stronger.</Text>
 
         <View style={styles.infoContainer}>
           <View style={styles.info}>
@@ -60,7 +61,7 @@ const styles = StyleSheet.create({
   },
   infoContainer: {
     position: 'absolute', 
-    top: '33%',
+    top: '40%',
     justifyContent: 'center',
   },
   info: {

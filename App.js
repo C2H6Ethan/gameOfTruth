@@ -53,7 +53,6 @@ export default class App extends Component {
       AdEventType.LOADED,
       async () => {
         await this.setState({interstitialLoaded: true})
-        interstitial.show();
       }
     );
 

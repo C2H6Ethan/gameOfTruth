@@ -44,7 +44,6 @@ export default function OnboardingScreen({navigation}) {
             titleStyles: 
             {
               fontFamily: 'Gilroy-ExtraBold',
-              fontStyle: 'normal',
               fontSize: 84,
               lineHeight: 76,
               color: 'white',
@@ -53,8 +52,7 @@ export default function OnboardingScreen({navigation}) {
             },
             subTitleStyles: 
             {
-              fontFamily: 'Gilroy-ExtraBold',
-              fontStyle: 'normal',
+              fontFamily: 'Poppins',
               fontSize: 17,
               lineHeight: 22,
               color: 'white',
@@ -65,7 +63,7 @@ export default function OnboardingScreen({navigation}) {
             title: 'Choose Cardset',
             titleStyles: 
             {
-              fontFamily: 'Gilroy-ExtraBold',
+              fontFamily: 'Poppins',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -77,7 +75,7 @@ export default function OnboardingScreen({navigation}) {
             title: 'Add people. Or play alone',
             titleStyles: 
             {
-              fontFamily: 'Gilroy-ExtraBold',
+              fontFamily: 'Poppins',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -89,7 +87,7 @@ export default function OnboardingScreen({navigation}) {
             title: 'Start playing',
             titleStyles: 
             {
-              fontFamily: 'Gilroy-ExtraBold',
+              fontFamily: 'Poppins',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
