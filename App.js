@@ -75,7 +75,7 @@ export default class App extends Component {
   }
 
   componentDidMount = async() => {
-    //await AsyncStorage.clear()
+    await AsyncStorage.clear()
     const unsubscribeInterstitalEvents = this.loadInterstital();
 
     this.loadFonts();
@@ -135,29 +135,31 @@ export default class App extends Component {
     }
 
     return (
-      <NavigationContainer>
-        <Stack.Navigator
-          screenOptions={{
-            headerShown: false,
-            cardStyleInterpolator: forFade,
-          }}
-        >
-          <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} />
-          <Stack.Screen name="HomeScreen" component={HomeScreen} />
-          <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
-          <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
-          <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
-          <Stack.Screen name="AdjustPlayersScreen" component={AdjustPlayersScreen}/>
-          <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
-          <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
-          <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
-          <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
-          <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
-          <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
-          <Stack.Screen name="PaywallScreen" component={PaywallScreen}/>
-          <Stack.Screen name="PremiumThankYou" component={PremiumThankYou}/>
-        </Stack.Navigator>
-      </NavigationContainer>
+      <MyContext.Provider value={{interstitial: interstitial}}>
+        <NavigationContainer>
+          <Stack.Navigator
+            screenOptions={{
+              headerShown: false,
+              cardStyleInterpolator: forFade,
+            }}
+          >
+            <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} />
+            <Stack.Screen name="HomeScreen" component={HomeScreen} />
+            <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
+            <Stack.Screen name="LanguageSettingsScreen" component={LanguageSettingsScreen}/>
+            <Stack.Screen name="AddPlayersScreen" component={AddPlayersScreen}/>
+            <Stack.Screen name="AdjustPlayersScreen" component={AdjustPlayersScreen}/>
+            <Stack.Screen name="GameTransitionScreen" component={GameTransitionScreen}/>
+            <Stack.Screen name="GameMainScreen" component={GameMainScreen}/>
+            <Stack.Screen name="GameMenuScreen" component={GameMenuScreen}/>
+            <Stack.Screen name="GameYesScreen" component={GameYesScreen}/>
+            <Stack.Screen name="GameNoScreen" component={GameNoScreen}/>
+            <Stack.Screen name="GameFinishWinnerScreen" component={GameFinishWinnerScreen}/>
+            <Stack.Screen name="PaywallScreen" component={PaywallScreen}/>
+            <Stack.Screen name="PremiumThankYou" component={PremiumThankYou}/>
+          </Stack.Navigator>
+        </NavigationContainer>
+      </MyContext.Provider>
     )
   }
 }
