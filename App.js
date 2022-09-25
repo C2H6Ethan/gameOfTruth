@@ -75,7 +75,7 @@ export default class App extends Component {
   }
 
   componentDidMount = async() => {
-    await AsyncStorage.clear()
+    //await AsyncStorage.clear()
     const unsubscribeInterstitalEvents = this.loadInterstital();
 
     this.loadFonts();
