@@ -1,30 +1,734 @@
 [
-	{
-		"text": "question 0",
-		"cardset": "classic"
-	},
-	{
-		"text": "question 1",
-		"cardset": "classic"
-	},
-	{
-		"text": "question 2",
-		"cardset": "classic"
-	},
-	{
-		"text": "question 3",
-		"cardset": "classic"
-	},
-	{
-		"text": "question 4",
-		"cardset": "classic"
-	},
-	{
-		"text": "question 5",
-		"cardset": "classic"
-	},
-	{
-		"text": "question 6",
-		"cardset": "classic"
-	}
+    {
+        "text": "What's the worst swear word you say often?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Have you ever cheated on a boyfriend or girlfriend?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What's the most illegal thing you've ever done?",
+        "cardset": "group, classic"
+    },
+    {
+        "text": "Have you ever kissed someone in this room?",
+        "cardset": "group, classic"
+    },
+    {
+        "text": "What's one thing you wish you could hire someone to do?",
+        "cardset": "dating, classic"
+    },
+    {
+        "text": "Would you let someone in this room read text messages on your phone?",
+        "cardset": "group, classic"
+    },
+    {
+        "text": "Did you ever throw up at the end of a classic?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What's the most among of trouble you got into as a kid?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What's the grossest thing you've ever done?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What habit did you have as a kid that was gross?",
+        "cardset": "classic"
+    },
+    {
+        "text": "Did you ever fail a class or grade in school?",
+        "cardset": "classic"
+    },
+    {
+        "text": "When did you lose your virginity?",
+        "cardset": "dating, classic, relationship, sex"
+    },
+    {
+        "text": "How often do you go to the bathroom?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What's the most embarrassing thing your mom caught you doing?",
+        "cardset": "dating, classic, relationship, sex"
+    },
+    {
+        "text": "What's the most embarrassing thing your dad caught you doing?",
+        "cardset": "dating, classic, relationship, sex"
+    },
+    {
+        "text": "What's one thing as a kid that you used to get ridiculed for doing?",
+        "cardset": "classic"
+    },
+    {
+        "text": "When did you last fart?",
+        "cardset": "classic"
+    },
+    {
+        "text": "Did you ever get diarrhea in public?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What's the worst food you've ever ate?",
+        "cardset": "classic"
+    },
+    {
+        "text": "Did you ever k#ss someone of your own gender?",
+        "cardset": "dating, classic, relationship, sex"
+    },
+    {
+        "text": "How often do you think about having sex?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Did you ever get fired from a job for doing something bad?",
+        "cardset": "classic, Work"
+    },
+    {
+        "text": "When's the last time you got in trouble at work?",
+        "cardset": "classic, Work"
+    },
+    {
+        "text": "Did you ever cut class in high school?",
+        "cardset": "classic, Work"
+    },
+    {
+        "text": "Have you ever went to a concert completely drunk?",
+        "cardset": "classic, Work"
+    },
+    {
+        "text": "Did you ever get intimate at a concert or sporting event?",
+        "cardset": "dating, classic, relationship, sex"
+    },
+    {
+        "text": "Have you ever thrown up at a concert or sporting event?",
+        "cardset": "classic"
+    },
+    {
+        "text": "Did you ever secretly learn the password to your partners phone?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "Would you ever consider doing role play in the bedroom?",
+        "cardset": "dating, relationship, sex"
+    },
+    {
+        "text": "Have you ever asked someone to take a drty picture for you?",
+        "cardset": "dating, classic, sex"
+    },
+    {
+        "text": "What's one thing that really turns you on about another gender?",
+        "cardset": "dating, relationship, sex"
+    },
+    {
+        "text": "What's your favorite position during intimacy?",
+        "cardset": "dating, relationship, sex"
+    },
+    {
+        "text": "Would you ever take lingerie photographs?",
+        "cardset": "trash"
+    },
+    {
+        "text": "Did you ever flirt with someone random on social media?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "Would you ever let your partner read all of your Snapchat messages?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Would you rather be on top or be on bottom?",
+        "cardset": "relationship, sex"
+    },
+    {
+        "text": "Did you ever intentionally read your partners text messages?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Who is the loudest in the bedroom?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Would you rather be the big spoon or the little spoon?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Did you ever give a lap dance to someone?",
+        "cardset": "dating, relationship, sex"
+    },
+    {
+        "text": "Would you let your partner read all of your text messages?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Did you ever send dirty photographs to another couple?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How many times per week do you and your spouse have s#x?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What's the longest dry spell you've ever had?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "Did you ever fantasize about someone other than your boyfriend/girlfriend?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What's the biggest age gap you've had with a romantic partner?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "Did you ever ditch out on a first date?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "What's the worst lie you've ever told?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "What couple would you have a threesome with?",
+        "cardset": "relationship, sex"
+    },
+    {
+        "text": "Have you ever done something s#xual with another couple?",
+        "cardset": "relationship, sex"
+    },
+    {
+        "text": "Have you ever fallen in public and had people laugh at you?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "Have you ever lied to your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What was the worst date you've ever been on",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "When's the last time you cried?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "What's something d#rty that you think about often?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Did you ever wear your friends underwear?",
+        "cardset": "friendship, classic"
+    },
+    {
+        "text": "Have you ever k#ssed your friend as a dare?",
+        "cardset": "friendship, classic"
+    },
+    {
+        "text": "Did you ever borrow money from your friend?",
+        "cardset": "friendship, classic"
+    },
+    {
+        "text": "Have you ever fantasized about your friends parent or parents?",
+        "cardset": "friendship, classic, sex"
+    },
+    {
+        "text": "Did you ever let a friend cheat on one of your tests?",
+        "cardset": "friendship, classic"
+    },
+    {
+        "text": "Did you ever cheat in school?",
+        "cardset": "friendship, classic, Work"
+    },
+    {
+        "text": "What was your last first date like?",
+        "cardset": "dating, classic, relationship"
+    },
+    {
+        "text": "Did you ever try to steal your best friends crush?",
+        "cardset": "dating, friendship, classic"
+    },
+    {
+        "text": "What's one thing you have ever done that makes you seem like a bad person?",
+        "cardset": "dating, friendship, classic, relationship"
+    },
+    {
+        "text": "What is a nickname your family used to call you?",
+        "cardset": "friendship, group, classic, relationship"
+    },
+    {
+        "text": "What's one thing you wish you could do for the rest of your life?",
+        "cardset": "dating, friendship, classic, relationship, Work"
+    },
+    {
+        "text": "What's your strangest off-limit crush?",
+        "cardset": "dating, classic, relationship"
+    },
+    {
+        "text": "Have you ever had a sexting conversation?",
+        "cardset": "dating, friendship, classic, relationship, sex"
+    },
+    {
+        "text": "Has anyone ever caught you masturbating?",
+        "cardset": "friendship, classic, sex"
+    },
+    {
+        "text": "Would you consider yourself more of a dominant or submissive person?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What's a pet name that your mom/dad always calls you?",
+        "cardset": "friendship, relationship"
+    },
+    {
+        "text": "What's a pet peeve of someone in this room?",
+        "cardset": "group, classic"
+    },
+    {
+        "text": "Have you ever been to an adult club or adult stip club?",
+        "cardset": "friendship, classic, sex"
+    },
+    {
+        "text": "Did you ever visit adult websites?",
+        "cardset": "friendship, classic, relationship, sex"
+    },
+    {
+        "text": "Would you ever steal your friends ex-boyfriend or ex-girlfriend?",
+        "cardset": "dating, friendship"
+    },
+    {
+        "text": "Have you ever flirted with a friends boyfriend/girlfriend?",
+        "cardset": "dating, friendship"
+    },
+    {
+        "text": "Have you ever got into a fist fight with another person?",
+        "cardset": "friendship, classic"
+    },
+    {
+        "text": "Did you ever decide to listen to a song just because your friend liked it?",
+        "cardset": "friendship, classic"
+    },
+    {
+        "text": "What's the last lie you told your best friend?",
+        "cardset": "friendship, classic"
+    },
+    {
+        "text": "If you could change one thing about your friend, what would it be?",
+        "cardset": "friendship"
+    },
+    {
+        "text": "If you could eliminate one friend from the group, who would it be?",
+        "cardset": "friendship, group, classic"
+    },
+    {
+        "text": "When did you know that you had a best friend?",
+        "cardset": "dating, friendship"
+    },
+    {
+        "text": "Did you ever have a best friend who wasn't your best friend in return?",
+        "cardset": "friendship, classic"
+    },
+    {
+        "text": "Did you ever have a friend get upset at you for something you didn't know you did wrong?",
+        "cardset": "dating, friendship, classic"
+    },
+    {
+        "text": "Where is the worst place you've ever had sex?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Did you ever walk in on your parents having sex?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Which celebrity would you like to sleep with or kiss?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever shared the bed with another couple?",
+        "cardset": "relationship, sex"
+    },
+    {
+        "text": "Did you ever have sex at school?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What's one random thing you've done in the bedroom?",
+        "cardset": "sex"
+    },
+    {
+        "text": "How often do you fantasize?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What's the last thing you remember doing in the bedroom?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever ate food while having s#x?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Did you ever dance s#xually for someone?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever had someone talk dirty to you?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Did you ever want to film a dirty movie?",
+        "cardset": "sex"
+    },
+    {
+        "text": "If you could have sex with anyone in this room, who would it be?",
+        "cardset": "group, classic, sex"
+    },
+    {
+        "text": "What movie always turn you on?",
+        "cardset": "dating, sex"
+    },
+    {
+        "text": "What's your favorite body part on a guy/girl?",
+        "cardset": "dating, classic, relationship, sex"
+    },
+    {
+        "text": "What do you like to be called in the bedroom?",
+        "cardset": "dating, relationship, sex"
+    },
+    {
+        "text": "What's the last fantasy that you masturbated to?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What's the dirtiest sext you've ever sent?",
+        "cardset": "classic, sex"
+    },
+    {
+        "text": "What sexual position are you best at?",
+        "cardset": "classic, sex"
+    },
+    {
+        "text": "Where is one place you wish you could have sex?",
+        "cardset": "relationship, sex"
+    },
+    {
+        "text": "Did you ever have sex on an airplane?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever been intimate in a car?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Did you ever have an intimate encounter in a movie theater?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever put your hand down a boyfriend or girlfriends pants in public?",
+        "cardset": "sex"
+    },
+    {
+        "text": "When was the first time you made out with someone?",
+        "cardset": "dating, classic, relationship, sex"
+    },
+    {
+        "text": "What was the first time you ever French kissed someone?",
+        "cardset": "sex"
+    },
+    {
+        "text": "If you could change one body part on your boyfriend/girlfriend, what would it be?",
+        "cardset": "dating, relationship, sex"
+    },
+    {
+        "text": "If you could choose any person in the world: Who would you like to have as your dinner guest?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Would you like to be famous? In what way?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Have you ever rehearsed what you want to say on the phone before you call someone? Why?",
+        "cardset": "dating"
+    },
+    {
+        "text": "How would you describe a perfect day?",
+        "cardset": "dating"
+    },
+    {
+        "text": "When was the last time you sang for yourself? For someone else?",
+        "cardset": "dating"
+    },
+    {
+        "text": "If you could live to be 90, and from the age of 30 you could keep either the body or the mind of a 30 year old for the remaining 60 years, what would you choose?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Do you have a secret premonition of how you will die?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Name three things that you and your counterpart seem to have in common.",
+        "cardset": "dating"
+    },
+    {
+        "text": "For what aspect of your life are you most grateful?",
+        "cardset": "dating"
+    },
+    {
+        "text": "If you could change anything about the way you were raised, what would it be?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Take four minutes to tell your partner as much of your life story as you can.",
+        "cardset": "dating"
+    },
+    {
+        "text": "If you could wake up tomorrow and choose one skill or quality that you have gained, what would it be?",
+        "cardset": "dating"
+    },
+    {
+        "text": "If a crystal ball could tell you the truth about yourself, your life, the future, or anything else, what would you want to know?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Is there something you have been dreaming about for a long time? Why haven't you done it yet?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What is the greatest achievement of your life?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What do you value most in a friendship?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What is your most precious memory?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What is your worst memory?",
+        "cardset": "dating"
+    },
+    {
+        "text": "If you knew you were going to die suddenly in a year, would you change anything about the way you live now? Why?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What does friendship mean to you?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What role do love and affection play in your life?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Take turns telling each other what positive traits your counterpart has. List a total of five character traits.",
+        "cardset": "dating"
+    },
+    {
+        "text": "How close is your family? Do you feel your childhood was happier than most people's?",
+        "cardset": "dating"
+    },
+    {
+        "text": "How is your relationship with your mother?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "Make three true \"we\" statements about yourselves. For example, \"We are in this room right now feeling...\"",
+        "cardset": "dating"
+    },
+    {
+        "text": "Complete this sentence, \"I wish I had someone to tell that...\"",
+        "cardset": "dating"
+    },
+    {
+        "text": "If your counterpart were to become a close friend of yours, what would he need to know about you?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Tell your counterpart what you like about him. ",
+        "cardset": "dating"
+    },
+    {
+        "text": "Share an embarrassing moment from your life with your counterpart.",
+        "cardset": "dating"
+    },
+    {
+        "text": "When was the last time you cried in front of someone? When was the last time you cried alone?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Tell your counterpart what you already like about him.",
+        "cardset": "dating"
+    },
+    {
+        "text": "What - if anything - is too serious to joke about?",
+        "cardset": "dating"
+    },
+    {
+        "text": "If you were to die tonight without being able to talk to anyone, what would you regret most about not telling someone? Why haven't you told that person yet?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Your house, which contains everything you own, is on fire, and after saving your family and pets, there is still time to save one thing from the house. What would that be? Why?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Of all the people in your family, whose death would take you the most?",
+        "cardset": "dating"
+    },
+    {
+        "text": "Share a personal problem with your partner and ask them how they would solve it. Also ask your partner how you feel about the problem.",
+        "cardset": "dating"
+    },
+    {
+        "text": "When's the last time you lied about having an orgasm?",
+        "cardset": "relationship, sex"
+    },
+    {
+        "text": "Do you enjoy dirty talk?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever had a ‘friends with benefits’ situation? If so, who with?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What's the best intimate experience you've ever had?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Do you have any fetishes?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What's your biggest turn-on?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Who would you most like to kiss in this room?",
+        "cardset": "group, classic, sex"
+    },
+    {
+        "text": "Have you ever read erotic fiction?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What’s the longest you’ve gone without sex?",
+        "cardset": "sex"
+    },
+    {
+        "text": "When did you lose your virginity?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever fallen asleep during sex?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What was your most embarrassing sexual experience?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What is your favourite sex position?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What’s your biggest turn off?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever slept with someone then immediately regretted it?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever hooked up with a friend?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What is the dirtiest text you’ve received?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Who did you last have a sexual fantasy/dream about?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What is your least favourite sex position?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you faked an orgasm?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever noticed that your partner faked an orgasm?",
+        "cardset": "classic, sex"
+    },
+    {
+        "text": "Describe your best orgasm. How long did it last?",
+        "cardset": "sex"
+    },
+    {
+        "text": "If you could only do one sex act for the rest of your life, what would it be?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever had s#x with someone that you barely knew?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What's the last fantasy that you masturbated to?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What's the dirtiest s#xt you've ever sent?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What s#xual position are you best at?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Where is one place you wish you could have s#x?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Did you ever have s#x on an airplane?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever been intimate in a car?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Did you ever have an intimate encounter in a movie theater?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever put your hand down a boyfriend or girlfriends pants in public?",
+        "cardset": "sex"
+    },
+    {
+        "text": "When was the first time you made out with someone?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What was the first time you ever French k#ssed someone?",
+        "cardset": "sex"
+    },
+    {
+        "text": "If you could change one body part on your boyfriend/girlfriend, what would it be?",
+        "cardset": "sex"
+    },
+    {
+        "text": "When's the last time you lied about having an orgasm?",
+        "cardset": "sex"
+    }
 ]

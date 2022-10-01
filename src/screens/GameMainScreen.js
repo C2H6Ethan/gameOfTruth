@@ -26,7 +26,7 @@ export default function GameMainScreen({ route, navigation }) {
     var filteredQuestions = []
     for (var i = 0; i < questions.length; i++) {
       const question = questions[i];
-      if(question['cardset'] == 'classic') {filteredQuestions.push(questions[i])}
+      if(question['cardset'].includes(cardset)) {filteredQuestions.push(questions[i])}
     }
 
     var question = filteredQuestions[Math.floor(Math.random()*filteredQuestions.length)];
