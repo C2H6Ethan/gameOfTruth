@@ -7,14 +7,14 @@ const CardsetSelectionCard = (props) => {
             <View style={styles.shadowCard2}></View>
             <View style={styles.shadowCard}></View>
             <TouchableOpacity activeOpacity={.7} style={[styles.container, props.style, props.currentCardSet == props.type ? styles.checked : null]} onPress={props.onPress}>
-                {props.currentCardSet == props.type? 
-                <Image style={styles.checkbox} source={require('../assets/checked.png')} /> : <Image style={styles.checkbox} source={require('../assets/unchecked.png')} />
-                }
+                <View style={styles.header}>
+                    <Image style={styles.icon} source={props.icon} />
+                    {props.currentCardSet == props.type? 
+                    <Image style={styles.checkbox} source={require('../assets/checked.png')} /> : <Image style={styles.checkbox} source={require('../assets/unchecked.png')} />
+                    }
+                </View>
                 <View style={styles.textContainer}>
-                    <View style={styles.title}>
-                        <Image style={styles.icon} source={props.icon} />
-                        <Text style={styles.mainText}>{props.mainText}</Text>
-                    </View>
+                    <Text style={styles.mainText}>{props.mainText}</Text>
                     <Text style={styles.subText}>{props.subText}</Text>
                 </View>
             </TouchableOpacity>
@@ -25,9 +25,16 @@ const CardsetSelectionCard = (props) => {
 export default CardsetSelectionCard;
 
 const styles = StyleSheet.create({
+    header: {
+        flexDirection: 'row',
+        marginTop: 24,
+        marginBottom: 14,
+        justifyContent: 'space-between',
+        marginHorizontal: 21,
+    },
     cardContainer: {
-        width: 208,
-        height: 160,
+        width: 192,
+        height: 152,
         marginHorizontal: 8
     },
     container: {
@@ -36,25 +43,21 @@ const styles = StyleSheet.create({
       borderWidth: 2,
       borderRadius: 10,
       height: '96%',
-      width: '100%'
+      width: '100%',
     },
     checked: {
         borderColor: 'white',
     },
     checkbox: {
-        position: 'absolute',
-        right: 0,
-        margin: 16,
         width: 24,
         height: 24
     },
     mainText: {
         fontFamily: 'Gilroy-ExtraBold',
         fontStyle: 'normal',
-        fontSize: 26,
-        lineHeight: 33,
+        fontSize: 24,
+        lineHeight: 30,
         color: 'white',
-        marginLeft: 5,
     },
     subText: {
         fontFamily: 'Poppins',
@@ -62,15 +65,9 @@ const styles = StyleSheet.create({
         fontSize: 14,
         lineHeight: 17,
         color: 'white',
-        marginTop: 10
     },
     textContainer: {
-        marginLeft: 16,
-        flex: 1,
-        justifyContent: 'center',
-    },
-    title: {
-        flexDirection: "row",
+        marginLeft: 21,
     },
     shadowCard: {
         position: 'absolute',

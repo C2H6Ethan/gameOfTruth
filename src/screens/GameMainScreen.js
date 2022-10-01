@@ -135,9 +135,13 @@ export default function GameMainScreen({ route, navigation }) {
         </TouchableOpacity>
       </View>
       {cardset == 'classic'? 
-        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'white'} textColor={'#111111'} icon={require('../assets/classicIconBlack.png')}/>
+        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#903BFF'} textColor={'white'} icon={require('../assets/classicIcon.png')}/>
         : cardset == 'sex'?
-        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#FF3A68'} textColor={'white'} icon={require('../assets/sexIcon.png')}/> 
+        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#FF3A68'} textColor={'white'} icon={require('../assets/sexIcon.png')}/>
+        : cardset == 'relationship'?
+        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#6F00FF'} textColor={'white'} icon={require('../assets/relationshipIcon.png')}/> 
+        : cardset == 'dating'?
+        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#FF327C'} textColor={'white'} icon={require('../assets/datingIcon.png')}/>  
         : null
       }
 

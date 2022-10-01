@@ -28,7 +28,7 @@ export default function HomeScreen({ navigation }) {
             onStartGameButtonPress={() => navigation.navigate('AddPlayersScreen', {cardset: cardset})}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Classic" 
-            subText="Free Cardset to get your party started." 
+            subText="To get your party started." 
             background1={require('../assets/classicBackgroundBig.png')}
             background2={require('../assets/classicBackgroundBig2.png')}
             icon={require('../assets/classicIcon.png')}
@@ -39,10 +39,30 @@ export default function HomeScreen({ navigation }) {
             onStartGameButtonPress={hasUpgraded? () => navigation.navigate('AddPlayersScreen', {cardset: cardset}) : () => navigation.navigate('PaywallScreen')}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Sex" 
-            subText="To make your party even hotter!" 
+            subText="To break taboos." 
             background1={require('../assets/sexBackgroundBig.png')}
             background2={require('../assets/sexBackgroundBig2.png')}
             icon={require('../assets/sexIcon.png')}
+            hasUpgraded={hasUpgraded}
+        />
+        : cardset == 'relationship'?
+        <Head
+            onStartGameButtonPress={hasUpgraded? () => navigation.navigate('AddPlayersScreen', {cardset: cardset}) : () => navigation.navigate('PaywallScreen')}
+            onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
+            mainText="Relationship" 
+            subText="To fall in love." 
+            background1={require('../assets/relationshipBackgroundBig.png')}
+            icon={require('../assets/relationshipIcon.png')}
+            hasUpgraded={hasUpgraded}
+        /> 
+        : cardset == 'dating'?
+        <Head
+            onStartGameButtonPress={hasUpgraded? () => navigation.navigate('AddPlayersScreen', {cardset: cardset}) : () => navigation.navigate('PaywallScreen')}
+            onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
+            mainText="Dating" 
+            subText="To save the date." 
+            background1={require('../assets/datingBackgroundBig.png')}
+            icon={require('../assets/datingIcon.png')}
             hasUpgraded={hasUpgraded}
         /> 
         : null
@@ -59,7 +79,7 @@ export default function HomeScreen({ navigation }) {
                 <CardsetSelectionCard
                     mainText="Classic"
                     type="classic" 
-                    subText="Free Cardset to get your party started."
+                    subText="To get your party started."
                     icon={require('../assets/classicIconSmall.png')} 
                     style={{backgroundColor: '#903BFF'}} 
                     onPress={() => onCardsetClick("classic")}
@@ -68,10 +88,28 @@ export default function HomeScreen({ navigation }) {
                 <CardsetSelectionCard 
                     mainText="Sex"
                     type="sex"
-                    subText="To make your party even hotter!" 
+                    subText="To break taboos." 
                     icon={require('../assets/sexIconSmall.png')}
                     style={{backgroundColor: '#FF3A68'}} 
                     onPress={() => onCardsetClick("sex")}
+                    currentCardSet={cardset}
+                />
+                <CardsetSelectionCard 
+                    mainText="Relationship"
+                    type="relationship"
+                    subText="To fall in love." 
+                    icon={require('../assets/relationshipIconSmall.png')}
+                    style={{backgroundColor: '#FF327C'}} 
+                    onPress={() => onCardsetClick("relationship")}
+                    currentCardSet={cardset}
+                />
+                <CardsetSelectionCard 
+                    mainText="Dating"
+                    type="dating"
+                    subText="To save the date." 
+                    icon={require('../assets/datingIconSmall.png')}
+                    style={{backgroundColor: '#6F00FF'}} 
+                    onPress={() => onCardsetClick("dating")}
                     currentCardSet={cardset}
                 />
             </View>
