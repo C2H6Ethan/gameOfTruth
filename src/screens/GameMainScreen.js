@@ -139,9 +139,9 @@ export default function GameMainScreen({ route, navigation }) {
         : cardset == 'sex'?
         <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#FF3A68'} textColor={'white'} icon={require('../assets/sexIcon.png')}/>
         : cardset == 'relationship'?
-        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#6F00FF'} textColor={'white'} icon={require('../assets/relationshipIcon.png')}/> 
+        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#FF327C'} textColor={'white'} icon={require('../assets/relationshipIcon.png')}/> 
         : cardset == 'dating'?
-        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#FF327C'} textColor={'white'} icon={require('../assets/datingIcon.png')}/>  
+        <GameQuestionCard name={player['name']} cardset={cardset} cardText={cardText} backgroundColor={'#6F00FF'} textColor={'white'} icon={require('../assets/datingIcon.png')}/>  
         : null
       }
 

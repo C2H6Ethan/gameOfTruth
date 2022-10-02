@@ -5,9 +5,11 @@ const GameSelectionCard = (props) => {
     return (
         <View style={[styles.cardContainer, {backgroundColor: props.backgroundColor}]}>
             <View style={styles.content}>
-                <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 16, lineHeight: 19, color: props.textColor, }}>{props.name}</Text>
+                <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 16, lineHeight: 19, color: props.textColor, marginTop: 10}}>{props.name}</Text>
 
-                <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 31, lineHeight: 35, color: props.textColor, top: '25%'}}>{props.cardText}</Text>
+                <View style={styles.mainText}>
+                    <Text  numberOfLines={8} adjustsFontSizeToFit style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 27, lineHeight: 33, color: props.textColor, textAlignVertical: 'center', }}>{props.cardText}</Text>
+                </View>
 
                 <View style={styles.cardFooter}>
                     <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 16, lineHeight: 22, color: props.textColor, textTransform: 'uppercase'}}>{props.cardset}</Text>
@@ -31,6 +33,10 @@ const styles = StyleSheet.create({
     content: {
         width: '80%',
         height: '90%',
+    },
+    mainText: {
+        flex: 1,
+        top: '10%',
     },
     cardFooter: {
         position: 'absolute',
