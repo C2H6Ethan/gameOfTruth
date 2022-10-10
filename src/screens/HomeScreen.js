@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Animated } from 'react-native';
+import { StyleSheet, Modal, Text, View, Image, Dimensions } from 'react-native';
 import Head from '../components/Head';
 import CardsetSelectionCard from '../components/CardsetSelectionCard';
 import { ScrollView } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+const {height, width} = Dimensions.get("window");
 
 export default function HomeScreen({ navigation }) {
   const [cardset, setCardset] = useState("classic");
@@ -127,18 +128,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  classicBackgroundBig: {
-    position: 'absolute',
-    width: '100%',
-    top: 0,
-    borderBottomLeftRadius: 40,
-    borderBottomRightRadius: 40,
-  },
-  classicBackgroundBig2: {
-    position: 'absolute',
-    top: 0,
-    left: 0
-  },
   headButton: {
     position: 'absolute',
     bottom: 0,
@@ -162,11 +151,11 @@ const styles = StyleSheet.create({
     fontSize: 17,
     lineHeight: 22,
     color: 'white',
-    marginBottom: 28
+    marginBottom: (128 / 812) * height
   },
   cardsetSelectionCardScrollView: {
     position: 'absolute',
-    bottom: 128,
+    bottom: '15%',
   },
   backgroundImage: {
     position: 'absolute',
@@ -176,11 +165,11 @@ const styles = StyleSheet.create({
   screenInfo: {
     position: 'absolute',
     top: '55%',
-    width: '80%',
+    width: width * 0.8,
   },
   cards: {
     flexDirection: 'row',
-    marginHorizontal: 36,
+    marginHorizontal: width * 0.1,
   },    
 
 
@@ -189,29 +178,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  modalView: {
-    position: 'absolute',
-    backgroundColor: "#4D4D4D",
-    width: '100%',
-    height: '57%',
-    borderBottomLeftRadius: 40,
-    borderBottomRightRadius: 40,
-    top: 0,
-
-    alignItems: "center",
-  },
   modalText: {
     textAlign: "center"
   },
-  closeModalButton: {
-    height: 46,
-    width: 46,
-    left: 0,
-    marginBottom: 36
-  },
-  modalContent: {
-    width: '80%',
-    height: '100%',
-    top: 69
-  }
 });

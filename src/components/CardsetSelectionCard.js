@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
+
+const {height, width} = Dimensions.get("window");
 
 const CardsetSelectionCard = (props) => {
     return (
         <View style={styles.cardContainer}>
-            <View style={styles.shadowCard2}></View>
-            <View style={styles.shadowCard}></View>
+            {/* <View style={styles.shadowCard2}></View>
+            <View style={styles.shadowCard}></View> */}
             <TouchableOpacity activeOpacity={.7} style={[styles.container, props.style, props.currentCardSet == props.type ? styles.checked : null]} onPress={props.onPress}>
                 <View style={styles.header}>
                     <Image style={styles.icon} source={props.icon} />
@@ -33,8 +35,8 @@ const styles = StyleSheet.create({
         marginHorizontal: 21,
     },
     cardContainer: {
-        width: 192,
-        height: 152,
+        width: (192 / 375) * width,
+        height: (152 / 812) * height,
         marginHorizontal: 8
     },
     container: {

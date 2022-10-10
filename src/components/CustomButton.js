@@ -1,5 +1,7 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
+
+const {height, width} = Dimensions.get("window");
 
 const CustomButton = (props) => {
     return (
@@ -16,7 +18,7 @@ export default CustomButton;
 
 const styles = StyleSheet.create({
     buttonContainer: {
-      height: 58,
+      height: (58 / 812) * height,
       backgroundColor: 'white',
       borderRadius: 10,
       alignItems: 'center',
@@ -40,7 +42,7 @@ const styles = StyleSheet.create({
         opacity: .6
     },
     inverted: {
-        height: 58,
+        height: (58 / 812) * height,
         backgroundColor: '#1A1A1A',
         borderWidth: 2,
         borderColor: 'white',

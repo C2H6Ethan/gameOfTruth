@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
 import CustomButton from './CustomButton';
+const {height, width} = Dimensions.get("window");
 
 const Head = (props) => {
     return (
@@ -71,6 +72,7 @@ const styles = StyleSheet.create({
         fontSize: 36,
         lineHeight: 46,
         color: 'white',
+        marginBottom: (8 / 817) * height
       },
       subText: {
         fontFamily: 'Poppins',
@@ -78,10 +80,11 @@ const styles = StyleSheet.create({
         fontSize: 17,
         lineHeight: 22,
         color: 'white',
-        marginBottom: 28
+        marginBottom: height * 0.036
       },
       icon: {
         width: 41,
-        height: 41
+        height: 41,
+        marginBottom: (16 / 817) * height
       },
   });
