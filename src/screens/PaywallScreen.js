@@ -8,7 +8,7 @@ import { ThemeProvider } from '@react-navigation/native';
 
 
 export default function PaywallScreen({ navigation }) {
-  const [price, setPrice] = useState('$6');
+  const [price, setPrice] = useState('');
 
   useEffect(() => {
     getIAPDetails()

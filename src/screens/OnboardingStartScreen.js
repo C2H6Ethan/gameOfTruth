@@ -12,34 +12,24 @@ export default function OnboardingStartScreen({navigation}) {
   }
 
   return (
-    <View style={styles.container}>
-      <LottieView
-        style={{flex: 1}}
-        source={require('../assets/animation/test.json')}
-        autoPlay
-        loop
-      />
-    </View>
-    // <View style={styles.container}>
-    //   <Image style={{position: 'absolute', bottom: 0, width: '100%'}} source={require('../assets/onboardingBackground1.png')} />
+    <SafeAreaView style={styles.container}>
+      <Image style={{position: 'absolute', bottom: 0, width: '100%'}} source={require('../assets/onboardingBackground1.png')} />
 
-    //   <View style={styles.animationContainer}>
-    //     <LottieView
-    //       autoPlay
-    //       loop
-    //       ref={animation}
-    //       source={require('../assets/animation/rose_icon.json')}
-    //     />
-    //   </View>
+      <View style={styles.content}>
+        <Image style={{position: 'absolute', width: 52, height: 52, top: 0, right: 0}} source={require('../assets/iconSmile.png')} />
+        <Image style={{width: '80%', height: '50%', top: '5%'}} source={require('../assets/onboardingRose.png')} />
+        
 
-    //   <View style={styles.textContainer}>
-    //     <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 43, color: 'white', marginBottom: 8}}>game of truth.</Text>
-    //     <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', textAlign: 'center'}}>A bridge to endless topics of conversation.</Text>
-    //   </View>
-    //   <View style={styles.buttonContainer}>
-    //     <CustomButton text="Show me how it works" onPress={() => buttonPress()} />
-    //   </View>
-    // </View>
+        <View style={styles.textContainer}>
+          <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 43, color: 'white', marginBottom: 8}}>game of truth.</Text>
+          <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', textAlign: 'center'}}>A bridge to endless topics of conversation.</Text>
+        </View>
+        <View style={styles.buttonContainer}>
+          <CustomButton text="Show me how it works" onPress={() => buttonPress()} />
+        </View>
+      </View>
+  
+    </SafeAreaView>
   );
 }
 
@@ -50,22 +40,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  content: {
+    width: '80%',
+    height: '100%',
+    alignItems: 'center',
+  },
   buttonContainer: {
     position: 'absolute',
-    width: '80%',
     top: '85%',
   },
   textContainer: {
     position: 'absolute',
-    width: '80%',
     top: '63%',
+    width: '100%',
     alignItems: 'center',
-  },
-
-  animationContainer: {
-    backgroundColor: 'black',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
   },
 });

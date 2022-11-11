@@ -730,5 +730,517 @@
     {
         "text": "When's the last time you lied about having an orgasm?",
         "cardset": "sex"
+    },
+    {
+        "text": "If you caught you best friend having sex with your partner, what would you do?",
+        "cardset": "sex, dating"
+    },
+    {
+        "text": "What is legal and should become illegal?",
+        "cardset": "classic, dating, group"
+    },
+    {
+        "text": "Who are the scariest types of people?",
+        "cardset": "classic, dating, group"
+    },
+    {
+        "text": "What is a great example of a necessary evil?",
+        "cardset": "classic, dating"
+    },
+    {
+        "text": "What's incorrectly perceived as a sign of low intelligence?",
+        "cardset": "classic, dating, group"
+    },
+    {
+        "text": "What‘s the best film you‘ve ever seen?",
+        "cardset": "classic, dating, relationship"
+    },
+    {
+        "text": "What's a hygiene tip that you think is underused and you wish more people knew?",
+        "cardset": "classic, group"
+    },
+    {
+        "text": "In your opinion, which historical figure should serve as an example for children from an early age?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What’s a food that you hate the texture of, no matter how many times you try it?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What are redflags you can’t ignore?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "Whats the best thing you’ve watched on netflix?",
+        "cardset": "classic, dating"
+    },
+    {
+        "text": "What's the best way to avoid kissing?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What is fucking awesome as an adult but sucked as a kid?",
+        "cardset": "classic, dating"
+    },
+    {
+        "text": "You are Vladimir Putin for a day. What do you do?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What simple thing irritates you in daily life?",
+        "cardset": "classic, relationship"
+    },
+    {
+        "text": "Where do you put your phone when you go to sleep for the night?",
+        "cardset": "classic, dating"
+    },
+    {
+        "text": "What is the nicest compliment you have ever received?",
+        "cardset": "classic, dating, relationship"
+    },
+    {
+        "text": "What is your favorite Christmas movie?",
+        "cardset": "classic, dating, relationship"
+    },
+    {
+        "text": "What's the most unique name you've ever heard?",
+        "cardset": "classic, dating"
+    },
+    {
+        "text": "What would be the scariest animal if it was 100x bigger?",
+        "cardset": "classic, dating"
+    },
+    {
+        "text": "What are some socially acceptable addictions in your culture?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What’s the most disturbing song lyrics?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What’s the first thing you will do if the nukes start flying?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What \"bad movie\" are you ready to defend?",
+        "cardset": "classic, dating, relationship"
+    },
+    {
+        "text": "If you can delete something in this world. What would it be?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What app doesn't exist that you would love on your phone?",
+        "cardset": "classic"
+    },
+    {
+        "text": "Who turned the life around, what caused you to do it?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What is something you still haven't forgiven yourself for?",
+        "cardset": "classic"
+    },
+    {
+        "text": "Would you be offended if a potential sex partner asked you for an STI test before you do the deed? Why or why not?",
+        "cardset": "classic, sex"
+    },
+    {
+        "text": "What’s a song with lyrics so brilliant you feel like you ghostwrote it in some way?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What is your opinion on people who have sold their virginity?",
+        "cardset": "classic, sex"
+    },
+    {
+        "text": "Whats your family's \"secret\" or \"dark secret\"?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Would you fight someone who is bigger and stronger than you?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What advice would you give yourself if you haven't had your first time yet.",
+        "cardset": "sex"
+    },
+    {
+        "text": "Have you ever had a near death experience, what was it like?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What's the most horrifying thing you've seen, online or off?",
+        "cardset": "classic, group"
+    },
+    {
+        "text": "What makes you different from others?",
+        "cardset": "classic, relationship"
+    },
+    {
+        "text": "Can you be friends with a person you are attracted to?",
+        "cardset": "classic, dating, relationship, sex"
+    },
+    {
+        "text": "What are underrated websites and what do you use them for?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What is not a red flag in the short run but becomes a red flag in a long term relationship?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How much would you pay for a list of everyone who has ever sexually fantasized about or masturbated to you? Why?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What’s the worst excuse for cheating?",
+        "cardset": "classic, sex"
+    },
+    {
+        "text": "Which musical artists definitely have sex to their own music?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What is falsely seen as a sign of maturity?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What are the worst words to hear when you're having sex?",
+        "cardset": "sex"
+    },
+    {
+        "text": "If you became a God for exactly 1 hour, what’s the first thing you’re doing?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What would you refuse to buy even if you were a millionaire?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What song would instantly “kill the mood” in the bedroom?",
+        "cardset": "sex"
+    },
+    {
+        "text": "What about you now, would surprise your younger self?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What do you think the average person needs more of in day to day life?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What’s something you would not do for $100 but would consider doing for $500?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What’s the most common thing people lie about?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What is fucking awesome as an adult but sucked as a kid?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What do you think about before and after sex?",
+        "cardset": "sex"
+    },
+    {
+        "text": "Not including smoking, how do you release stress?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What’s that thing you did as a kid that still brings you joy as an adult?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What’s that thing you did as a kid that still brings you joy as an adult?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "If you could build your own house, what things would you include that people normally might not think about?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "What should you never buy the cheap version of?",
+        "cardset": "classic"
+    },
+    {
+        "text": "If money wasn't an issue, how would you spend your days?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What Is something you would never do for any amount of money?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What do you truly want?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What happened that made you think “I’m getting old?”",
+        "cardset": "classic"
+    },
+    {
+        "text": "Whats ruining our society?",
+        "cardset": "classic"
+    },
+    {
+        "text": "When did your gut feeling of ‘there’s something wrong here’ save you?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "What is something that you've overheard that you weren't supposed to?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What is something that you are insecure about?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "When is it time for kids to get a phone?",
+        "cardset": "classic, relationship"
+    },
+    {
+        "text": "What is the most annoying personality trait?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Whats a completely common kink that turns you off?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What is your fondest memory of your childhood?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What is hard about dating you?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What's your worst dating app story?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What's the best first date you've been on?",
+        "cardset": "dating"
+    },
+    {
+        "text": "What are your thoughts on dating a step sibling?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What's the worst alcoholic drink?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What is something positive going on in your life?",
+        "cardset": "dating, relationship"
+    },
+    {
+        "text": "What have you done to improve your life this year?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What are some early warning signs of an abusive relationship?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What is the craziest cult of all time?",
+        "cardset": "classic, dating"
+    },
+    {
+        "text": "What is the single greatest animated series of all time?",
+        "cardset": "classic"
+    },
+    {
+        "text": "What was your first impression of your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How did the relationship start?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Are you happy with the intimacy you share?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What did you like or love about your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you feel the same way you felt for your partner at the beginning of the relationship?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you still like what you loved about your partner and why?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Have you started to do something because of each other’s influence?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How often do you laugh together?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "When was the last time you dreamt about your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you get each other’s feeling without the need to say anything?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you like spending time with your partner’s friends and family?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "When was the last time you said “I love you” to your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How often do you think of your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you smile when you relate something from your daily life with your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Can you recall the most romantic moment with this partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How often do you talk on the phone with your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How do you show your love for each other?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "What was the best moment in your relationship so far? (Are you smiling while recalling that moment?)",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Are you keeping any secrets that you’re afraid of letting your partner know?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you bring up arguments very often and why?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How do you feel when others find your partner attractive?",
+        "cardset": "relationship"
+    },
+    {
+        "text": " Do you make sacrifices for your relationship?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you throw temper easily for small mistakes of your partners?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How much do you think you understand your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "When was the last time you had an in-depth conversation with your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you forgive your partner’s mistakes easily?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you feel jealous if your partner hang out with a friend of the opposite sex?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Have you ever apologized for what you’ve done wrong to your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Is it really necessary to know everything from your partner’s previous relationships?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How do you feel when your partner has to leave you for some time because of work or study?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Will you say sorry to your partner even though it’s not your fault?",
+        "cardset": "relationship"
+    },
+    {
+        "text": " Have you ever changed anything for your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Have you not let your partner do something just because you feel jealous or angry?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you respect each other’s beliefs?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you trust each other?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Essential Relationship Questions To Ask",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you believe in staying with this partner for a very long time or even forever?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "How serious are you both taking this relationship?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Will you lie for the sake of your partner’s happiness and how do you define the line?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you look forward to your future with your partner?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Have you ever thought about cheating on your partner? Why?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Are you in a relationship only because you enjoy the excitement or the feeling to be loved and cared about?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you think your partner’s friends and family like you?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Have you seen each other at your best and worst?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Do you feel that your partner accepts the way you are?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Does this partner make you forget the painful feeling of your previous relationships?",
+        "cardset": "relationship"
+    },
+    {
+        "text": "Have you ever thought about breaking up with your partner and why?",
+        "cardset": "relationship"
     }
 ]

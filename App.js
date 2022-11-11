@@ -144,7 +144,7 @@ export default class App extends Component {
               cardStyleInterpolator: forFade,
             }}
           >
-            {/* <Stack.Screen name="OnboardingStartScreen" component={OnboardingStartScreen} /> */}
+            <Stack.Screen name="OnboardingStartScreen" component={OnboardingStartScreen} />
             <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} />
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
             <Stack.Screen name="SettingsScreen" component={SettingsScreen} />

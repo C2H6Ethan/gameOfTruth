@@ -17,11 +17,20 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
   }, []);
 
   const endGame = (interstitial) => {
-    if(!hasUpgraded) {interstitial.show()}
+    // if(!hasUpgraded) {interstitial.show()}
 
     navigation.reset({
       index: 0,
       routes: [{ name: 'HomeScreen' }],
+    });
+  }
+
+  const restartGame = (interstitial) => {
+    // if(!hasUpgraded) {interstitial.show()}
+
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'AdjustPlayersScreen', params:  {cardset: cardset, oldPlayers: players, restartGame: true}}],
     });
   }
 
@@ -50,7 +59,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
 
             
             <View style={styles.buttonContainer}>
-              <CustomButton text="Restart" onPress={() => navigation.navigate('AdjustPlayersScreen', {cardset: cardset, oldPlayers: players, restartGame: true})} style={{marginBottom: 15}} inverted={true}/>
+              <CustomButton text="Restart" onPress={() => restartGame(context.interstitial)} style={{marginBottom: 15}} inverted={true}/>
               <CustomButton text="Back to Home" onPress={() => endGame(context.interstitial)} inverted={true} />
             </View>
           </View>

@@ -36,31 +36,11 @@ export default function OnboardingScreen({navigation}) {
         showPagination={false}
 
         containerStyles={{}}
-        imageContainerStyles={styles.imageContainerStyles}
+        imageContainerStyles={{}}
         pages={[
           {
-            title: "Let's gather",
-            subtitle: 'Game of Truth was born from the idea to bring more life into the get-together. The goal of the app is to create a bridge between boring small talk and exciting deep conversations.',
-            titleStyles: 
-            {
-              fontFamily: 'Gilroy-ExtraBold',
-              fontSize: 84,
-              lineHeight: 76,
-              color: 'white',
-              flexWrap: 'wrap',
-              left: 0
-            },
-            subTitleStyles: 
-            {
-              fontFamily: 'Poppins',
-              fontSize: 17,
-              lineHeight: 22,
-              color: 'white',
-            }
-          },
-          {
             image: <Image resizeMode='contain' style={styles.onboardingImage} source={require('../assets/onboardingImage1.png')} />,
-            title: 'Choose Cardset',
+            title: '1.  Select game mode',
             titleStyles: 
             {
               fontFamily: 'Poppins',
@@ -72,7 +52,7 @@ export default function OnboardingScreen({navigation}) {
           },
           {
             image: <Image resizeMode='contain' style={styles.onboardingImage} source={require('../assets/onboardingImage2.png')} />,
-            title: 'Add people. Or play alone',
+            title: '2. Add your peeps.',
             titleStyles: 
             {
               fontFamily: 'Poppins',
@@ -84,7 +64,19 @@ export default function OnboardingScreen({navigation}) {
           },
           {
             image: <Image resizeMode='contain' style={styles.onboardingImage} source={require('../assets/onboardingImage3.png')} />,
-            title: 'Start playing',
+            title: '3. Random questions are asked.',
+            titleStyles: 
+            {
+              fontFamily: 'Poppins',
+              fontStyle: 'normal',
+              fontSize: 20,
+              lineHeight: 24,
+              color: 'white',
+            },
+          },
+          {
+            image: <Image resizeMode='contain' style={styles.onboardingImage} source={require('../assets/onboardingImage4.png')} />,
+            title: '4. Who answers most, wins.',
             titleStyles: 
             {
               fontFamily: 'Poppins',
@@ -137,13 +129,6 @@ const styles = StyleSheet.create({
     width: '80%',
     top: '35%',
   },
-  subText: {
-    fontFamily: 'Gilroy-ExtraBold',
-    fontStyle: 'normal',
-    fontSize: 17,
-    lineHeight: 22,
-    color: 'white'
-  },
   buttonContainer: {
     position: 'absolute',
     width: '80%',
@@ -157,14 +142,14 @@ const styles = StyleSheet.create({
     color: '#111111',
   },
   onboardingImage: {
-    height: 380,
-    width: 187,
+    height: 469,
+    width: 216,
   },
   pagination: {
     flex: 1,
     position: 'absolute',
     flexDirection: 'row',
-    bottom: '20%',
+    bottom: '16%',
     width: 62.5,
     height: 15,
     alignItems: 'center',

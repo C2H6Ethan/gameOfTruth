@@ -91,9 +91,12 @@ export default function AdjustPlayersScreen({ route, navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
+        {restartGame? null
+        :
         <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
+        }
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 17, lineHeight: 22, color: 'white', textTransform: 'uppercase'}}>{cardset}</Text>
       </View>
       <View style={styles.content}>
