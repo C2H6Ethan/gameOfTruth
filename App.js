@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import {
+  OnboardingStartScreen,
   OnboardingScreen,
   HomeScreen,
   SettingsScreen,
@@ -143,6 +144,7 @@ export default class App extends Component {
               cardStyleInterpolator: forFade,
             }}
           >
+            {/* <Stack.Screen name="OnboardingStartScreen" component={OnboardingStartScreen} /> */}
             <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} />
             <Stack.Screen name="HomeScreen" component={HomeScreen} />
             <Stack.Screen name="SettingsScreen" component={SettingsScreen} />
