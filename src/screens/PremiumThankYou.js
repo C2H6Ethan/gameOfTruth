@@ -1,40 +1,33 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Animated } from 'react-native';
+import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Dimensions } from 'react-native';
 import CustomButton from '../components/CustomButton';
+const translations = require('../translations.json');
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
+const {height, width} = Dimensions.get("window");
 
 export default function PremiumThankYou({ navigation }) {
+  const [language, setLanguage] = useState("en");
+
+  useEffect(async () => {
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
+  }, []);
+
   return (
     <View style={styles.container}>
-      <Image style={{position: 'absolute', width: '100%', height: '100%'}} source={require('../assets/premiumThankYouBackground1.png')}/>
-      <Image style={{position: 'absolute', width: '100%', height: '100%'}} source={require('../assets/premiumThankYouBackground2.png')}/>
+      <Image style={{position: 'absolute', bottom: (148 / 812) * height, resizeMode: 'stretch', width: '100%'}} source={require('../assets/premiumThankYouGuy.png')}/>
+      <Image style={{position: 'absolute', bottom: 0, resizeMode: 'stretch', width: '100%'}} source={require('../assets/premiumThankYouBackground.png')}/>
+      <Image style={{position: 'absolute', top: (135 / 812) * height, resizeMode: 'stretch', width: 52, height: 52}} source={require('../assets/premiumThankYouCrown.png')}/>
       <View style={styles.content}>
-        <TouchableOpacity onPress={() => navigation.reset({index: 0,routes: [{ name: 'HomeScreen' }]})} activeOpacity={.7}>
-          <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
-        </TouchableOpacity>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', width: 200, marginBottom: 16}}>Thank you for the drink.</Text>
-        <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', width: '90%'}}>A big thank you for your support. With your purchase of Premium, we can continue to work on game of truth even stronger.</Text>
-
         <View style={styles.infoContainer}>
-          <View style={styles.info}>
-            <View style={styles.infoTitle}>
-              <Image style={{width: 36, height: 36, marginRight: 18}} source={require('../assets/video-game-key.png')}/>
-              <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white'}}>Access all packages!</Text>
-            </View>
-            <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', flexWrap: 'wrap', marginLeft: 54}}>You got access to all our packages.</Text>
-          </View>
-          <View style={styles.info}>
-            <View style={styles.infoTitle}>
-              <Image style={{width: 36, height: 36, marginRight: 18}} source={require('../assets/target-miss.png')}/>
-              <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white'}}>No more ads!</Text>
-            </View>
-            <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', flexWrap: 'wrap', marginLeft: 54}}>Enjoy our app add free!</Text>
-          </View>
+          <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'black', marginBottom: 8}}>{translations[language]["Premium Unlocked"]}</Text>
+          <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'black'}}>{translations[language]["A big thank you for your support."]}</Text>
         </View>
 
         <View style={styles.footer}>
-          <CustomButton onPress={() => navigation.reset({index: 0,routes: [{ name: 'HomeScreen' }]})} style={{marginBottom: 16, width: '100%'}} text="Let's go"/>
+          <CustomButton onPress={() => navigation.reset({index: 0,routes: [{ name: 'HomeScreen' }]})} style={{width: '100%'}} text={translations[language]["Let’s go"]}/>
         </View>
       </View>
     </View>
@@ -45,7 +38,7 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,  
-    backgroundColor: '#111111',
+    backgroundColor: '#F0940B',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -61,8 +54,10 @@ const styles = StyleSheet.create({
   },
   infoContainer: {
     position: 'absolute', 
-    top: '40%',
+    top: (211 / 812) * height,
+    alignItems: 'center',
     justifyContent: 'center',
+    width: '100%'
   },
   info: {
     marginBottom: 24
@@ -72,7 +67,7 @@ const styles = StyleSheet.create({
   },
   footer: {
     position: 'absolute',
-    top: '75%',
+    bottom: (64 / 812) * height,
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',

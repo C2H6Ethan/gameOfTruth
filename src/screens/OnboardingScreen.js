@@ -5,10 +5,17 @@ import CustomButton from '../components/CustomButton';
 import Onboarding from 'react-native-onboarding-swiper';
 import OnboardingDot from '../components/OnboardingDot';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+const translations = require('../translations.json');
 
 export default function OnboardingScreen({navigation}) {
+  const [language, setLanguage] = useState("en");
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   const [pageIndex, setPageIndex] = useState(0);
+
+  useEffect(async () => {
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
+  }, []);
 
   const getpageIndex = (pageIndex) => {
     setPageIndex(pageIndex)
@@ -25,8 +32,7 @@ export default function OnboardingScreen({navigation}) {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Image style={styles.backgroundImage} source={require('../assets/background_bubble.png')} />
-      <Image style={styles.backgroundImage} source={require('../assets/background_smile.png')} />
+      <Image style={styles.backgroundImage} source={require('../assets/gameMenuBackground2.png')} />
       {/* <View style={styles.textContainer}>
         <Text style={styles.mainText}>Let's gather</Text>
         <Text style={styles.subText}>17+ was born from the idea to bring more life into the get-together. The goal of the app is to create a bridge between boring small talk and exciting deep conversations.</Text>
@@ -36,14 +42,14 @@ export default function OnboardingScreen({navigation}) {
         showPagination={false}
 
         containerStyles={{}}
-        imageContainerStyles={{}}
+        imageContainerStyles={{paddingBottom: 0, width: '100%', height: '52%', bottom:100}}
         pages={[
           {
             image: <Image resizeMode='contain' style={styles.onboardingImage} source={require('../assets/onboardingImage1.png')} />,
-            title: '1.  Select game mode',
+            title: translations[language]["1. Select game mode"],
             titleStyles: 
             {
-              fontFamily: 'Poppins',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -52,10 +58,10 @@ export default function OnboardingScreen({navigation}) {
           },
           {
             image: <Image resizeMode='contain' style={styles.onboardingImage} source={require('../assets/onboardingImage2.png')} />,
-            title: '2. Add your peeps.',
+            title: translations[language]["2. Add your peeps."],
             titleStyles: 
             {
-              fontFamily: 'Poppins',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -64,10 +70,10 @@ export default function OnboardingScreen({navigation}) {
           },
           {
             image: <Image resizeMode='contain' style={styles.onboardingImage} source={require('../assets/onboardingImage3.png')} />,
-            title: '3. Random questions are asked.',
+            title: translations[language]["3. Random questions are asked."],
             titleStyles: 
             {
-              fontFamily: 'Poppins',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -76,10 +82,10 @@ export default function OnboardingScreen({navigation}) {
           },
           {
             image: <Image resizeMode='contain' style={styles.onboardingImage} source={require('../assets/onboardingImage4.png')} />,
-            title: '4. Who answers most, wins.',
+            title: translations[language]["4. Who answers most, wins."],
             titleStyles: 
             {
-              fontFamily: 'Poppins',
+              fontFamily: 'Gilroy-ExtraBold',
               fontStyle: 'normal',
               fontSize: 20,
               lineHeight: 24,
@@ -95,7 +101,7 @@ export default function OnboardingScreen({navigation}) {
         <OnboardingDot index={3} pageIndex={pageIndex}/>
       </View>
       <View style={styles.buttonContainer}>
-        <CustomButton disabled={isButtonDisabled}  text="Let's go" onPress={() => buttonPress()} />
+        <CustomButton disabled={isButtonDisabled}  text={translations[language]["Let’s go"]} onPress={() => buttonPress()} />
       </View>
       
     </View>
@@ -112,7 +118,7 @@ const styles = StyleSheet.create({
   backgroundImage: {
     position: 'absolute',
     width: '100%',
-    height: '100%'
+    bottom: 0
   },
   mainText: {
     fontFamily: 'Gilroy-ExtraBold',
@@ -142,14 +148,14 @@ const styles = StyleSheet.create({
     color: '#111111',
   },
   onboardingImage: {
-    height: 469,
-    width: 216,
+    height: '100%',
+    width: '100%',
   },
   pagination: {
     flex: 1,
     position: 'absolute',
     flexDirection: 'row',
-    bottom: '16%',
+    bottom: '20%',
     width: 62.5,
     height: 15,
     alignItems: 'center',

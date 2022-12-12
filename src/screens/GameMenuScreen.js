@@ -4,19 +4,25 @@ import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, A
 import CustomButton from '../components/CustomButton';
 import { MyContext } from "../context";
 import AsyncStorage from '@react-native-async-storage/async-storage';
+const translations = require('../translations.json');
 
 
 export default function GameMenuScreen({ navigation, route }) {
   const [hasUpgraded, setHasUpgraded] = useState(false);
+  const [language, setLanguage] = useState("en");
   const { cardset } = route.params;
   const { question } = route.params; 
   const { round } = route.params;
   const { player } = route.params;
   const { players } = route.params;
+  const { usedQuestions } = route.params;
 
   useEffect(async () => {
     var temp = await AsyncStorage.getItem('hasUpgraded')
     if (temp == 'true'){setHasUpgraded(true)}
+
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
   }, []);
 
   const endGame = (interstitial) => {
@@ -29,7 +35,7 @@ export default function GameMenuScreen({ navigation, route }) {
   }
 
   const adjustPlayers = () => {
-    navigation.navigate('AdjustPlayersScreen', {cardset: cardset, question: question, player: player, round: round, oldPlayers: players})
+    navigation.navigate('AdjustPlayersScreen', {cardset: cardset, question: question, player: player, round: round, oldPlayers: players, usedQuestions: usedQuestions})
   }
 
   return (
@@ -49,15 +55,15 @@ export default function GameMenuScreen({ navigation, route }) {
 
             <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Game Menu</Text>
 
-            <CustomButton onPress={() => adjustPlayers()} style={{marginBottom: 20}} text="Adjust Players" inverted={true}/>
-            <CustomButton onPress={() => endGame(context.interstitial)} style={{marginBottom: 58}} text="End Game" inverted={true}/>
+            <CustomButton onPress={() => adjustPlayers()} style={{marginBottom: 20}} text={translations[language]["Adjust players"]} inverted={true}/>
+            <CustomButton onPress={() => endGame(context.interstitial)} style={{marginBottom: 58}} text={translations[language]["End Game"]} inverted={true}/>
 
-            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white'}}>How it's played</Text>
-            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>A random card with a question or task appears on the screen.</Text>
-            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you answer:</Text>
-            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>You get a point.</Text>
-            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>If you pass:</Text>
-            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>You get punished MUHAHAHA!</Text>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white'}}>{translations[language]["How it's played"]}</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>{translations[language]["A random card with a question or task appears on the screen."]}</Text>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>{translations[language]["If you answer:"]}</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>{translations[language]["You get a point."]}</Text>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 31, color: 'white', marginTop: 24}}>{translations[language]["If you pass:"]}</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white'}}>{translations[language]["You get punished MUHAHAHA!"]}</Text>
 
           </View>
         </View>

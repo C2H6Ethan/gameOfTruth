@@ -2,8 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 import CustomButton from '../components/CustomButton';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+const translations = require('../translations.json');
 
 export default function AdjustPlayersScreen({ route, navigation }) {
+  const [language, setLanguage] = useState("en");
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [players, setPlayers] = useState([])
   const [inputText, onInputTextChange] = useState("");
@@ -16,10 +19,14 @@ export default function AdjustPlayersScreen({ route, navigation }) {
   const { player } = route.params;
   const { round } = route.params;
   const { restartGame } = route.params;
+  const { usedQuestions } = route.params;
 
-  useEffect(() => {
+  useEffect(async() => {
     setPlayers(oldPlayers)
     setTotalAddedPlayers(oldTotalAddedPlayers)
+
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
   }, []);
 
   const onNameEnter = (name) => {
@@ -58,18 +65,18 @@ export default function AdjustPlayersScreen({ route, navigation }) {
       cleanPlayers()
       var newPlayer = players[Math.floor(Math.random()*players.length)];
       newPlayer['timesPlayed'] = 1;
-      navigation.navigate('GameTransitionScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: 1})
+      navigation.navigate('GameTransitionScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: 1, usedQuestions: usedQuestions})
     }
     else {
       // check if player has been deleted
       if(players.includes(player)){
-        navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round, question: question})
+        navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round, question: question, usedQuestions: usedQuestions})
       }
       else {
         // pick a new player
         var newPlayer = players[Math.floor(Math.random()*players.length)];
         newPlayer['timesPlayed'] += 1;
-        navigation.navigate('GameTransitionScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: 1})
+        navigation.navigate('GameTransitionScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: 1, usedQuestions: usedQuestions})
       }
       
     }
@@ -101,8 +108,8 @@ export default function AdjustPlayersScreen({ route, navigation }) {
       </View>
       <View style={styles.content}>
         
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>Adjust players</Text>
-        <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>Remove or Add players down below.</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>{translations[language]["Adjust players"]}</Text>
+        <Text numberOfLines={1} style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>{translations[language]["Remove or Add players down below."]}</Text>
         <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 14, lineHeight: 21, color: 'white', width: '80%'}}>Name</Text>
         <TextInput
           style={styles.input}
@@ -130,7 +137,7 @@ export default function AdjustPlayersScreen({ route, navigation }) {
 
       </View>
       <View style={styles.buttonContainer}>
-        <CustomButton disabled={isButtonDisabled}  text="Finished" onPress={() => finishAdjustingPlayers()} />
+        <CustomButton disabled={isButtonDisabled}  text={translations[language]["Finished"]} onPress={() => finishAdjustingPlayers()} />
       </View>
     </View>
   );

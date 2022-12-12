@@ -3,6 +3,7 @@ import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, Image, Dimensions } from 'react-native';
 import CustomButton from './CustomButton';
 const {height, width} = Dimensions.get("window");
+const translations = require('../translations.json');
 
 const Head = (props) => {
     return (
@@ -17,9 +18,9 @@ const Head = (props) => {
             <Text style={styles.mainText}>{props.mainText}</Text>
             <Text style={styles.subText}>{props.subText}</Text>
             {props.hasUpgraded ? 
-              <CustomButton onPress={props.onStartGameButtonPress} style={styles.headButton} text="Start Game"/>
+              <CustomButton onPress={props.onStartGameButtonPress} style={styles.headButton} text={translations[props.language]["Start Game"]} />
             :
-              <CustomButton onPress={props.onStartGameButtonPress} style={styles.headButton} crown={true} text="Unlock all Packages"/>
+              <CustomButton onPress={props.onStartGameButtonPress} style={styles.headButton} crown={true} text={translations[props.language]["Unlock all Packages"]}/>
             }
         </View>
       </View>
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
         flex: 1,
         position: 'absolute',
         width: '80%',
-        height: '30%',
+        height: '33%',
         top: '10%',
         justifyContent: 'center',
       },

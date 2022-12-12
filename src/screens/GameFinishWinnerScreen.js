@@ -4,16 +4,22 @@ import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, Tex
 import CustomButton from '../components/CustomButton';
 import { MyContext } from '../context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+const translations = require('../translations.json');
 
 export default function GameFinishWinnerScreen({ route, navigation }) {
   const [hasUpgraded, setHasUpgraded] = useState(false);
+  const [language, setLanguage] = useState("en");
   const { winners } = route.params;
   const { cardset } = route.params;
   const { players } = route.params;
+  const { usedQuestions } = route.params;
 
   useEffect(async () => {
     var temp = await AsyncStorage.getItem('hasUpgraded')
     if (temp == 'true'){setHasUpgraded(true)}
+
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
   }, []);
 
   const endGame = (interstitial) => {
@@ -30,7 +36,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
 
     navigation.reset({
       index: 0,
-      routes: [{ name: 'AdjustPlayersScreen', params:  {cardset: cardset, oldPlayers: players, restartGame: true}}],
+      routes: [{ name: 'AdjustPlayersScreen', params:  {cardset: cardset, oldPlayers: players, restartGame: true, usedQuestions: usedQuestions}}],
     });
   }
 
@@ -42,7 +48,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
           <Image style={{position: 'absolute', width: 142, height: 264, bottom: '30%'}} source={require('../assets/award.png')}/>
 
           <View style={styles.content}>
-            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: '#191919', textAlign: 'center', top: '20%'}}>Most answered</Text>
+            <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: '#191919', textAlign: 'center', top: '20%'}}>{translations[language]["Most answered"]}</Text>
 
             
             <ScrollView bounces={true} showsHorizontalScrollIndicator={false} horizontal={true} style={styles.winnersScrollView} contentContainerStyle={{ flexGrow: 1, justifyContent: 'center'}}>
@@ -59,8 +65,8 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
 
             
             <View style={styles.buttonContainer}>
-              <CustomButton text="Restart" onPress={() => restartGame(context.interstitial)} style={{marginBottom: 15}} inverted={true}/>
-              <CustomButton text="Back to Home" onPress={() => endGame(context.interstitial)} inverted={true} />
+              <CustomButton text={translations[language]["Restart Game"]} onPress={() => restartGame(context.interstitial)} style={{marginBottom: 15}} inverted={true}/>
+              <CustomButton text={translations[language]["Back to Home"]} onPress={() => endGame(context.interstitial)} inverted={true} />
             </View>
           </View>
         </View>

@@ -5,16 +5,21 @@ import Head from '../components/Head';
 import CardsetSelectionCard from '../components/CardsetSelectionCard';
 import { ScrollView } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+const translations = require('../translations.json');
 
 const {height, width} = Dimensions.get("window");
 
 export default function HomeScreen({ navigation }) {
   const [cardset, setCardset] = useState("classic");
   const [hasUpgraded, setHasUpgraded] = useState(false);
+  const [language, setLanguage] = useState("en");
 
   useEffect(async () => {
     var temp = await AsyncStorage.getItem('hasUpgraded')
     if (temp == 'true'){setHasUpgraded(true)}
+    
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
   }, []);
 
   const onCardsetClick = (type) => {
@@ -29,49 +34,53 @@ export default function HomeScreen({ navigation }) {
             onStartGameButtonPress={() => navigation.navigate('AddPlayersScreen', {cardset: cardset})}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Classic" 
-            subText="To get your party started." 
+            subText={translations[language]["To get your party started."]} 
             background1={require('../assets/classicBackgroundBig.png')}
             background2={require('../assets/classicBackgroundBig2.png')}
             icon={require('../assets/classicIcon.png')}
             hasUpgraded={true}
+            language={language}
         />
         : cardset == 'sex'?
         <Head
             onStartGameButtonPress={hasUpgraded? () => navigation.navigate('AddPlayersScreen', {cardset: cardset}) : () => navigation.navigate('PaywallScreen')}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Sex" 
-            subText="To break taboos." 
+            subText={translations[language]["To break taboos."]}
             background1={require('../assets/sexBackgroundBig.png')}
             background2={require('../assets/sexBackgroundBig2.png')}
             icon={require('../assets/sexIcon.png')}
             hasUpgraded={hasUpgraded}
+            language={language}
         />
         : cardset == 'relationship'?
         <Head
             onStartGameButtonPress={hasUpgraded? () => navigation.navigate('AddPlayersScreen', {cardset: cardset}) : () => navigation.navigate('PaywallScreen')}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Relationship" 
-            subText="To fall in love." 
+            subText={translations[language]["To fall in love."]} 
             background1={require('../assets/relationshipBackgroundBig.png')}
             icon={require('../assets/relationshipIcon.png')}
             hasUpgraded={hasUpgraded}
+            language={language}
         /> 
         : cardset == 'dating'?
         <Head
             onStartGameButtonPress={hasUpgraded? () => navigation.navigate('AddPlayersScreen', {cardset: cardset}) : () => navigation.navigate('PaywallScreen')}
             onSettingsButtonPress={() => navigation.navigate('SettingsScreen')}
             mainText="Dating" 
-            subText="To save the date." 
+            subText={translations[language]["To save the date."]} 
             background1={require('../assets/datingBackgroundBig.png')}
             icon={require('../assets/datingIcon.png')}
             hasUpgraded={hasUpgraded}
+            language={language}
         /> 
         : null
         }
 
         <View style={styles.screenInfo}>
-            <Text style={styles.mainText}>Cardtypes</Text>
-            <Text style={styles.subText}>Select your Gamemode</Text>
+            <Text style={styles.mainText}>{translations[language]["Cardtypes"]}</Text>
+            <Text style={styles.subText}>{translations[language]["Select your Gamemode"]}</Text>
         </View>
 
         <Image style={styles.backgroundImage} source={require('../assets/background_bubble_home.png')} />
@@ -80,7 +89,7 @@ export default function HomeScreen({ navigation }) {
                 <CardsetSelectionCard
                     mainText="Classic"
                     type="classic" 
-                    subText="To get your party started."
+                    subText={translations[language]["To get your party started."]}
                     icon={require('../assets/classicIconSmall.png')} 
                     style={{backgroundColor: '#903BFF'}} 
                     onPress={() => onCardsetClick("classic")}
@@ -89,7 +98,7 @@ export default function HomeScreen({ navigation }) {
                 <CardsetSelectionCard 
                     mainText="Sex"
                     type="sex"
-                    subText="To break taboos." 
+                    subText={translations[language]["To break taboos."]} 
                     icon={require('../assets/sexIconSmall.png')}
                     style={{backgroundColor: '#FF3A68'}} 
                     onPress={() => onCardsetClick("sex")}
@@ -98,7 +107,7 @@ export default function HomeScreen({ navigation }) {
                 <CardsetSelectionCard 
                     mainText="Relationship"
                     type="relationship"
-                    subText="To fall in love." 
+                    subText={translations[language]["To fall in love."]}
                     icon={require('../assets/relationshipIconSmall.png')}
                     style={{backgroundColor: '#FF327C'}} 
                     onPress={() => onCardsetClick("relationship")}
@@ -107,7 +116,7 @@ export default function HomeScreen({ navigation }) {
                 <CardsetSelectionCard 
                     mainText="Dating"
                     type="dating"
-                    subText="To save the date." 
+                    subText={translations[language]["To save the date."]} 
                     icon={require('../assets/datingIconSmall.png')}
                     style={{backgroundColor: '#6F00FF'}} 
                     onPress={() => onCardsetClick("dating")}

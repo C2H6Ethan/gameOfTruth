@@ -77,6 +77,7 @@ export default class App extends Component {
 
   componentDidMount = async() => {
     //await AsyncStorage.clear()
+    //await AsyncStorage.setItem('language', 'de')
     const unsubscribeInterstitalEvents = this.loadInterstital();
 
     this.loadFonts();

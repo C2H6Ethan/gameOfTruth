@@ -1,1246 +1,1838 @@
 [
-    {
-        "text": "What's the worst swear word you say often?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Have you ever cheated on a boyfriend or girlfriend?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What's the most illegal thing you've ever done?",
-        "cardset": "group, classic"
-    },
-    {
-        "text": "Have you ever kissed someone in this room?",
-        "cardset": "group, classic"
-    },
-    {
-        "text": "What's one thing you wish you could hire someone to do?",
-        "cardset": "dating, classic"
-    },
-    {
-        "text": "Would you let someone in this room read text messages on your phone?",
-        "cardset": "group, classic"
-    },
-    {
-        "text": "Did you ever throw up at the end of a classic?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What's the most among of trouble you got into as a kid?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What's the grossest thing you've ever done?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What habit did you have as a kid that was gross?",
-        "cardset": "classic"
-    },
-    {
-        "text": "Did you ever fail a class or grade in school?",
-        "cardset": "classic"
-    },
-    {
-        "text": "When did you lose your virginity?",
-        "cardset": "dating, classic, relationship, sex"
-    },
-    {
-        "text": "How often do you go to the bathroom?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What's the most embarrassing thing your mom caught you doing?",
-        "cardset": "dating, classic, relationship, sex"
-    },
-    {
-        "text": "What's the most embarrassing thing your dad caught you doing?",
-        "cardset": "dating, classic, relationship, sex"
-    },
-    {
-        "text": "What's one thing as a kid that you used to get ridiculed for doing?",
-        "cardset": "classic"
-    },
-    {
-        "text": "When did you last fart?",
-        "cardset": "classic"
-    },
-    {
-        "text": "Did you ever get diarrhea in public?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What's the worst food you've ever ate?",
-        "cardset": "classic"
-    },
-    {
-        "text": "Did you ever k#ss someone of your own gender?",
-        "cardset": "dating, classic, relationship, sex"
-    },
-    {
-        "text": "How often do you think about having sex?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Did you ever get fired from a job for doing something bad?",
-        "cardset": "classic, Work"
-    },
-    {
-        "text": "When's the last time you got in trouble at work?",
-        "cardset": "classic, Work"
-    },
-    {
-        "text": "Did you ever cut class in high school?",
-        "cardset": "classic, Work"
-    },
-    {
-        "text": "Have you ever went to a concert completely drunk?",
-        "cardset": "classic, Work"
-    },
-    {
-        "text": "Did you ever get intimate at a concert or sporting event?",
-        "cardset": "dating, classic, relationship, sex"
-    },
-    {
-        "text": "Have you ever thrown up at a concert or sporting event?",
-        "cardset": "classic"
-    },
-    {
-        "text": "Did you ever secretly learn the password to your partners phone?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "Would you ever consider doing role play in the bedroom?",
-        "cardset": "dating, relationship, sex"
-    },
-    {
-        "text": "Have you ever asked someone to take a drty picture for you?",
-        "cardset": "dating, classic, sex"
-    },
-    {
-        "text": "What's one thing that really turns you on about another gender?",
-        "cardset": "dating, relationship, sex"
-    },
-    {
-        "text": "What's your favorite position during intimacy?",
-        "cardset": "dating, relationship, sex"
-    },
-    {
-        "text": "Would you ever take lingerie photographs?",
-        "cardset": "trash"
-    },
-    {
-        "text": "Did you ever flirt with someone random on social media?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "Would you ever let your partner read all of your Snapchat messages?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Would you rather be on top or be on bottom?",
-        "cardset": "relationship, sex"
-    },
-    {
-        "text": "Did you ever intentionally read your partners text messages?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Who is the loudest in the bedroom?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Would you rather be the big spoon or the little spoon?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Did you ever give a lap dance to someone?",
-        "cardset": "dating, relationship, sex"
-    },
-    {
-        "text": "Would you let your partner read all of your text messages?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Did you ever send dirty photographs to another couple?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How many times per week do you and your spouse have s#x?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What's the longest dry spell you've ever had?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "Did you ever fantasize about someone other than your boyfriend/girlfriend?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What's the biggest age gap you've had with a romantic partner?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "Did you ever ditch out on a first date?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "What's the worst lie you've ever told?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "What couple would you have a threesome with?",
-        "cardset": "relationship, sex"
-    },
-    {
-        "text": "Have you ever done something s#xual with another couple?",
-        "cardset": "relationship, sex"
-    },
-    {
-        "text": "Have you ever fallen in public and had people laugh at you?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "Have you ever lied to your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What was the worst date you've ever been on",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "When's the last time you cried?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "What's something d#rty that you think about often?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Did you ever wear your friends underwear?",
-        "cardset": "friendship, classic"
-    },
-    {
-        "text": "Have you ever k#ssed your friend as a dare?",
-        "cardset": "friendship, classic"
-    },
-    {
-        "text": "Did you ever borrow money from your friend?",
-        "cardset": "friendship, classic"
-    },
-    {
-        "text": "Have you ever fantasized about your friends parent or parents?",
-        "cardset": "friendship, classic, sex"
-    },
-    {
-        "text": "Did you ever let a friend cheat on one of your tests?",
-        "cardset": "friendship, classic"
-    },
-    {
-        "text": "Did you ever cheat in school?",
-        "cardset": "friendship, classic, Work"
-    },
-    {
-        "text": "What was your last first date like?",
-        "cardset": "dating, classic, relationship"
-    },
-    {
-        "text": "Did you ever try to steal your best friends crush?",
-        "cardset": "dating, friendship, classic"
-    },
-    {
-        "text": "What's one thing you have ever done that makes you seem like a bad person?",
-        "cardset": "dating, friendship, classic, relationship"
-    },
-    {
-        "text": "What is a nickname your family used to call you?",
-        "cardset": "friendship, group, classic, relationship"
-    },
-    {
-        "text": "What's one thing you wish you could do for the rest of your life?",
-        "cardset": "dating, friendship, classic, relationship, Work"
-    },
-    {
-        "text": "What's your strangest off-limit crush?",
-        "cardset": "dating, classic, relationship"
-    },
-    {
-        "text": "Have you ever had a sexting conversation?",
-        "cardset": "dating, friendship, classic, relationship, sex"
-    },
-    {
-        "text": "Has anyone ever caught you masturbating?",
-        "cardset": "friendship, classic, sex"
-    },
-    {
-        "text": "Would you consider yourself more of a dominant or submissive person?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What's a pet name that your mom/dad always calls you?",
-        "cardset": "friendship, relationship"
-    },
-    {
-        "text": "What's a pet peeve of someone in this room?",
-        "cardset": "group, classic"
-    },
-    {
-        "text": "Have you ever been to an adult club or adult stip club?",
-        "cardset": "friendship, classic, sex"
-    },
-    {
-        "text": "Did you ever visit adult websites?",
-        "cardset": "friendship, classic, relationship, sex"
-    },
-    {
-        "text": "Would you ever steal your friends ex-boyfriend or ex-girlfriend?",
-        "cardset": "dating, friendship"
-    },
-    {
-        "text": "Have you ever flirted with a friends boyfriend/girlfriend?",
-        "cardset": "dating, friendship"
-    },
-    {
-        "text": "Have you ever got into a fist fight with another person?",
-        "cardset": "friendship, classic"
-    },
-    {
-        "text": "Did you ever decide to listen to a song just because your friend liked it?",
-        "cardset": "friendship, classic"
-    },
-    {
-        "text": "What's the last lie you told your best friend?",
-        "cardset": "friendship, classic"
-    },
-    {
-        "text": "If you could change one thing about your friend, what would it be?",
-        "cardset": "friendship"
-    },
-    {
-        "text": "If you could eliminate one friend from the group, who would it be?",
-        "cardset": "friendship, group, classic"
-    },
-    {
-        "text": "When did you know that you had a best friend?",
-        "cardset": "dating, friendship"
-    },
-    {
-        "text": "Did you ever have a best friend who wasn't your best friend in return?",
-        "cardset": "friendship, classic"
-    },
-    {
-        "text": "Did you ever have a friend get upset at you for something you didn't know you did wrong?",
-        "cardset": "dating, friendship, classic"
-    },
-    {
-        "text": "Where is the worst place you've ever had sex?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Did you ever walk in on your parents having sex?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Which celebrity would you like to sleep with or kiss?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever shared the bed with another couple?",
-        "cardset": "relationship, sex"
-    },
-    {
-        "text": "Did you ever have sex at school?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What's one random thing you've done in the bedroom?",
-        "cardset": "sex"
-    },
-    {
-        "text": "How often do you fantasize?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What's the last thing you remember doing in the bedroom?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever ate food while having s#x?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Did you ever dance s#xually for someone?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever had someone talk dirty to you?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Did you ever want to film a dirty movie?",
-        "cardset": "sex"
-    },
-    {
-        "text": "If you could have sex with anyone in this room, who would it be?",
-        "cardset": "group, classic, sex"
-    },
-    {
-        "text": "What movie always turn you on?",
-        "cardset": "dating, sex"
-    },
-    {
-        "text": "What's your favorite body part on a guy/girl?",
-        "cardset": "dating, classic, relationship, sex"
-    },
-    {
-        "text": "What do you like to be called in the bedroom?",
-        "cardset": "dating, relationship, sex"
-    },
-    {
-        "text": "What's the last fantasy that you masturbated to?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What's the dirtiest sext you've ever sent?",
-        "cardset": "classic, sex"
-    },
-    {
-        "text": "What sexual position are you best at?",
-        "cardset": "classic, sex"
-    },
-    {
-        "text": "Where is one place you wish you could have sex?",
-        "cardset": "relationship, sex"
-    },
-    {
-        "text": "Did you ever have sex on an airplane?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever been intimate in a car?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Did you ever have an intimate encounter in a movie theater?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever put your hand down a boyfriend or girlfriends pants in public?",
-        "cardset": "sex"
-    },
-    {
-        "text": "When was the first time you made out with someone?",
-        "cardset": "dating, classic, relationship, sex"
-    },
-    {
-        "text": "What was the first time you ever French kissed someone?",
-        "cardset": "sex"
-    },
-    {
-        "text": "If you could change one body part on your boyfriend/girlfriend, what would it be?",
-        "cardset": "dating, relationship, sex"
-    },
-    {
-        "text": "If you could choose any person in the world: Who would you like to have as your dinner guest?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Would you like to be famous? In what way?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Have you ever rehearsed what you want to say on the phone before you call someone? Why?",
-        "cardset": "dating"
-    },
-    {
-        "text": "How would you describe a perfect day?",
-        "cardset": "dating"
-    },
-    {
-        "text": "When was the last time you sang for yourself? For someone else?",
-        "cardset": "dating"
-    },
-    {
-        "text": "If you could live to be 90, and from the age of 30 you could keep either the body or the mind of a 30 year old for the remaining 60 years, what would you choose?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Do you have a secret premonition of how you will die?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Name three things that you and your counterpart seem to have in common.",
-        "cardset": "dating"
-    },
-    {
-        "text": "For what aspect of your life are you most grateful?",
-        "cardset": "dating"
-    },
-    {
-        "text": "If you could change anything about the way you were raised, what would it be?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Take four minutes to tell your partner as much of your life story as you can.",
-        "cardset": "dating"
-    },
-    {
-        "text": "If you could wake up tomorrow and choose one skill or quality that you have gained, what would it be?",
-        "cardset": "dating"
-    },
-    {
-        "text": "If a crystal ball could tell you the truth about yourself, your life, the future, or anything else, what would you want to know?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Is there something you have been dreaming about for a long time? Why haven't you done it yet?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What is the greatest achievement of your life?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What do you value most in a friendship?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What is your most precious memory?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What is your worst memory?",
-        "cardset": "dating"
-    },
-    {
-        "text": "If you knew you were going to die suddenly in a year, would you change anything about the way you live now? Why?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What does friendship mean to you?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What role do love and affection play in your life?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Take turns telling each other what positive traits your counterpart has. List a total of five character traits.",
-        "cardset": "dating"
-    },
-    {
-        "text": "How close is your family? Do you feel your childhood was happier than most people's?",
-        "cardset": "dating"
-    },
-    {
-        "text": "How is your relationship with your mother?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "Make three true \"we\" statements about yourselves. For example, \"We are in this room right now feeling...\"",
-        "cardset": "dating"
-    },
-    {
-        "text": "Complete this sentence, \"I wish I had someone to tell that...\"",
-        "cardset": "dating"
-    },
-    {
-        "text": "If your counterpart were to become a close friend of yours, what would he need to know about you?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Tell your counterpart what you like about him. ",
-        "cardset": "dating"
-    },
-    {
-        "text": "Share an embarrassing moment from your life with your counterpart.",
-        "cardset": "dating"
-    },
-    {
-        "text": "When was the last time you cried in front of someone? When was the last time you cried alone?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Tell your counterpart what you already like about him.",
-        "cardset": "dating"
-    },
-    {
-        "text": "What - if anything - is too serious to joke about?",
-        "cardset": "dating"
-    },
-    {
-        "text": "If you were to die tonight without being able to talk to anyone, what would you regret most about not telling someone? Why haven't you told that person yet?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Your house, which contains everything you own, is on fire, and after saving your family and pets, there is still time to save one thing from the house. What would that be? Why?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Of all the people in your family, whose death would take you the most?",
-        "cardset": "dating"
-    },
-    {
-        "text": "Share a personal problem with your partner and ask them how they would solve it. Also ask your partner how you feel about the problem.",
-        "cardset": "dating"
-    },
-    {
-        "text": "When's the last time you lied about having an orgasm?",
-        "cardset": "relationship, sex"
-    },
-    {
-        "text": "Do you enjoy dirty talk?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever had a ‘friends with benefits’ situation? If so, who with?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What's the best intimate experience you've ever had?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Do you have any fetishes?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What's your biggest turn-on?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Who would you most like to kiss in this room?",
-        "cardset": "group, classic, sex"
-    },
-    {
-        "text": "Have you ever read erotic fiction?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What’s the longest you’ve gone without sex?",
-        "cardset": "sex"
-    },
-    {
-        "text": "When did you lose your virginity?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever fallen asleep during sex?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What was your most embarrassing sexual experience?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What is your favourite sex position?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What’s your biggest turn off?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever slept with someone then immediately regretted it?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever hooked up with a friend?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What is the dirtiest text you’ve received?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Who did you last have a sexual fantasy/dream about?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What is your least favourite sex position?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you faked an orgasm?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever noticed that your partner faked an orgasm?",
-        "cardset": "classic, sex"
-    },
-    {
-        "text": "Describe your best orgasm. How long did it last?",
-        "cardset": "sex"
-    },
-    {
-        "text": "If you could only do one sex act for the rest of your life, what would it be?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever had s#x with someone that you barely knew?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What's the last fantasy that you masturbated to?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What's the dirtiest s#xt you've ever sent?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What s#xual position are you best at?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Where is one place you wish you could have s#x?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Did you ever have s#x on an airplane?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever been intimate in a car?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Did you ever have an intimate encounter in a movie theater?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever put your hand down a boyfriend or girlfriends pants in public?",
-        "cardset": "sex"
-    },
-    {
-        "text": "When was the first time you made out with someone?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What was the first time you ever French k#ssed someone?",
-        "cardset": "sex"
-    },
-    {
-        "text": "If you could change one body part on your boyfriend/girlfriend, what would it be?",
-        "cardset": "sex"
-    },
-    {
-        "text": "When's the last time you lied about having an orgasm?",
-        "cardset": "sex"
-    },
-    {
-        "text": "If you caught you best friend having sex with your partner, what would you do?",
-        "cardset": "sex, dating"
-    },
-    {
-        "text": "What is legal and should become illegal?",
-        "cardset": "classic, dating, group"
-    },
-    {
-        "text": "Who are the scariest types of people?",
-        "cardset": "classic, dating, group"
-    },
-    {
-        "text": "What is a great example of a necessary evil?",
-        "cardset": "classic, dating"
-    },
-    {
-        "text": "What's incorrectly perceived as a sign of low intelligence?",
-        "cardset": "classic, dating, group"
-    },
-    {
-        "text": "What‘s the best film you‘ve ever seen?",
-        "cardset": "classic, dating, relationship"
-    },
-    {
-        "text": "What's a hygiene tip that you think is underused and you wish more people knew?",
-        "cardset": "classic, group"
-    },
-    {
-        "text": "In your opinion, which historical figure should serve as an example for children from an early age?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What’s a food that you hate the texture of, no matter how many times you try it?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What are redflags you can’t ignore?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "Whats the best thing you’ve watched on netflix?",
-        "cardset": "classic, dating"
-    },
-    {
-        "text": "What's the best way to avoid kissing?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What is fucking awesome as an adult but sucked as a kid?",
-        "cardset": "classic, dating"
-    },
-    {
-        "text": "You are Vladimir Putin for a day. What do you do?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What simple thing irritates you in daily life?",
-        "cardset": "classic, relationship"
-    },
-    {
-        "text": "Where do you put your phone when you go to sleep for the night?",
-        "cardset": "classic, dating"
-    },
-    {
-        "text": "What is the nicest compliment you have ever received?",
-        "cardset": "classic, dating, relationship"
-    },
-    {
-        "text": "What is your favorite Christmas movie?",
-        "cardset": "classic, dating, relationship"
-    },
-    {
-        "text": "What's the most unique name you've ever heard?",
-        "cardset": "classic, dating"
-    },
-    {
-        "text": "What would be the scariest animal if it was 100x bigger?",
-        "cardset": "classic, dating"
-    },
-    {
-        "text": "What are some socially acceptable addictions in your culture?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What’s the most disturbing song lyrics?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What’s the first thing you will do if the nukes start flying?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What \"bad movie\" are you ready to defend?",
-        "cardset": "classic, dating, relationship"
-    },
-    {
-        "text": "If you can delete something in this world. What would it be?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What app doesn't exist that you would love on your phone?",
-        "cardset": "classic"
-    },
-    {
-        "text": "Who turned the life around, what caused you to do it?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What is something you still haven't forgiven yourself for?",
-        "cardset": "classic"
-    },
-    {
-        "text": "Would you be offended if a potential sex partner asked you for an STI test before you do the deed? Why or why not?",
-        "cardset": "classic, sex"
-    },
-    {
-        "text": "What’s a song with lyrics so brilliant you feel like you ghostwrote it in some way?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What is your opinion on people who have sold their virginity?",
-        "cardset": "classic, sex"
-    },
-    {
-        "text": "Whats your family's \"secret\" or \"dark secret\"?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Would you fight someone who is bigger and stronger than you?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What advice would you give yourself if you haven't had your first time yet.",
-        "cardset": "sex"
-    },
-    {
-        "text": "Have you ever had a near death experience, what was it like?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What's the most horrifying thing you've seen, online or off?",
-        "cardset": "classic, group"
-    },
-    {
-        "text": "What makes you different from others?",
-        "cardset": "classic, relationship"
-    },
-    {
-        "text": "Can you be friends with a person you are attracted to?",
-        "cardset": "classic, dating, relationship, sex"
-    },
-    {
-        "text": "What are underrated websites and what do you use them for?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What is not a red flag in the short run but becomes a red flag in a long term relationship?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How much would you pay for a list of everyone who has ever sexually fantasized about or masturbated to you? Why?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What’s the worst excuse for cheating?",
-        "cardset": "classic, sex"
-    },
-    {
-        "text": "Which musical artists definitely have sex to their own music?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What is falsely seen as a sign of maturity?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What are the worst words to hear when you're having sex?",
-        "cardset": "sex"
-    },
-    {
-        "text": "If you became a God for exactly 1 hour, what’s the first thing you’re doing?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What would you refuse to buy even if you were a millionaire?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What song would instantly “kill the mood” in the bedroom?",
-        "cardset": "sex"
-    },
-    {
-        "text": "What about you now, would surprise your younger self?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What do you think the average person needs more of in day to day life?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What’s something you would not do for $100 but would consider doing for $500?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What’s the most common thing people lie about?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What is fucking awesome as an adult but sucked as a kid?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What do you think about before and after sex?",
-        "cardset": "sex"
-    },
-    {
-        "text": "Not including smoking, how do you release stress?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What’s that thing you did as a kid that still brings you joy as an adult?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What’s that thing you did as a kid that still brings you joy as an adult?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "If you could build your own house, what things would you include that people normally might not think about?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "What should you never buy the cheap version of?",
-        "cardset": "classic"
-    },
-    {
-        "text": "If money wasn't an issue, how would you spend your days?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What Is something you would never do for any amount of money?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What do you truly want?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What happened that made you think “I’m getting old?”",
-        "cardset": "classic"
-    },
-    {
-        "text": "Whats ruining our society?",
-        "cardset": "classic"
-    },
-    {
-        "text": "When did your gut feeling of ‘there’s something wrong here’ save you?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "What is something that you've overheard that you weren't supposed to?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What is something that you are insecure about?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "When is it time for kids to get a phone?",
-        "cardset": "classic, relationship"
-    },
-    {
-        "text": "What is the most annoying personality trait?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Whats a completely common kink that turns you off?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What is your fondest memory of your childhood?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What is hard about dating you?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What's your worst dating app story?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What's the best first date you've been on?",
-        "cardset": "dating"
-    },
-    {
-        "text": "What are your thoughts on dating a step sibling?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What's the worst alcoholic drink?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What is something positive going on in your life?",
-        "cardset": "dating, relationship"
-    },
-    {
-        "text": "What have you done to improve your life this year?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What are some early warning signs of an abusive relationship?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What is the craziest cult of all time?",
-        "cardset": "classic, dating"
-    },
-    {
-        "text": "What is the single greatest animated series of all time?",
-        "cardset": "classic"
-    },
-    {
-        "text": "What was your first impression of your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How did the relationship start?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Are you happy with the intimacy you share?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What did you like or love about your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you feel the same way you felt for your partner at the beginning of the relationship?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you still like what you loved about your partner and why?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Have you started to do something because of each other’s influence?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How often do you laugh together?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "When was the last time you dreamt about your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you get each other’s feeling without the need to say anything?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you like spending time with your partner’s friends and family?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "When was the last time you said “I love you” to your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How often do you think of your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you smile when you relate something from your daily life with your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Can you recall the most romantic moment with this partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How often do you talk on the phone with your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How do you show your love for each other?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "What was the best moment in your relationship so far? (Are you smiling while recalling that moment?)",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Are you keeping any secrets that you’re afraid of letting your partner know?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you bring up arguments very often and why?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How do you feel when others find your partner attractive?",
-        "cardset": "relationship"
-    },
-    {
-        "text": " Do you make sacrifices for your relationship?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you throw temper easily for small mistakes of your partners?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How much do you think you understand your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "When was the last time you had an in-depth conversation with your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you forgive your partner’s mistakes easily?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you feel jealous if your partner hang out with a friend of the opposite sex?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Have you ever apologized for what you’ve done wrong to your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Is it really necessary to know everything from your partner’s previous relationships?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How do you feel when your partner has to leave you for some time because of work or study?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Will you say sorry to your partner even though it’s not your fault?",
-        "cardset": "relationship"
-    },
-    {
-        "text": " Have you ever changed anything for your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Have you not let your partner do something just because you feel jealous or angry?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you respect each other’s beliefs?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you trust each other?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Essential Relationship Questions To Ask",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you believe in staying with this partner for a very long time or even forever?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "How serious are you both taking this relationship?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Will you lie for the sake of your partner’s happiness and how do you define the line?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you look forward to your future with your partner?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Have you ever thought about cheating on your partner? Why?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Are you in a relationship only because you enjoy the excitement or the feeling to be loved and cared about?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you think your partner’s friends and family like you?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Have you seen each other at your best and worst?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Do you feel that your partner accepts the way you are?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Does this partner make you forget the painful feeling of your previous relationships?",
-        "cardset": "relationship"
-    },
-    {
-        "text": "Have you ever thought about breaking up with your partner and why?",
-        "cardset": "relationship"
-    }
+  {
+      "en": "What's the worst swear word you say often?",
+      "de": "Was ist das schlimmste Schimpfwort, das du oft sagst?",
+      "cardset": "relationship",
+      "id": 1
+  },
+  {
+      "en": "Have you ever cheated on a boyfriend or girlfriend?",
+      "de": "Hast du jemals einen Freund oder eine Freundin betrogen?",
+      "cardset": "relationship",
+      "id": 2
+  },
+  {
+      "en": "What's the most illegal thing you've ever done?",
+      "de": "Was ist das Illegalste, das du je getan hast?",
+      "cardset": "group, classic",
+      "id": 3
+  },
+  {
+      "en": "Have you ever kissed someone in this room?",
+      "de": "Hast du mal jemanden in diesem Raum geküsst?",
+      "cardset": "group, classic",
+      "id": 4
+  },
+  {
+      "en": "What's one thing you wish you could hire someone to do?",
+      "de": "Was ist eine Sache, für die du gerne jemanden anstellen würdest?",
+      "cardset": "dating, classic",
+      "id": 5
+  },
+  {
+      "en": "Who in this room would you most like to have read your text messages?",
+      "de": "Von wem in diesem Raum würdest du am ehensten deine Textnachrichten lesen lassen?",
+      "cardset": "group, classic",
+      "id": 6
+  },
+  {
+      "en": "Have you ever thrown up after playing a drinking game?",
+      "de": "Hast du dich schon einmal nach einem Trinkspiel übergeben?",
+      "cardset": "classic",
+      "id": 7
+  },
+  {
+      "en": "What's the most among of trouble you got into as a kid?",
+      "de": "Was war der größte Ärger, in den du als Kind geraten bist?",
+      "cardset": "classic",
+      "id": 8
+  },
+  {
+      "en": "What's the grossest thing you've ever done?",
+      "de": "Was ist das Ekelhafteste, das du je getan hast?",
+      "cardset": "classic",
+      "id": 9
+  },
+  {
+      "en": "What habit did you have as a kid that was gross?",
+      "de": "Welche Angewohnheit hattest du als Kind, die eklig war?",
+      "cardset": "classic",
+      "id": 10
+  },
+  {
+      "en": "Did you ever fail a class or grade in school?",
+      "de": "Hast du jemals eine Klasse oder eine Note in der Schule nicht bestanden?",
+      "cardset": "classic",
+      "id": 11
+  },
+  {
+      "en": "When did you lose your virginity?",
+      "de": "Wann hast du deine Jungfräulichkeit verloren?",
+      "cardset": "dating, classic, relationship, sex",
+      "id": 12
+  },
+  {
+      "en": "How often do you go to the bathroom?",
+      "de": "Wie oft gehst du auf die Toilette?",
+      "cardset": "classic",
+      "id": 13
+  },
+  {
+      "en": "What's the most embarrassing thing your mom caught you doing?",
+      "de": "Was ist das Peinlichste, bei dem dich deine Mutter erwischt hat?",
+      "cardset": "dating, classic, relationship, sex",
+      "id": 14
+  },
+  {
+      "en": "What's the most embarrassing thing your dad caught you doing?",
+      "de": "Was ist das Peinlichste, bei dem dein Vater dich erwischt hat?",
+      "cardset": "dating, classic, relationship, sex",
+      "id": 15
+  },
+  {
+      "en": "What's one thing as a kid that you used to get ridiculed for doing?",
+      "de": "Was war eine Sache, für die du als Kind immer ausgelacht wurdest?",
+      "cardset": "classic",
+      "id": 16
+  },
+  {
+      "en": "When did you last fart?",
+      "de": "Wann hast du zuletzt gefurzt?",
+      "cardset": "classic",
+      "id": 17
+  },
+  {
+      "en": "Did you ever get diarrhea in public?",
+      "de": "Hattest du jemals in der Öffentlichkeit Durchfall?",
+      "cardset": "classic",
+      "id": 18
+  },
+  {
+      "en": "What's the worst food you've ever ate?",
+      "de": "Was ist das schlimmste Essen, das du je gegessen hast?",
+      "cardset": "classic",
+      "id": 19
+  },
+  {
+      "en": "Did you ever kiss someone of your own gender?",
+      "de": "Hast du jemals jemanden deines eigenen Geschlechts geküsst?",
+      "cardset": "dating, classic, relationship, sex",
+      "id": 20
+  },
+  {
+      "en": "How often do you think about having sex?",
+      "de": "Wie oft denkst du an Sex?",
+      "cardset": "sex",
+      "id": 21
+  },
+  {
+      "en": "Did you ever get fired from a job for doing something bad?",
+      "de": "Wurdest du schon einmal gefeuert, weil du etwas Schlimmes getan hast?",
+      "cardset": "classic, Work",
+      "id": 22
+  },
+  {
+      "en": "When's the last time you got in trouble at work?",
+      "de": "Wann hattest du das letzte Mal Ärger auf der Arbeit?",
+      "cardset": "classic, Work",
+      "id": 23
+  },
+  {
+      "en": "Did you ever cut class in high school?",
+      "de": "Hast du in der Schule schon einmal geschwänzt?",
+      "cardset": "classic, Work",
+      "id": 24
+  },
+  {
+      "en": "Have you ever went to a concert completely drunk?",
+      "de": "Bist du jemals völlig betrunken auf ein Konzert gegangen?",
+      "cardset": "classic, Work",
+      "id": 25
+  },
+  {
+      "en": "Did you ever get intimate at a concert or sporting event?",
+      "de": "Bist du jemals bei einem Konzert oder einer Sportveranstaltung intim geworden?",
+      "cardset": "dating, classic, relationship, sex",
+      "id": 26
+  },
+  {
+      "en": "Have you ever thrown up at a concert or sporting event?",
+      "de": "Hast du dich schon einmal auf einem Konzert oder bei einer Sportveranstaltung übergeben?",
+      "cardset": "classic",
+      "id": 27
+  },
+  {
+      "en": "Did you ever secretly learn the password to your partners phone?",
+      "de": "Hast du jemals heimlich das Passwort für das Handy deines Partners erfahren?",
+      "cardset": "dating, relationship",
+      "id": 28
+  },
+  {
+      "en": "Would you ever consider doing role play in the bedroom?",
+      "de": "Würdest Rollenspiel in Betracht ziehen?",
+      "cardset": "dating, relationship, sex",
+      "id": 29
+  },
+  {
+      "en": "Have you ever asked someone to take a drty picture for you?",
+      "de": "Hast du schon einmal jemanden gebeten, ein Dirty-Photo von dir zu machen?",
+      "cardset": "dating, classic, sex",
+      "id": 30
+  },
+  {
+      "en": "What's one thing that really turns you on about another gender?",
+      "de": "Was macht dich am anderen Geschlecht besonders an?",
+      "cardset": "dating, relationship, sex",
+      "id": 31
+  },
+  {
+      "en": "What's your favorite position during intimacy?",
+      "de": "Was ist deine Lieblingsstellung beim Sex?",
+      "cardset": "dating, relationship, sex",
+      "id": 32
+  },
+  {
+      "en": "Would you ever take lingerie photographs?",
+      "de": "Würdest du jemals Fotos in deiner Unterwäsche machen?",
+      "cardset": "trash",
+      "id": 33
+  },
+  {
+      "en": "Did you ever flirt with someone random on social media?",
+      "de": "Hast du schon einmal mit jemandem in den sozialen Medien geflirtet?",
+      "cardset": "dating, relationship",
+      "id": 34
+  },
+  {
+      "en": "Would you ever let your partner read all of your Snapchat messages?",
+      "de": "Würdest du deinen Partner jemals alle deine Snapchat-Nachrichten lesen lassen?",
+      "cardset": "relationship",
+      "id": 35
+  },
+  {
+      "en": "Would you rather be on top or be on bottom?",
+      "de": "Bist du lieber oben oder unten?",
+      "cardset": "relationship, sex",
+      "id": 36
+  },
+  {
+      "en": "Did you ever intentionally read your partners text messages?",
+      "de": "Hast du jemals absichtlich die Textnachrichten deines Partners gelesen?",
+      "cardset": "relationship",
+      "id": 37
+  },
+  {
+      "en": "Who is the loudest in the bedroom?",
+      "de": "Wer ist lauter im Schlafzimmer?",
+      "cardset": "relationship",
+      "id": 38
+  },
+  {
+      "en": "Would you rather be the big spoon or the little spoon?",
+      "de": "Bist du lieber der große Löffel oder der kleine Löffel?",
+      "cardset": "relationship",
+      "id": 39
+  },
+  {
+      "en": "Did you ever give a lap dance to someone?",
+      "de": "Hast du schon einmal jemandem einen Lap Dance gegeben?",
+      "cardset": "dating, relationship, sex",
+      "id": 40
+  },
+  {
+      "en": "Would you let your partner read all of your text messages?",
+      "de": "Würdest du deinem Partner erlauben, alle deine Textnachrichten zu lesen?",
+      "cardset": "relationship",
+      "id": 41
+  },
+  {
+      "en": "Did you ever send dirty photographs to another couple?",
+      "de": "Habt ihr schon einmal schmutzige Fotos an ein anderes Paar geschickt?",
+      "cardset": "relationship",
+      "id": 42
+  },
+  {
+      "en": "How many times per week do you and your spouse have sex?",
+      "de": "Wie oft pro Woche habt ihr beide Sex?",
+      "cardset": "relationship",
+      "id": 43
+  },
+  {
+      "en": "What's the longest dry spell you've ever had?",
+      "de": "Was war die längste Phase in welcher du keinen Sex hattest?",
+      "cardset": "dating, relationship",
+      "id": 44
+  },
+  {
+      "en": "Did you ever fantasize about someone other than your boyfriend/girlfriend?",
+      "de": "Hast du jemals über jemand anderen als deinen Partner/deine Partnerin fantasiert?",
+      "cardset": "relationship",
+      "id": 45
+  },
+  {
+      "en": "What's the biggest age gap you've had with a romantic partner?",
+      "de": "Was ist der größte Altersunterschied, den du mit einem Partner hattest?",
+      "cardset": "dating, relationship",
+      "id": 46
+  },
+  {
+      "en": "Did you ever ditch out on a first date?",
+      "de": "Hast du schon einmal bei einem ersten Date gekniffen?",
+      "cardset": "dating, relationship",
+      "id": 47
+  },
+  {
+      "en": "What's the worst lie you've ever told?",
+      "de": "Was ist die schlimmste Lüge, die du je erzählt hast?",
+      "cardset": "dating, relationship",
+      "id": 48
+  },
+  {
+      "en": "What couple would you have a threesome with?",
+      "de": "Mit welchem Paar würdest du einen Dreier haben wollen?",
+      "cardset": "relationship, sex",
+      "id": 49
+  },
+  {
+      "en": "Have you ever done something s#xual with another couple?",
+      "de": "Hattet ihr jemals Sexuellen Kontakt mit einem anderen Paar?",
+      "cardset": "relationship, sex",
+      "id": 50
+  },
+  {
+      "en": "Have you ever fallen in public and had people laugh at you?",
+      "de": "Haben dich schonmal Leute ausgelacht, weil du in der Öffentlichkeit hingefallen bist?",
+      "cardset": "dating, relationship",
+      "id": 51
+  },
+  {
+      "en": "Have you ever lied to your partner?",
+      "de": "Hast du deinen Partner jemals angelogen?",
+      "cardset": "relationship",
+      "id": 52
+  },
+  {
+      "en": "What was the worst date you've ever been on",
+      "de": "Was war das schlimmste Date, das du je hattest?",
+      "cardset": "dating, relationship",
+      "id": 53
+  },
+  {
+      "en": "When's the last time you cried?",
+      "de": "Wann hast du das letzte Mal geweint?",
+      "cardset": "dating, relationship",
+      "id": 54
+  },
+  {
+      "en": "What's something d#rty that you think about often?",
+      "de": "Was ist etwas, woran du oft denkst?",
+      "cardset": "relationship",
+      "id": 55
+  },
+  {
+      "en": "Did you ever wear your friends underwear?",
+      "de": "Hast du jemals die Unterwäsche deiner Freunde getragen?",
+      "cardset": "friendship, classic",
+      "id": 56
+  },
+  {
+      "en": "Have you ever kissed your friend as a dare?",
+      "de": "Hast du schon einmal einen Freund oder eine Freundin bei als Mutprobe geküsst?",
+      "cardset": "friendship, classic",
+      "id": 57
+  },
+  {
+      "en": "Did you ever borrow money from your friend?",
+      "de": "Hast du dir schon einmal Geld von deinem Freund geliehen?",
+      "cardset": "friendship, classic",
+      "id": 58
+  },
+  {
+      "en": "Have you ever fantasized about your friends parent or parents?",
+      "de": "Hast du schon einmal über die Eltern deines Freundes fantasiert?",
+      "cardset": "friendship, classic, sex",
+      "id": 59
+  },
+  {
+      "en": "Did you ever let a friend cheat on one of your tests?",
+      "de": "Hast du jemals einen Freund bei einem Test schummeln lassen?",
+      "cardset": "friendship, classic",
+      "id": 60
+  },
+  {
+      "en": "Did you ever cheat in school?",
+      "de": "Hast du schon einmal in der Schule geschummelt?",
+      "cardset": "friendship, classic, Work",
+      "id": 61
+  },
+  {
+      "en": "What was your last first date like?",
+      "de": "Wie war dein letztes erstes Date?",
+      "cardset": "dating, classic, relationship",
+      "id": 62
+  },
+  {
+      "en": "Did you ever try to steal your best friends crush?",
+      "de": "Hast du jemals versucht, deinem besten Freund den Schwarm auszuspannen?",
+      "cardset": "dating, friendship, classic",
+      "id": 63
+  },
+  {
+      "en": "What's one thing you have ever done that makes you seem like a bad person?",
+      "de": "Was hast du jemals getan, das dich wie einen schlechten Menschen erscheinen lässt?",
+      "cardset": "dating, friendship, classic, relationship",
+      "id": 64
+  },
+  {
+      "en": "What is a nickname your family used to call you?",
+      "de": "Was ist ein Spitzname, den deine Familie dir gegeben hat?",
+      "cardset": "friendship, group, classic, relationship",
+      "id": 65
+  },
+  {
+      "en": "What's one thing you wish you could do for the rest of your life?",
+      "de": "Was würdest du gerne für den Rest deines Lebens tun können?",
+      "cardset": "dating, friendship, classic, relationship, Work",
+      "id": 66
+  },
+  {
+      "en": "What's your strangest off-limit crush?",
+      "de": "Was ist dein seltsamster Schwarm?",
+      "cardset": "dating, classic, relationship",
+      "id": 67
+  },
+  {
+      "en": "Have you ever had a sexting conversation?",
+      "de": "Hast du schon einmal Sexting gemacht?",
+      "cardset": "dating, friendship, classic, relationship, sex",
+      "id": 68
+  },
+  {
+      "en": "Has anyone ever caught you masturbating?",
+      "de": "Hat dich schon mal jemand beim Masturbieren erwischt?",
+      "cardset": "friendship, classic, sex",
+      "id": 69
+  },
+  {
+      "en": "Would you consider yourself more of a dominant or submissive person?",
+      "de": "Würdest du dich eher als dominante oder unterwürfige Person betrachten?",
+      "cardset": "sex",
+      "id": 70
+  },
+  {
+      "en": "What's a pet name that your mom/dad always calls you?",
+      "de": "Was ist der Kosename, den deine Mutter/dein Vater dir immer gegeben hat?",
+      "cardset": "friendship, relationship",
+      "id": 71
+  },
+  {
+      "en": "What's a pet peeve of someone in this room?",
+      "de": "Was ist ein banales Ärgernis von jemandem in diesem Raum?",
+      "cardset": "group, classic",
+      "id": 72
+  },
+  {
+      "en": "Have you ever been to an adult club or adult stip club?",
+      "de": "Warst du jemals in einem Strip-Club?",
+      "cardset": "friendship, classic, sex",
+      "id": 73
+  },
+  {
+      "en": "Did you ever visit adult websites?",
+      "de": "Hast du schonmal einen Porno geschaut?",
+      "cardset": "friendship, classic, relationship, sex",
+      "id": 74
+  },
+  {
+      "en": "Would you ever steal your friends ex-boyfriend or ex-girlfriend?",
+      "de": "Würdest du jemals mit dem Ex-Freund oder der Ex-Freundin deines Freundes etwas anfangen?",
+      "cardset": "dating, friendship",
+      "id": 75
+  },
+  {
+      "en": "Have you ever flirted with a friends boyfriend/girlfriend?",
+      "de": "Hast du jemals mit dem Freund/der Freundin eines Freundes geflirtet?",
+      "cardset": "dating, friendship",
+      "id": 76
+  },
+  {
+      "en": "Have you ever got into a fist fight with another person?",
+      "de": "Hast du dich schon einmal mit einer anderen Person geprügelt?",
+      "cardset": "friendship, classic",
+      "id": 77
+  },
+  {
+      "en": "Did you ever decide to listen to a song just because your friend liked it?",
+      "de": "Hast du jemals beschlossen, dir einen Song anzuhören, nur weil dein Freund ihn mochte?",
+      "cardset": "friendship, classic",
+      "id": 78
+  },
+  {
+      "en": "What's the last lie you told your best friend?",
+      "de": "Was war die letzte Lüge, die du deinem besten Freund erzählt hast?",
+      "cardset": "friendship, classic",
+      "id": 79
+  },
+  {
+      "en": "If you could change one thing about your friend, what would it be?",
+      "de": "Wenn du eine Sache an deinem Freund ändern könntest, was wäre das?",
+      "cardset": "friendship",
+      "id": 80
+  },
+  {
+      "en": "If you could eliminate one friend from the group, who would it be?",
+      "de": "Wenn du einen Freund aus der Gruppe streichen könntest, wer wäre das?",
+      "cardset": "friendship, group, classic",
+      "id": 81
+  },
+  {
+      "en": "When did you know that you had a best friend?",
+      "de": "Wann wusstest du, dass du einen besten Freund hast?",
+      "cardset": "dating, friendship",
+      "id": 82
+  },
+  {
+      "en": "Did you ever have a best friend who wasn't your best friend in return?",
+      "de": "Hattest du jemals einen besten Freund, der im Gegenzug nicht dein bester Freund war?",
+      "cardset": "friendship, classic",
+      "id": 83
+  },
+  {
+      "en": "Did you ever have a friend get upset at you for something you didn't know you did wrong?",
+      "de": "Hat sich schon einmal ein Freund über dich geärgert, obwohl du nicht wusstest, dass du etwas falsch gemacht hast?",
+      "cardset": "dating, friendship, classic",
+      "id": 84
+  },
+  {
+      "en": "Where is the worst place you've ever had sex?",
+      "de": "Was war der schlimmste Ort, an dem du jemals Sex hattest?",
+      "cardset": "sex",
+      "id": 85
+  },
+  {
+      "en": "Did you ever walk in on your parents having sex?",
+      "de": "Hast du jemals deine Eltern beim Sex erwischt?",
+      "cardset": "sex",
+      "id": 86
+  },
+  {
+      "en": "Which celebrity would you like to sleep with or kiss?",
+      "de": "Mit welchem Prominenten würdest du gerne ins Bett?",
+      "cardset": "sex",
+      "id": 87
+  },
+  {
+      "en": "Have you ever shared the bed with another couple?",
+      "de": "Habt ihr schon einmal das Bett mit einem anderen Paar geteilt?",
+      "cardset": "relationship, sex",
+      "id": 88
+  },
+  {
+      "en": "Did you ever have sex at school?",
+      "de": "Hattest du schon einmal Sex in der Schule?",
+      "cardset": "sex",
+      "id": 89
+  },
+  {
+      "en": "What's one random thing you've done in the bedroom?",
+      "de": "Was ist eine zufällige Sache, die du im Schlafzimmer gemacht hast?",
+      "cardset": "sex",
+      "id": 90
+  },
+  {
+      "en": "How often do you fantasize?",
+      "de": "Wie oft fantasierst du?",
+      "cardset": "sex",
+      "id": 91
+  },
+  {
+      "en": "What's the last thing you remember doing in the bedroom?",
+      "de": "Was ist das Letzte, an das du dich im Schlafzimmer erinnerst?",
+      "cardset": "sex",
+      "id": 92
+  },
+  {
+      "en": "Have you ever ate food while having s#x?",
+      "de": "Hast du jemals beim Sex etwas gegessen?",
+      "cardset": "sex",
+      "id": 93
+  },
+  {
+      "en": "Did you ever dance s#xually for someone?",
+      "de": "Hast du schon einmal für jemanden sexy getanzt?",
+      "cardset": "sex",
+      "id": 94
+  },
+  {
+      "en": "Have you ever had someone talk dirty to you?",
+      "de": "Hat schon einmal jemand schmutzige Dinge zu Ihnen gesagt?",
+      "cardset": "sex",
+      "id": 95
+  },
+  {
+      "en": "Did you ever want to film a dirty movie?",
+      "de": "Wollten Sie schon einmal einen Schmuddelfilm drehen?",
+      "cardset": "sex",
+      "id": 96
+  },
+  {
+      "en": "If you could have sex with anyone in this room, who would it be?",
+      "de": "Mit wem würdest du in diesem Raum am ehesten Sex haben?",
+      "cardset": "group, classic, sex",
+      "id": 97
+  },
+  {
+      "en": "What movie always turn you on?",
+      "de": "Welcher Film macht dich an?",
+      "cardset": "dating, sex",
+      "id": 98
+  },
+  {
+      "en": "What's your favorite body part on a guy/girl?",
+      "de": "Was ist dein Lieblingskörperteil?",
+      "cardset": "dating, classic, relationship, sex",
+      "id": 99
+  },
+  {
+      "en": "What do you like to be called in the bedroom?",
+      "de": "Wie wirst du am liebsten im Schlafzimmer genannt?",
+      "cardset": "dating, relationship, sex",
+      "id": 100
+  },
+  {
+      "en": "What's the last fantasy that you masturbated to?",
+      "de": "Was ist die letzte Fantasie, zu der du masturbiert hast?",
+      "cardset": "sex",
+      "id": 101
+  },
+  {
+      "en": "What's the dirtiest sext you've ever sent?",
+      "de": "Was ist der schmutzigste Sext, den du je verschickt hast?",
+      "cardset": "classic, sex",
+      "id": 102
+  },
+  {
+      "en": "What sexual position are you best at?",
+      "de": "In welcher Sexstellung bist du am besten?",
+      "cardset": "classic, sex",
+      "id": 103
+  },
+  {
+      "en": "Where is one place you wish you could have sex?",
+      "de": "An welchem Ort deiner Wahl würdest du gerne Sex haben?",
+      "cardset": "relationship, sex",
+      "id": 104
+  },
+  {
+      "en": "Did you ever have sex on an airplane?",
+      "de": "Hattest du schon einmal Sex in einem Flugzeug?",
+      "cardset": "sex",
+      "id": 105
+  },
+  {
+      "en": "Have you ever been intimate in a car?",
+      "de": "Hattest du schon mal Sex im Auto?",
+      "cardset": "sex",
+      "id": 106
+  },
+  {
+      "en": "Did you ever have an intimate encounter in a movie theater?",
+      "de": "Hattest du schon mal eine sexuelle Begegnung im Kino?",
+      "cardset": "sex",
+      "id": 107
+  },
+  {
+      "en": "Have you ever put your hand down a boyfriend or girlfriends pants in public?",
+      "de": "Hast du deine Hand in der Öffentlichkeit schon einmal in die Hose deines Freundes oder deiner Freundin gesteckt?",
+      "cardset": "sex",
+      "id": 108
+  },
+  {
+      "en": "When was the first time you made out with someone?",
+      "de": "Wann hast du das erste Mal mit jemandem herumgemacht?",
+      "cardset": "dating, classic, relationship, sex",
+      "id": 109
+  },
+  {
+      "en": "What was the first time you ever French kissed someone?",
+      "de": "Wann hast du das erste Mal einen Zungenkuss bekommen?",
+      "cardset": "sex",
+      "id": 110
+  },
+  {
+      "en": "If you could change one body part on your boyfriend/girlfriend, what would it be?",
+      "de": "Wenn du ein Körperteil Deines Freundes / Deiner Freundin ändern könntest, welches wäre es?",
+      "cardset": "dating, relationship, sex",
+      "id": 111
+  },
+  {
+      "en": "If you could choose any person in the world: Who would you like to have as your dinner guest?",
+      "de": "Wenn du dir eine beliebige Person auf der Welt aussuchen könntest: Wen würdest du gerne als Gast zum Abendessen haben?",
+      "cardset": "dating",
+      "id": 112
+  },
+  {
+      "en": "Would you like to be famous? In what way?",
+      "de": "Würdest du gerne berühmt sein? Auf welche Art und Weise?",
+      "cardset": "dating",
+      "id": 113
+  },
+  {
+      "en": "Have you ever rehearsed what you want to say on the phone before you call someone? Why?",
+      "de": "Hast du jemals geprobt, was du am Telefon sagen willst, bevor du jemanden angerufen hast? Und warum?",
+      "cardset": "dating",
+      "id": 114
+  },
+  {
+      "en": "How would you describe a perfect day?",
+      "de": "Wie würdest du einen perfekten Tag beschreiben?",
+      "cardset": "dating",
+      "id": 115
+  },
+  {
+      "en": "When was the last time you sang for yourself? For someone else?",
+      "de": "Wann hast du das letzte Mal für dich selbst gesungen? Für jemand anderen?",
+      "cardset": "dating",
+      "id": 116
+  },
+  {
+      "en": "If you could live to be 90, and from the age of 30 you could keep either the body or the mind of a 30 year old for the remaining 60 years, what would you choose?",
+      "de": "Wenn du 90 Jahre alt werden könntest und ab dem Alter von 30 Jahren entweder den Körper oder den Geist eines 30-Jährigen für die restlichen 60 Jahre behalten könntest, wofür würdest du dich entscheiden?",
+      "cardset": "dating",
+      "id": 117
+  },
+  {
+      "en": "Do you have a secret premonition of how you will die?",
+      "de": "Hast du eine geheime Vorahnung, wie du sterben wirst?",
+      "cardset": "dating",
+      "id": 118
+  },
+  {
+      "en": "Name three things that you and your counterpart seem to have in common.",
+      "de": "Nenne drei Dinge, die du und dein Gegenüber gemeinsam zu haben scheinen.",
+      "cardset": "dating",
+      "id": 119
+  },
+  {
+      "en": "For what aspect of your life are you most grateful?",
+      "de": "Für welchen Aspekt deines Lebens bist du am dankbarsten?",
+      "cardset": "dating",
+      "id": 120
+  },
+  {
+      "en": "If you could change anything about the way you were raised, what would it be?",
+      "de": "Wenn du etwas an deiner Erziehung ändern könntest, was wäre es?",
+      "cardset": "dating",
+      "id": 121
+  },
+  {
+      "en": "Take four minutes to tell your partner as much of your life story as you can.",
+      "de": "Nimm dir vier Minuten Zeit, um deinem Partner so viel von deiner Lebensgeschichte zu erzählen, wie du kannst.",
+      "cardset": "dating",
+      "id": 122
+  },
+  {
+      "en": "If you could wake up tomorrow and choose one skill or quality that you have gained, what would it be?",
+      "de": "Wenn du morgen aufwachen könntest und eine Fähigkeit oder Eigenschaft auswählen könntest, die du erworben hast, welche wäre das?",
+      "cardset": "dating",
+      "id": 123
+  },
+  {
+      "en": "If a crystal ball could tell you the truth about yourself, your life, the future, or anything else, what would you want to know?",
+      "de": "Wenn eine Kristallkugel dir die Wahrheit über dich, dein Leben, die Zukunft oder etwas anderes sagen könnte, was würdest du wissen wollen?",
+      "cardset": "dating",
+      "id": 124
+  },
+  {
+      "en": "Is there something you have been dreaming about for a long time? Why haven't you done it yet?",
+      "de": "Gibt es etwas, wovon du schon seit langem träumst? Warum hast du es noch nicht getan?",
+      "cardset": "dating",
+      "id": 125
+  },
+  {
+      "en": "What is the greatest achievement of your life?",
+      "de": "Was ist die größte Errungenschaft in Ihrem Leben?",
+      "cardset": "dating",
+      "id": 126
+  },
+  {
+      "en": "What do you value most in a friendship?",
+      "de": "Was schätzen Sie an einer Freundschaft am meisten?",
+      "cardset": "dating",
+      "id": 127
+  },
+  {
+      "en": "What is your most precious memory?",
+      "de": "Was ist deine schönste Erinnerung?",
+      "cardset": "dating",
+      "id": 128
+  },
+  {
+      "en": "What is your worst memory?",
+      "de": "Was ist deine schlimmste Erinnerung?",
+      "cardset": "dating",
+      "id": 129
+  },
+  {
+      "en": "If you knew you were going to die suddenly in a year, would you change anything about the way you live now? Why?",
+      "de": "Wenn du wüsstest, dass du in einem Jahr plötzlich sterben würdest, würdest du etwas an deinem jetzigen Leben ändern? Und warum?",
+      "cardset": "dating",
+      "id": 130
+  },
+  {
+      "en": "What does friendship mean to you?",
+      "de": "Was bedeutet Freundschaft für dich?",
+      "cardset": "dating",
+      "id": 131
+  },
+  {
+      "en": "What role do love and affection play in your life?",
+      "de": "Welche Rolle spielt Liebe und Zuneigung in deinem Leben?",
+      "cardset": "dating",
+      "id": 132
+  },
+  {
+      "en": "Take turns telling each other what positive traits your counterpart has. List a total of five character traits.",
+      "de": "Sagt euch abwechselnd, welche positiven Eigenschaften euer Gegenüber hat. Zählen Sie insgesamt fünf Charaktereigenschaften auf.",
+      "cardset": "dating",
+      "id": 133
+  },
+  {
+      "en": "How close is your family? Do you feel your childhood was happier than most people's?",
+      "de": "Wie nahe ist deine Familie? Glaubst du, dass deine Kindheit glücklicher war als die der meisten Menschen?",
+      "cardset": "dating",
+      "id": 134
+  },
+  {
+      "en": "How is your relationship with your mother?",
+      "de": "Wie ist die Beziehung zu deiner Mutter?",
+      "cardset": "dating, relationship",
+      "id": 135
+  },
+  {
+      "en": "Make three true \"we\" statements about yourselves. For example, \"We are in this room right now feeling...\"",
+      "de": "Macht drei wahre \"Wir\"-Aussagen über euch selbst. Zum Beispiel: \"Wir sind gerade in diesem Raum und fühlen...\".",
+      "cardset": "dating",
+      "id": 136
+  },
+  {
+      "en": "Complete this sentence, \"I wish I had someone to tell that...\"",
+      "de": "Vervollständigen Sie diesen Satz: \"Ich wünschte, ich hätte jemanden, dem ich sagen könnte, dass...\"",
+      "cardset": "dating",
+      "id": 137
+  },
+  {
+      "en": "If your counterpart were to become a close friend of yours, what would he need to know about you?",
+      "de": "Wenn dein Gegenüber ein enger Freund von dir werden würde, was müsste er dann über dich wissen?",
+      "cardset": "dating",
+      "id": 138
+  },
+  {
+      "en": "Tell your counterpart what you like about him.",
+      "de": "Sage deinem Gegenüber, was du an ihm magst. ",
+      "cardset": "dating",
+      "id": 139
+  },
+  {
+      "en": "Share an embarrassing moment from your life with your counterpart.",
+      "de": "Teile deinem Gegenüber einen peinlichen Moment aus deinem Leben mit.",
+      "cardset": "dating",
+      "id": 140
+  },
+  {
+      "en": "When was the last time you cried in front of someone? When was the last time you cried alone?",
+      "de": "Wann hast du das letzte Mal in Gegenwart von jemandem geweint? Wann hast du das letzte Mal alleine geweint?",
+      "cardset": "dating",
+      "id": 141
+  },
+  {
+      "en": "Tell your counterpart what you already like about him.",
+      "de": "Sage deinem Gegenüber, was du bereits an ihm magst.",
+      "cardset": "dating",
+      "id": 142
+  },
+  {
+      "en": "What - if anything - is too serious to joke about?",
+      "de": "Was - wenn überhaupt - ist zu ernst, um darüber zu scherzen?",
+      "cardset": "dating",
+      "id": 143
+  },
+  {
+      "en": "If you were to die tonight without being able to talk to anyone, what would you regret most about not telling someone? Why haven't you told that person yet?",
+      "de": "Wenn du heute Nacht sterben würdest, ohne mit jemandem reden zu können, was würdest du am meisten bedauern, dass du es niemandem gesagt hast? Warum hast du es dieser Person noch nicht gesagt?",
+      "cardset": "dating",
+      "id": 144
+  },
+  {
+      "en": "Your house, which contains everything you own, is on fire, and after saving your family and pets, there is still time to save one thing from the house. What would that be? Why?",
+      "de": "Dein Haus, in dem sich alles befindet, was du besitzt, steht in Flammen, und nachdem du deine Familie und deine Haustiere gerettet hast, bleibt dir noch Zeit, eine Sache aus dem Haus zu retten. Was könnte das sein? Und warum?",
+      "cardset": "dating",
+      "id": 145
+  },
+  {
+      "en": "Of all the people in your family, whose death would take you the most?",
+      "de": "Wessen Tod würdest du von allen Leuten in deiner Familie am meisten bedauern?",
+      "cardset": "dating",
+      "id": 146
+  },
+  {
+      "en": "Share a personal problem with your partner and ask them how they would solve it. Also ask your partner how you feel about the problem.",
+      "de": "Erzähle deinem Gesprächspartner von einem persönlichen Problem und frage ihn, wie er es lösen würde. Frage auch, wie dieser über das Problem denkt.",
+      "cardset": "dating",
+      "id": 147
+  },
+  {
+      "en": "When's the last time you lied about having an orgasm?",
+      "de": "Wann hast du das letzte Mal gelogen, dass du einen Orgasmus hattest?",
+      "cardset": "relationship, sex",
+      "id": 148
+  },
+  {
+      "en": "Do you enjoy dirty talk?",
+      "de": "Magst du Dirty Talk?",
+      "cardset": "sex",
+      "id": 149
+  },
+  {
+      "en": "Have you ever had a ‘friends with benefits’ situation? If so, who with?",
+      "de": "Hattest du schon einmal eine \"Freundschaft Plus Beziehung\"? Wenn ja, mit wem?",
+      "cardset": "sex",
+      "id": 150
+  },
+  {
+      "en": "What's the best intimate experience you've ever had?",
+      "de": "Was war die beste intime Erfahrung, die du je gemacht hast?",
+      "cardset": "sex",
+      "id": 151
+  },
+  {
+      "en": "Do you have any fetishes?",
+      "de": "Hast du irgendwelche Fetische?",
+      "cardset": "sex",
+      "id": 152
+  },
+  {
+      "en": "What's your biggest turn-on?",
+      "de": "Was macht dich am meisten an?",
+      "cardset": "sex",
+      "id": 153
+  },
+  {
+      "en": "Who would you most like to kiss in this room?",
+      "de": "Wen würdest du in diesem Raum am liebsten küssen?",
+      "cardset": "group, classic, sex",
+      "id": 154
+  },
+  {
+      "en": "Have you ever read erotic fiction?",
+      "de": "Hast du schon einmal erotische Bücher gelesen?",
+      "cardset": "sex",
+      "id": 155
+  },
+  {
+      "en": "What’s the longest you’ve gone without sex?",
+      "de": "Was war dein längstes mal ohne Sex?",
+      "cardset": "sex",
+      "id": 156
+  },
+  {
+      "en": "When did you lose your virginity?",
+      "de": "Wann hast du deine Jungfräulichkeit verloren?",
+      "cardset": "sex",
+      "id": 157
+  },
+  {
+      "en": "Have you ever fallen asleep during sex?",
+      "de": "Bist du schon mal beim Sex eingeschlafen?",
+      "cardset": "sex",
+      "id": 158
+  },
+  {
+      "en": "What was your most embarrassing sexual experience?",
+      "de": "Was war dein peinlichstes sexuelles Erlebnis?",
+      "cardset": "sex",
+      "id": 159
+  },
+  {
+      "en": "What is your favourite sex position?",
+      "de": "Was ist deine Lieblingsstellung?",
+      "cardset": "sex",
+      "id": 160
+  },
+  {
+      "en": "What’s your biggest turn off?",
+      "de": "Was törnt dich am meisten ab?",
+      "cardset": "sex",
+      "id": 161
+  },
+  {
+      "en": "Have you ever slept with someone then immediately regretted it?",
+      "de": "Hast du schon mal mit jemandem geschlafen und es dann sofort bereut?",
+      "cardset": "sex",
+      "id": 162
+  },
+  {
+      "en": "Have you ever hooked up with a friend?",
+      "de": "Hast du schon mal mit einem Freund geschlafen?",
+      "cardset": "sex",
+      "id": 163
+  },
+  {
+      "en": "What is the dirtiest text you’ve received?",
+      "de": "Was ist die schmutzigste SMS, die du erhalten hast?",
+      "cardset": "sex",
+      "id": 164
+  },
+  {
+      "en": "Who did you last have a sexual fantasy/dream about?",
+      "de": "Von wem hattest du zuletzt eine sexuelle Fantasie/einen sexuellen Traum?",
+      "cardset": "sex",
+      "id": 165
+  },
+  {
+      "en": "What is your least favourite sex position?",
+      "de": "Was ist deine unbeliebteste Sexstellung?",
+      "cardset": "sex",
+      "id": 166
+  },
+  {
+      "en": "Have you faked an orgasm?",
+      "de": "Hast du schon mal einen Orgasmus vorgetäuscht?",
+      "cardset": "sex",
+      "id": 167
+  },
+  {
+      "en": "Have you ever noticed that your partner faked an orgasm?",
+      "de": "Hast du jemals bemerkt, dass dein Partner einen Orgasmus vorgetäuscht hat?",
+      "cardset": "classic, sex",
+      "id": 168
+  },
+  {
+      "en": "Describe your best orgasm. How long did it last?",
+      "de": "Beschreibe deinen besten Orgasmus. Wie lange hat er gedauert?",
+      "cardset": "sex",
+      "id": 169
+  },
+  {
+      "en": "If you could only do one sex act for the rest of your life, what would it be?",
+      "de": "Wenn du für den Rest deines Lebens nur eine einzige sexuelle Handlung machen könntest, welche wäre das?",
+      "cardset": "sex",
+      "id": 170
+  },
+  {
+      "en": "Have you ever had sex with someone that you barely knew?",
+      "de": "Hattest du schon einmal Sex mit jemandem, den du kaum kanntest?",
+      "cardset": "sex",
+      "id": 171
+  },
+  {
+      "en": "What's the last fantasy that you masturbated to?",
+      "de": "Was ist die letzte Fantasie, zu der du masturbiert hast?",
+      "cardset": "sex",
+      "id": 172
+  },
+  {
+      "en": "What's the dirtiest sext you've ever sent?",
+      "de": "Was ist die schmutzigste Sext, die du je verschickt hast?",
+      "cardset": "sex",
+      "id": 173
+  },
+  {
+      "en": "What s#xual position are you best at?",
+      "de": "In welcher sexuellen Stellung bist du am besten?",
+      "cardset": "sex",
+      "id": 174
+  },
+  {
+      "en": "Where is one place you wish you could have sex?",
+      "de": "Wo ist der Ort, an dem du gerne Sex haben würdest?",
+      "cardset": "sex",
+      "id": 175
+  },
+  {
+      "en": "Did you ever have sex on an airplane?",
+      "de": "Hattest du schon mal Sex in einem Flugzeug?",
+      "cardset": "sex",
+      "id": 176
+  },
+  {
+      "en": "Have you ever been intimate in a car?",
+      "de": "Warst du schon mal intim in einem Auto?",
+      "cardset": "sex",
+      "id": 177
+  },
+  {
+      "en": "Did you ever have an intimate encounter in a movie theater?",
+      "de": "Warst du schonmal in einem Kino intim?",
+      "cardset": "sex",
+      "id": 178
+  },
+  {
+      "en": "Have you ever put your hand down a boyfriend or girlfriends pants in public?",
+      "de": "Hast du schon einmal in der Öffentlichkeit deine Hand in die Hose deines Freundes oder deiner Freundin gesteckt?",
+      "cardset": "sex",
+      "id": 179
+  },
+  {
+      "en": "When was the first time you made out with someone?",
+      "de": "Wann hast du das erste Mal mit jemandem geknutscht?",
+      "cardset": "sex",
+      "id": 180
+  },
+  {
+      "en": "What was the first time you ever French kissed someone?",
+      "de": "Wann hast du das erste Mal einen Zungenkuss bekommen?",
+      "cardset": "sex",
+      "id": 181
+  },
+  {
+      "en": "If you could change one body part on your boyfriend/girlfriend, what would it be?",
+      "de": "Wenn du ein Körperteil deines Freundes/ deiner Freundin verändern könntest, welches wäre es?",
+      "cardset": "sex",
+      "id": 182
+  },
+  {
+      "en": "When's the last time you lied about having an orgasm?",
+      "de": "Wann hast du das letzte Mal gelogen, als du einen Orgasmus hattest?",
+      "cardset": "sex",
+      "id": 183
+  },
+  {
+      "en": "If you caught you best friend having sex with your partner, what would you do?",
+      "de": "Was würdest du tun, wenn du deinen besten Freund beim Sex mit deinem Partner erwischen würdest?",
+      "cardset": "sex, dating",
+      "id": 184
+  },
+  {
+      "en": "What is legal and should become illegal?",
+      "de": "Was ist legal und sollte illegal werden?",
+      "cardset": "classic, dating, group",
+      "id": 185
+  },
+  {
+      "en": "Who are the scariest types of people?",
+      "de": "Wer sind die furchterregendsten Typen von Menschen?",
+      "cardset": "classic, dating, group",
+      "id": 186
+  },
+  {
+      "en": "What is a great example of a necessary evil?",
+      "de": "Was ist ein gutes Beispiel für ein notwendiges Übel?",
+      "cardset": "classic, dating",
+      "id": 187
+  },
+  {
+      "en": "What's incorrectly perceived as a sign of low intelligence?",
+      "de": "Was wird fälschlicherweise als Zeichen von geringer Intelligenz angesehen?",
+      "cardset": "classic, dating, group",
+      "id": 188
+  },
+  {
+      "en": "What‘s the best film you‘ve ever seen?",
+      "de": "Welches ist der beste Film, den du je gesehen hast?",
+      "cardset": "classic, dating, relationship",
+      "id": 189
+  },
+  {
+      "en": "What's a hygiene tip that you think is underused and you wish more people knew?",
+      "de": "Was ist ein Hygienetipp, der deiner Meinung nach zu wenig genutzt wird und von dem du wünschst, dass ihn mehr Leute kennen?",
+      "cardset": "classic, group",
+      "id": 190
+  },
+  {
+      "en": "In your opinion, which historical figure should serve as an example for children from an early age?",
+      "de": "Welche historische Figur sollte deiner Meinung nach Kindern von klein auf als Vorbild dienen?",
+      "cardset": "classic",
+      "id": 191
+  },
+  {
+      "en": "What’s a food that you hate the texture of, no matter how many times you try it?",
+      "de": "Was ist ein Lebensmittel, dessen Konsistenz du nicht magst, egal wie oft du es probierst?",
+      "cardset": "classic",
+      "id": 192
+  },
+  {
+      "en": "What are redflags you can’t ignore?",
+      "de": "Was sind Warnsignale, die du nicht ignorieren kannst?",
+      "cardset": "dating, relationship",
+      "id": 193
+  },
+  {
+      "en": "Whats the best thing you’ve watched on netflix?",
+      "de": "Was ist das Beste, was du auf Netflix gesehen hast?",
+      "cardset": "classic, dating",
+      "id": 194
+  },
+  {
+      "en": "What's the best way to avoid kissing?",
+      "de": "Wie vermeidest du es am besten, dich zu küssen?",
+      "cardset": "classic",
+      "id": 195
+  },
+  {
+      "en": "What is fucking awesome as an adult but sucked as a kid?",
+      "de": "Was ist als Erwachsener verdammt geil, aber als Kind scheiße?",
+      "cardset": "classic, dating",
+      "id": 196
+  },
+  {
+      "en": "You are Vladimir Putin for a day. What do you do?",
+      "de": "Du bist Wladimir Putin für einen Tag. Was tust du?",
+      "cardset": "classic",
+      "id": 197
+  },
+  {
+      "en": "What simple thing irritates you in daily life?",
+      "de": "Welche einfache Sache irritiert dich im Alltag?",
+      "cardset": "classic, relationship",
+      "id": 198
+  },
+  {
+      "en": "Where do you put your phone when you go to sleep for the night?",
+      "de": "Wo legst du dein Handy ab, wenn du schlafen gehst?",
+      "cardset": "classic, dating",
+      "id": 199
+  },
+  {
+      "en": "What is the nicest compliment you have ever received?",
+      "de": "Was ist das schönste Kompliment, das du je bekommen hast?",
+      "cardset": "classic, dating, relationship",
+      "id": 200
+  },
+  {
+      "en": "What is your favorite Christmas movie?",
+      "de": "Was ist dein liebster Weihnachtsfilm?",
+      "cardset": "classic, dating, relationship",
+      "id": 201
+  },
+  {
+      "en": "What's the most unique name you've ever heard?",
+      "de": "Was ist der einzigartigste Name, den du je gehört hast?",
+      "cardset": "classic, dating",
+      "id": 202
+  },
+  {
+      "en": "What would be the scariest animal if it was 100x bigger?",
+      "de": "Was wäre das furchterregendste Tier, wenn es 100x größer wäre?",
+      "cardset": "classic, dating",
+      "id": 203
+  },
+  {
+      "en": "What are some socially acceptable addictions in your culture?",
+      "de": "Welche Süchte sind in deiner Kultur gesellschaftlich akzeptiert?",
+      "cardset": "classic",
+      "id": 204
+  },
+  {
+      "en": "What’s the most disturbing song lyrics?",
+      "de": "Welches ist der verstörendste Liedtext?",
+      "cardset": "classic",
+      "id": 205
+  },
+  {
+      "en": "What’s the first thing you will do if the nukes start flying?",
+      "de": "Was würdest du als erstes tun, wenn die Atombomben fliegen würden?",
+      "cardset": "classic",
+      "id": 206
+  },
+  {
+      "en": "What \"bad movie\" are you ready to defend?",
+      "de": "Welchen \"schlechten Film\" bist du bereit zu verteidigen?",
+      "cardset": "classic, dating, relationship",
+      "id": 207
+  },
+  {
+      "en": "If you can delete something in this world. What would it be?",
+      "de": "Wenn du etwas in dieser Welt löschen könntest. Was würde das sein?",
+      "cardset": "classic",
+      "id": 208
+  },
+  {
+      "en": "What app doesn't exist that you would love on your phone?",
+      "de": "Welche App gibt es nicht, die du gerne auf deinem Handy hättest?",
+      "cardset": "classic",
+      "id": 209
+  },
+  {
+      "en": "Who turned the life around, what caused you to do it?",
+      "de": "Wer hat dein Leben umgekrempelt, was hat dich dazu veranlasst?",
+      "cardset": "classic",
+      "id": 210
+  },
+  {
+      "en": "What is something you still haven't forgiven yourself for?",
+      "de": "Was ist etwas, das du dir immer noch nicht verziehen hast?",
+      "cardset": "classic",
+      "id": 211
+  },
+  {
+      "en": "Would you be offended if a potential sex partner asked you for an STI test before you do the deed? Why or why not?",
+      "de": "Wärst du beleidigt, wenn ein potenzieller Sexualpartner dich um einen HIV-Test bittet, Warum oder warum nicht?",
+      "cardset": "classic, sex",
+      "id": 212
+  },
+  {
+      "en": "What’s a song with lyrics so brilliant you feel like you ghostwrote it in some way?",
+      "de": "Welches ist ein Lied mit einem so genialen Text, dass du das Gefühl hast, du hättest ihn geschrieben?",
+      "cardset": "classic",
+      "id": 213
+  },
+  {
+      "en": "What is your opinion on people who have sold their virginity?",
+      "de": "Was hältst du von Menschen, die ihre Jungfräulichkeit verkauft haben?",
+      "cardset": "classic, sex",
+      "id": 214
+  },
+  {
+      "en": "Whats your family's \"secret\" or \"dark secret\"?",
+      "de": "Was ist das \"Geheimnis\" oder \"dunkle Geheimnis\" deiner Familie?",
+      "cardset": "relationship",
+      "id": 215
+  },
+  {
+      "en": "Would you fight someone who is bigger and stronger than you?",
+      "de": "Würdest du gegen jemanden kämpfen, der grösser und stärker ist als du?",
+      "cardset": "classic",
+      "id": 216
+  },
+  {
+      "en": "What advice would you give yourself if you haven't had your first time yet.",
+      "de": "Welchen Rat würdest du dir selbst geben, wenn du dein erstes Mal noch nicht hattest?",
+      "cardset": "sex",
+      "id": 217
+  },
+  {
+      "en": "Have you ever had a near death experience, what was it like?",
+      "de": "Hattest du schon einmal eine Nahtoderfahrung, wie war das?",
+      "cardset": "classic",
+      "id": 218
+  },
+  {
+      "en": "What's the most horrifying thing you've seen, online or off?",
+      "de": "Was ist das Schrecklichste, das du gesehen hast, online oder offline?",
+      "cardset": "classic, group",
+      "id": 219
+  },
+  {
+      "en": "What makes you different from others?",
+      "de": "Was macht dich anders als andere?",
+      "cardset": "classic, relationship",
+      "id": 220
+  },
+  {
+      "en": "Can you be friends with a person you are attracted to?",
+      "de": "Kannst du mit einer Person befreundet sein, zu der du dich hingezogen fühlst?",
+      "cardset": "classic, dating, relationship, sex",
+      "id": 221
+  },
+  {
+      "en": "What are underrated websites and what do you use them for?",
+      "de": "Was sind unterschätzte Websites und wofür nutzt du sie?",
+      "cardset": "classic",
+      "id": 222
+  },
+  {
+      "en": "What is not a red flag in the short run but becomes a red flag in a long term relationship?",
+      "de": "Was ist auf kurze Sicht keine Red Flag, wird aber in einer langfristigen Beziehung zu einer Red Flag?",
+      "cardset": "relationship",
+      "id": 223
+  },
+  {
+      "en": "How much would you pay for a list of everyone who has ever sexually fantasized about or masturbated to you? Why?",
+      "de": "Wie viel würdest du für eine Liste mit allen bezahlen, die jemals sexuelle Fantasien über dich hatten oder zu dir masturbiert haben? Und warum?",
+      "cardset": "sex",
+      "id": 224
+  },
+  {
+      "en": "What’s the worst excuse for cheating?",
+      "de": "Was ist die schlechteste Ausrede fürs Fremdgehen?",
+      "cardset": "classic, sex",
+      "id": 225
+  },
+  {
+      "en": "Which musical artists definitely have sex to their own music?",
+      "de": "Welche Musikkünstler haben definitiv Sex zu ihrer eigenen Musik?",
+      "cardset": "classic",
+      "id": 226
+  },
+  {
+      "en": "What is falsely seen as a sign of maturity?",
+      "de": "Was wird fälschlicherweise als Zeichen von Reife angesehen?",
+      "cardset": "relationship",
+      "id": 227
+  },
+  {
+      "en": "What are the worst words to hear when you're having sex?",
+      "de": "Welches sind die schlimmsten Worte, die man jemandem beim Sex sagen könnte?",
+      "cardset": "sex",
+      "id": 228
+  },
+  {
+      "en": "If you became a God for exactly 1 hour, what’s the first thing you’re doing?",
+      "de": "Wenn du für genau eine Stunde ein Gott wärst, was würdest du als erstes tun?",
+      "cardset": "classic",
+      "id": 229
+  },
+  {
+      "en": "What would you refuse to buy even if you were a millionaire?",
+      "de": "Was würdest du nicht kaufen, selbst wenn du Millionär wärst?",
+      "cardset": "dating",
+      "id": 230
+  },
+  {
+      "en": "What song would instantly “kill the mood” in the bedroom?",
+      "de": "Welches Lied würde deine Stimmung im Schlafzimmer sofort killen?",
+      "cardset": "sex",
+      "id": 231
+  },
+  {
+      "en": "What about you now, would surprise your younger self?",
+      "de": "Was an dir würde dein jüngeres Ich überraschen?",
+      "cardset": "relationship",
+      "id": 232
+  },
+  {
+      "en": "What do you think the average person needs more of in day to day life?",
+      "de": "Was, glaubst du, braucht der Durchschnittsmensch im Alltag mehr?",
+      "cardset": "classic",
+      "id": 233
+  },
+  {
+      "en": "What’s something you would not do for $100 but would consider doing for $500?",
+      "de": "Was würdest du für 100 Dollar nicht tun, aber für 500 Dollar schon?",
+      "cardset": "classic",
+      "id": 234
+  },
+  {
+      "en": "What’s the most common thing people lie about?",
+      "de": "Worüber lügen Menschen am häufigsten?",
+      "cardset": "classic",
+      "id": 235
+  },
+  {
+      "en": "What is fucking awesome as an adult but sucked as a kid?",
+      "de": "Was ist als Erwachsener verdammt cool, aber als Kind ätzend?",
+      "cardset": "classic",
+      "id": 236
+  },
+  {
+      "en": "What do you think about before and after sex?",
+      "de": "Woran denkst du vor und nach dem Sex?",
+      "cardset": "sex",
+      "id": 237
+  },
+  {
+      "en": "Not including smoking, how do you release stress?",
+      "de": "Abgesehen vom Rauchen, wie baust du Stress ab?",
+      "cardset": "relationship",
+      "id": 238
+  },
+  {
+      "en": "What’s that thing you did as a kid that still brings you joy as an adult?",
+      "de": "Was hast du als Kind gemacht, das dir auch als Erwachsener noch Freude bereitet?",
+      "cardset": "dating",
+      "id": 239
+  },
+  {
+      "en": "If you could build your own house, what things would you include that people normally might not think about?",
+      "de": "Wenn du dein eigenes Haus bauen könntest, welche Dinge würdest du einbauen, an die man normalerweise nicht denkt?",
+      "cardset": "classic, relationship",
+      "id": 240
+  },
+  {
+      "en": "What should you never buy the cheap version of?",
+      "de": "Wovon solltest du niemals die billige Version kaufen?",
+      "cardset": "dating, relationship",
+      "id": 241
+  },
+  {
+      "en": "If money wasn't an issue, how would you spend your days?",
+      "de": "Wenn Geld keine Rolle spielen würde, wie würdest du deine Tage verbringen?",
+      "cardset": "classic",
+      "id": 242
+  },
+  {
+      "en": "What Is something you would never do for any amount of money?",
+      "de": "Was ist etwas, das du für kein Geld der Welt tun würdest?",
+      "cardset": "dating",
+      "id": 243
+  },
+  {
+      "en": "What do you truly want?",
+      "de": "Was willst du wirklich?",
+      "cardset": "classic",
+      "id": 244
+  },
+  {
+      "en": "What happened that made you think “I’m getting old?”",
+      "de": "Was hat dich das letzte mal, \"Ich werde alt\"? denken lassen?",
+      "cardset": "relationship",
+      "id": 245
+  },
+  {
+      "en": "Whats ruining our society?",
+      "de": "Was macht unsere Gesellschaft kaputt?",
+      "cardset": "classic",
+      "id": 246
+  },
+  {
+      "en": "When did your gut feeling of ‘there’s something wrong here’ save you?",
+      "de": "Wann hat dich dein Bauchgefühl \"hier stimmt etwas nicht\" gerettet?",
+      "cardset": "classic",
+      "id": 247
+  },
+  {
+      "en": "What is something that you've overheard that you weren't supposed to?",
+      "de": "Was hast du zufällig mitbekommen, was du nicht hättest mitbekommen sollen?",
+      "cardset": "dating, relationship",
+      "id": 248
+  },
+  {
+      "en": "What is something that you are insecure about?",
+      "de": "Was ist etwas, bei dem du dir unsicher bist?",
+      "cardset": "relationship",
+      "id": 249
+  },
+  {
+      "en": "When is it time for kids to get a phone?",
+      "de": "Wann sollten Kinder ein Telefon bekommen?",
+      "cardset": "relationship",
+      "id": 250
+  },
+  {
+      "en": "What is the most annoying personality trait?",
+      "de": "Was ist die nervigste Persönlichkeitseigenschaft?",
+      "cardset": "classic, relationship",
+      "id": 251
+  },
+  {
+      "en": "Whats a completely common kink that turns you off?",
+      "de": "Was ist eine ganz gewöhnliche Macke, die dich abtörnt?",
+      "cardset": "relationship",
+      "id": 252
+  },
+  {
+      "en": "What is your fondest memory of your childhood?",
+      "de": "Was ist deine schönste Erinnerung an deine Kindheit?",
+      "cardset": "classic",
+      "id": 253
+  },
+  {
+      "en": "What is hard about dating you?",
+      "de": "Was ist das Schwierigste an einem Date mit dir?",
+      "cardset": "dating",
+      "id": 254
+  },
+  {
+      "en": "What's your worst dating app story?",
+      "de": "Was ist deine schlimmste Dating-App-Geschichte?",
+      "cardset": "dating",
+      "id": 255
+  },
+  {
+      "en": "What's the best first date you've been on?",
+      "de": "Was war das beste erste Date, das du hattest?",
+      "cardset": "dating",
+      "id": 256
+  },
+  {
+      "en": "What are your thoughts on dating a step sibling?",
+      "de": "Was hältst du davon, mit einem Stiefgeschwister auszugehen?",
+      "cardset": "dating",
+      "id": 257
+  },
+  {
+      "en": "What's the worst alcoholic drink?",
+      "de": "Was ist das schlimmste alkoholische Getränk?",
+      "cardset": "classic",
+      "id": 258
+  },
+  {
+      "en": "What is something positive going on in your life?",
+      "de": "Was ist etwas Positives in deinem Leben?",
+      "cardset": "classic",
+      "id": 259
+  },
+  {
+      "en": "What have you done to improve your life this year?",
+      "de": "Was hast du dieses Jahr getan, um dein Leben zu verbessern?",
+      "cardset": "dating, relationship",
+      "id": 260
+  },
+  {
+      "en": "What are some early warning signs of an abusive relationship?",
+      "de": "Was sind die ersten Anzeichen für eine missbräuchliche Beziehung?",
+      "cardset": "relationship",
+      "id": 261
+  },
+  {
+      "en": "What is the craziest cult of all time?",
+      "de": "Was ist der verrückteste Kult aller Zeiten?",
+      "cardset": "relationship",
+      "id": 262
+  },
+  {
+      "en": "What is the single greatest animated series of all time?",
+      "de": "Welches ist die beste Zeichentrickserie aller Zeiten?",
+      "cardset": "classic, dating",
+      "id": 263
+  },
+  {
+      "en": "What was your first impression of your partner?",
+      "de": "Was war dein erster Eindruck von deinem Partner?",
+      "cardset": "classic",
+      "id": 264
+  },
+  {
+      "en": "How did the relationship start?",
+      "de": "Wie hat die Beziehung begonnen?",
+      "cardset": "relationship",
+      "id": 265
+  },
+  {
+      "en": "Are you happy with the intimacy you share?",
+      "de": "Bist du mit eurer gemeinsamen Intimität zufrieden?",
+      "cardset": "relationship",
+      "id": 266
+  },
+  {
+      "en": "What did you like or love about your partner?",
+      "de": "Was hast du an deinem Partner gemocht oder geliebt?",
+      "cardset": "relationship",
+      "id": 267
+  },
+  {
+      "en": "Do you feel the same way you felt for your partner at the beginning of the relationship?",
+      "de": "Fühlst du noch dasselbe für deinen Partner wie zu Beginn der Beziehung?",
+      "cardset": "relationship",
+      "id": 268
+  },
+  {
+      "en": "Do you still like what you loved about your partner and why?",
+      "de": "Magst du immer noch, was du an deinem Partner geliebt hast und warum?",
+      "cardset": "relationship",
+      "id": 269
+  },
+  {
+      "en": "Have you started to do something because of each other’s influence?",
+      "de": "Habt ihr durch den Einfluss des anderen etwas angefangen zu tun?",
+      "cardset": "relationship",
+      "id": 270
+  },
+  {
+      "en": "How often do you laugh together?",
+      "de": "Wie oft lacht ihr zusammen?",
+      "cardset": "relationship",
+      "id": 271
+  },
+  {
+      "en": "When was the last time you dreamt about your partner?",
+      "de": "Wann hast du das letzte Mal von deinem Partner geträumt?",
+      "cardset": "relationship",
+      "id": 272
+  },
+  {
+      "en": "Do you like spending time with your partner’s friends and family?",
+      "de": "Verbringst du gerne Zeit mit den Freunden und der Familie deines Partners?",
+      "cardset": "relationship",
+      "id": 273
+  },
+  {
+      "en": "When was the last time you said “I love you” to your partner?",
+      "de": "Wann hast du das letzte Mal \"Ich liebe dich\" zu deinem Partner gesagt?",
+      "cardset": "relationship",
+      "id": 274
+  },
+  {
+      "en": "How often do you think of your partner?",
+      "de": "Wie oft denkst du an deinen Partner?",
+      "cardset": "relationship",
+      "id": 275
+  },
+  {
+      "en": "Do you smile when you relate something from your daily life with your partner?",
+      "de": "Lächelst du, wenn du etwas aus deinem Alltag mit deinem Partner erzählst?",
+      "cardset": "relationship",
+      "id": 276
+  },
+  {
+      "en": "Can you recall the most romantic moment with this partner?",
+      "de": "Kannst du dich an den romantischsten Moment mit deinem Partner erinnern?",
+      "cardset": "relationship",
+      "id": 277
+  },
+  {
+      "en": "How often do you talk on the phone with your partner?",
+      "de": "Wie oft telefonierst du mit deinem Partner?",
+      "cardset": "relationship",
+      "id": 278
+  },
+  {
+      "en": "How do you show your love for each other?",
+      "de": "Wie zeigt ihr eure Liebe füreinander?",
+      "cardset": "relationship",
+      "id": 279
+  },
+  {
+      "en": "What was the best moment in your relationship so far? (Are you smiling while recalling that moment?)",
+      "de": "Was war bisher der schönste Moment in eurer Beziehung? (Lächelst du, wenn du an diesen Moment denkst?)",
+      "cardset": "relationship",
+      "id": 280
+  },
+  {
+      "en": "Are you keeping any secrets that you’re afraid of letting your partner know?",
+      "de": "Gibt es Dinge, die du deinem Partner nicht Preisgeben möchtest?",
+      "cardset": "relationship",
+      "id": 281
+  },
+  {
+      "en": "Do you bring up arguments very often and why?",
+      "de": "Bringt ihr oft Streitigkeiten zur Sprache und warum?",
+      "cardset": "relationship",
+      "id": 282
+  },
+  {
+      "en": "How do you feel when others find your partner attractive?",
+      "de": "Wie fühlst du dich, wenn andere deinen Partner attraktiv finden?",
+      "cardset": "relationship",
+      "id": 283
+  },
+  {
+      "en": " Do you make sacrifices for your relationship?",
+      "de": "Bringst du Opfer für eure Beziehung?",
+      "cardset": "relationship",
+      "id": 284
+  },
+  {
+      "en": "Do you throw temper easily for small mistakes of your partners?",
+      "de": "Verlierst du bei kleinen Fehlern deines Partners, deine Nerven?",
+      "cardset": "relationship",
+      "id": 285
+  },
+  {
+      "en": "How much do you think you understand your partner?",
+      "de": "Wie sehr glaubst du, dass du deinen Partner verstehst?",
+      "cardset": "relationship",
+      "id": 286
+  },
+  {
+      "en": "When was the last time you had an in-depth conversation with your partner?",
+      "de": "Wann hast du das letzte Mal ein ausführliches Gespräch mit deinem Partner geführt?",
+      "cardset": "relationship",
+      "id": 287
+  },
+  {
+      "en": "Do you forgive your partner’s mistakes easily?",
+      "de": "Verzeihst du die Fehler deines Partners leicht?",
+      "cardset": "relationship",
+      "id": 288
+  },
+  {
+      "en": "Do you feel jealous if your partner hang out with a friend of the opposite sex?",
+      "de": "Bist du eifersüchtig, wenn dein Partner mit einem Freund des anderen Geschlechts abhängt?",
+      "cardset": "relationship",
+      "id": 289
+  },
+  {
+      "en": "Have you ever apologized for what you’ve done wrong to your partner?",
+      "de": "Hast du dich schon einmal bei deinem Partner für etwas entschuldigt, das du falsch gemacht hast?",
+      "cardset": "relationship",
+      "id": 290
+  },
+  {
+      "en": "Is it really necessary to know everything from your partner’s previous relationships?",
+      "de": "Ist es wirklich notwendig, alles über die früheren Beziehungen deines Partners zu wissen?",
+      "cardset": "relationship",
+      "id": 291
+  },
+  {
+      "en": "How do you feel when your partner has to leave you for some time because of work or study?",
+      "de": "Wie fühlst du dich, wenn dein Partner dich wegen der Arbeit oder des Studiums für einige Zeit verlassen muss?",
+      "cardset": "relationship",
+      "id": 292
+  },
+  {
+      "en": "Will you say sorry to your partner even though it’s not your fault?",
+      "de": "Würdest du dich bei deinem Partner entschuldigen, auch wenn es nicht deine Schuld ist?",
+      "cardset": "relationship",
+      "id": 293
+  },
+  {
+      "en": " Have you ever changed anything for your partner?",
+      "de": "Hast du jemals etwas für deinen Partner geändert?",
+      "cardset": "relationship",
+      "id": 294
+  },
+  {
+      "en": "Have you not let your partner do something just because you feel jealous or angry?",
+      "de": "Hast du deinen Partner schonmal etwas nicht tun lassen, weil du eifersüchtig oder wütend warst?",
+      "cardset": "relationship",
+      "id": 295
+  },
+  {
+      "en": "Do you respect each other’s beliefs?",
+      "de": "Respektiert ihr die Überzeugungen des anderen?",
+      "cardset": "relationship",
+      "id": 296
+  },
+  {
+      "en": "Do you trust each other?",
+      "de": "Vertraut ihr euch gegenseitig?",
+      "cardset": "relationship",
+      "id": 297
+  },
+  {
+      "en": "Do you believe in staying with this partner for a very long time or even forever?",
+      "de": "Glaubst du, dass du mit deinem Partner für eine sehr lange Zeit oder sogar für immer zusammenbleiben kannst?",
+      "cardset": "relationship",
+      "id": 298
+  },
+  {
+      "en": "How serious are you both taking this relationship?",
+      "de": "Wie ernst nehmt ihr beide diese Beziehung?",
+      "cardset": "relationship",
+      "id": 299
+  },
+  {
+      "en": "Will you lie for the sake of your partner’s happiness and how do you define the line?",
+      "de": "Würdest du um des Glücks deines Partners willen lügen und wie definierst du diese Grenze?",
+      "cardset": "relationship",
+      "id": 300
+  },
+  {
+      "en": "Do you look forward to your future with your partner?",
+      "de": "Freust du dich auf deine Zukunft mit deinem Partner?",
+      "cardset": "relationship",
+      "id": 301
+  },
+  {
+      "en": "Have you ever thought about cheating on your partner? Why?",
+      "de": "Hast du jemals daran gedacht, deinen Partner zu betrügen? Und warum?",
+      "cardset": "relationship",
+      "id": 302
+  },
+  {
+      "en": "Are you in a relationship only because you enjoy the excitement or the feeling to be loved and cared about?",
+      "de": "Bist du nur in einer Beziehung, weil du die Aufregung oder das Gefühl geniesst, geliebt und umsorgt zu werden?",
+      "cardset": "relationship",
+      "id": 303
+  },
+  {
+      "en": "Do you think your partner’s friends and family like you?",
+      "de": "Glaubst du, dass die Freunde und die Familie deines Partners dich mögen?",
+      "cardset": "relationship",
+      "id": 304
+  },
+  {
+      "en": "Have you seen each other at your best and worst?",
+      "de": "Habt ihr euch in euren besten und schlechtesten Zeiten gesehen?",
+      "cardset": "relationship",
+      "id": 305
+  },
+  {
+      "en": "Do you feel that your partner accepts the way you are?",
+      "de": "Hast du das Gefühl, dass dein Partner dich so akzeptiert, wie du bist?",
+      "cardset": "relationship",
+      "id": 306
+  }
 ]

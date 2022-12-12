@@ -1,17 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Animated } from 'react-native';
+import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Linking } from 'react-native';
 import CustomButton from '../components/CustomButton';
 import Constants from 'expo-constants';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { ThemeProvider } from '@react-navigation/native';
-
+const translations = require('../translations.json');
 
 export default function PaywallScreen({ navigation }) {
   const [price, setPrice] = useState('');
+  const [language, setLanguage] = useState("en");
 
-  useEffect(() => {
+  useEffect(async() => {
     getIAPDetails()
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
   }, []);
 
   const getIAPDetails = async() => {
@@ -108,38 +111,40 @@ export default function PaywallScreen({ navigation }) {
         <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white'}}>Support our work and get a better party experience.</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white'}}>{translations[language]["Support our work & get a better party experience."]}</Text>
 
         <View style={styles.infoContainer}>
           <View style={styles.info}>
             <View style={styles.infoTitle}>
               <Image style={{width: 36, height: 36, marginRight: 18}} source={require('../assets/video-game-key.png')}/>
-              <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white'}}>Access all packages!</Text>
+              <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white'}}>{translations[language]["Access all packages!"]}</Text>
             </View>
-            <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', flexWrap: 'wrap', marginLeft: 54}}>Get Access to our exclusive party packs.</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', flexWrap: 'wrap', marginLeft: 54}}>{translations[language]["Get Access to our exclusive party packs."]}</Text>
           </View>
           <View style={styles.info}>
             <View style={styles.infoTitle}>
               <Image style={{width: 36, height: 36, marginRight: 18}} source={require('../assets/certified-ribbon-1.png')}/>
-              <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white'}}>One time payment!</Text>
+              <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white'}}>{translations[language]["One time payment!"]}</Text>
             </View>
-            <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', flexWrap: 'wrap', marginLeft: 54}}>Fuck subscription plans. You’ll only pay once for all.</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', flexWrap: 'wrap', marginLeft: 54}}>{translations[language]["Fuck subscription plans. You’ll only pay once for all."]}</Text>
           </View>
           <View style={styles.info}>
             <View style={styles.infoTitle}>
               <Image style={{width: 36, height: 36, marginRight: 18}} source={require('../assets/target-miss.png')}/>
-              <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white'}}>No more ads!</Text>
+              <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 24, lineHeight: 29, color: 'white'}}>{translations[language]["No more ads!"]}</Text>
             </View>
-            <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', flexWrap: 'wrap', marginLeft: 54}}>as a thank you, we release you from the torments of advertising.</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 21, color: 'white', flexWrap: 'wrap', marginLeft: 54}}>{translations[language]["As a thank you, we release you from the torments of advertising."]}</Text>
           </View>
         </View>
 
         <View style={styles.footer}>
-          <CustomButton style={{marginBottom: 16, width: '100%'}} onPress={() => purchasePremium()} text={`${price} Upgrade to Premium`}/>
+          <CustomButton style={{marginBottom: 16, width: '100%'}} onPress={() => purchasePremium()} text={`${price} Upgrade`}/>
           <TouchableOpacity onPress={() => restorePurchase()} activeOpacity={.7}>
-            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 20, color: 'white', marginBottom: 39}}>Restore previous purchases</Text>
+            <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 20, color: 'white', marginBottom: 39}}>{translations[language]["Restore previous purchases"]}</Text>
           </TouchableOpacity>
-          <Text style={{fontFamily: 'Poppins', fontSize: 12, lineHeight: 14, color: 'white'}}>Terms of use - Privacy policy</Text>
+          <TouchableOpacity onPress={() => Linking.openURL('https://gameoftruth.app/privacy/')} activeOpacity={.7}>
+            <Text style={{fontFamily: 'Poppins', fontSize: 12, lineHeight: 14, color: 'white'}}>{translations[language]["Terms of use - Privacy policy"]}</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>

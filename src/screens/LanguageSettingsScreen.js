@@ -2,14 +2,22 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Animated } from 'react-native';
 import LanguageButton from '../components/LanguageButton';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+const translations = require('../translations.json');
 
 export default function LanguageSettingsScreen({ navigation }) {
   const [english, setEnglish] = useState(true);
   const [detusch, setDeutsch] = useState(false);
   const [francais, setFrancais] = useState(false);
   const [espanol, setEspanol] = useState(false);
+  const [language, setLanguage] = useState("en");
 
-  const select = (language) => {
+  useEffect(async () => {
+    var language = await AsyncStorage.getItem('language')
+    if(language){select(language); setLanguage(language)}
+  }, []);
+
+  const select = async (language) => {
     //deselect all
     setEnglish(false)
     setDeutsch(false)
@@ -17,17 +25,19 @@ export default function LanguageSettingsScreen({ navigation }) {
     setEspanol(false)
 
     //select wanted
+    setLanguage(language)
+    await AsyncStorage.setItem('language', language)
     switch (language) {
-      case 'english':
+      case 'en':
         setEnglish(true)
         break;
-      case 'deutsch':
+      case 'de':
         setDeutsch(true)
         break;
-      case 'francais':
+      case 'fr':
         setFrancais(true)
         break;
-      case 'espanol':
+      case 'es':
         setEspanol(true)
         break;
     }
@@ -39,18 +49,18 @@ export default function LanguageSettingsScreen({ navigation }) {
       <Image style={{position: 'absolute', top: 0, width: '100%'}} source={require('../assets/settingsBackground1.png')}/>
       <Image style={{position: 'absolute', bottom: 0, width: '100%'}} source={require('../assets/settingsBackground2.png')}/>
       <View style={styles.content}>
-        <TouchableOpacity onPress={() => navigation.goBack()} activeOpacity={.7}>
+        <TouchableOpacity onPress={() => navigation.reset({index: 0, routes: [{ name: 'HomeScreen' }],})} activeOpacity={.7}>
           <Image style={styles.closeButton} source={require('../assets/closeButton.png')} /> 
         </TouchableOpacity>
 
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Language</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>{translations[language]["Language"]}</Text>
 
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Coming soon</Text>
+        {/* <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 36, lineHeight: 46, color: 'white', marginBottom: 32}}>Coming soon</Text> */}
         
-        {/* <LanguageButton text="English" selected={english} onPress={() => select('english')}></LanguageButton>
-        <LanguageButton text="Deutsch" selected={detusch} onPress={() => select('deutsch')}></LanguageButton>
-        <LanguageButton text="Francais" selected={francais} onPress={() => select('francais')}></LanguageButton>
-        <LanguageButton text="Espanol" selected={espanol} onPress={() => select('espanol')}></LanguageButton> */}
+        <LanguageButton text="English" selected={english} onPress={() => select('en')}></LanguageButton>
+        <LanguageButton text="Deutsch" selected={detusch} onPress={() => select('de')}></LanguageButton>
+        {/* <LanguageButton text="Francais" selected={francais} onPress={() => select('fr')}></LanguageButton>
+        <LanguageButton text="Espanol" selected={espanol} onPress={() => select('es')}></LanguageButton> */}
 
       </View>
     </View>

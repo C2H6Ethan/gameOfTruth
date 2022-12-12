@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function GameTransitionScreen({ route, navigation }) {
   const { cardset } = route.params;
@@ -8,14 +9,19 @@ export default function GameTransitionScreen({ route, navigation }) {
   const { players } = route.params;
   const { round } = route.params;
   const { totalAddedPlayers } = route.params;
+  const { usedQuestions } = route.params;
+  const [language, setLanguage] = useState("en");
 
-  useEffect(() => {
+  useEffect(async() => {
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
+
     // Start counting when the page is loaded
     const timeoutHandle = setTimeout(()=>{
       // Add your logic for the transition
       navigation.reset({
         index: 0,
-        routes: [{ name: 'GameMainScreen', params:  {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round}}],
+        routes: [{ name: 'GameMainScreen', params:  {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round, usedQuestions: usedQuestions, language: language}}],
       });
     }, 2500);
   }, []);

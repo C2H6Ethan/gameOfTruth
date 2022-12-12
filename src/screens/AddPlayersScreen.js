@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 import CustomButton from '../components/CustomButton';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+const translations = require('../translations.json');
 
 export default function AddPlayersScreen({ route, navigation }) {
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
@@ -9,7 +11,13 @@ export default function AddPlayersScreen({ route, navigation }) {
   const [inputText, onInputTextChange] = useState("");
   const [dummyValue, setDummyValue] = useState(null)
   const [totalAddedPlayers, setTotalAddedPlayers] = useState(0)
+  const [language, setLanguage] = useState("en");
   const { cardset } = route.params;
+
+  useEffect(async () => {
+    var language = await AsyncStorage.getItem('language')
+    if(language){setLanguage(language)}
+  }, []);
 
   const onNameEnter = (name) => {
     if(name == ''){return}
@@ -43,7 +51,7 @@ export default function AddPlayersScreen({ route, navigation }) {
   }
   
   const startGame = () => {
-    var player = players[Math.floor(Math.random()*players.length)];
+    var player = players[0];
 
     player['timesPlayed'] = 1;
 
@@ -61,9 +69,9 @@ export default function AddPlayersScreen({ route, navigation }) {
       </View>
       <View style={styles.content}>
         
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 16, width: '80%'}}>Who are u playing with?</Text>
-        <Text style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>Remove or Add players down below.</Text>
-        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 14, lineHeight: 21, color: 'white', width: '80%'}}>Name</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 30, lineHeight: 36, color: 'white', marginBottom: 1, width: '80%'}}>{translations[language]["Who are u playing with?"]}</Text>
+        <Text numberOfLines={1} style={{fontFamily: 'Poppins', fontSize: 17, lineHeight: 22, color: 'white', marginBottom: 56, width: '80%'}}>{translations[language]["Remove or Add players down below."]}</Text>
+        <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 14, lineHeight: 21, color: 'white', width: '80%', marginBottom: 11}}>Name</Text>
         <TextInput
           style={styles.input}
           onChangeText={onInputTextChange}
@@ -90,7 +98,7 @@ export default function AddPlayersScreen({ route, navigation }) {
 
       </View>
       <View style={styles.buttonContainer}>
-        <CustomButton disabled={isButtonDisabled}  text="Start game" onPress={() => startGame()} />
+        <CustomButton disabled={isButtonDisabled}  text={translations[language]["Start Game"]} onPress={() => startGame()} />
       </View>
     </View>
   );

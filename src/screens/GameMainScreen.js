@@ -2,18 +2,22 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 const questions = require('../questions.json');
+const translations = require('../translations.json');
 import GameQuestionCard from '../components/GameQuestionCard';
 
 export default function GameMainScreen({ route, navigation }) {
+  const { language } = route.params;
   const { cardset } = route.params;
   const { player = {name: ''} } = route.params;
   const { players } = route.params;
   const { totalAddedPlayers } = route.params;
   const { round } = route.params;
   const { question } = route.params;
+  const { usedQuestions = [] } = route.params;
+  const [allUsedQuestions, setAllUsedQuestions] = useState([]);
   const [cardText, setCardText] = useState("");
 
-  useEffect(() => {
+  useEffect(async() => {
     if (question) {
       setCardText(question)
     }
@@ -26,26 +30,48 @@ export default function GameMainScreen({ route, navigation }) {
     var filteredQuestions = []
     for (var i = 0; i < questions.length; i++) {
       const question = questions[i];
-      if(question['cardset'].includes(cardset)) {filteredQuestions.push(questions[i])}
+      if(question['cardset'].includes(cardset) && !usedQuestions.includes(question['id'])) {filteredQuestions.push(questions[i])}
     }
 
-    var question = filteredQuestions[Math.floor(Math.random()*filteredQuestions.length)];
-    setCardText(question['text'])
+    if(filteredQuestions.length == []){
+      //all questions have been used
+      //reset allUsedQuestions
+      for (var i = 0; i < questions.length; i++) {
+        const question = questions[i];
+        if(question['cardset'].includes(cardset)){filteredQuestions.push(questions[i])}
+      }
+      var question = filteredQuestions[Math.floor(Math.random()*filteredQuestions.length)];
+      var newUsedQuestions = []
+      console.log("before push: " + newUsedQuestions)
+      newUsedQuestions.push(question['id'])
+      console.log("after push: " + newUsedQuestions)
+      setAllUsedQuestions(newUsedQuestions)
+      setCardText(question[language])
+    }
+    else{
+      var question = filteredQuestions[Math.floor(Math.random()*filteredQuestions.length)];
+      var newUsedQuestions = usedQuestions
+      console.log("before push: " + newUsedQuestions)
+      newUsedQuestions.push(question['id'])
+      console.log("after push: " + newUsedQuestions)
+      setAllUsedQuestions(newUsedQuestions)
+      setCardText(question[language])
+    }
   }
 
   const onNoButtonPress = () => {
     // pick new player
-    var newPlayer = getNewPlayer()
+    var newPlayer = getNewPlayerNew()
 
     // show screen if game hasn't finished yet
     if (newPlayer != null){
-      navigation.navigate('GameNoScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: round + 1})
+      navigation.navigate('GameNoScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: round + 1, usedQuestions: allUsedQuestions, language: language})
     }
     else {
       // all players have played 3 times
       var mostPoints = players.reduce((acc, player) => acc = acc > player.points ? acc : player.points, 0);
       var winners = players.filter(function(player) { return player.points == mostPoints; });
-      navigation.navigate('GameNoScreen', {cardset: cardset, players: players, winners: winners, isGameFinished: true})
+      navigation.navigate('GameNoScreen', {cardset: cardset, players: players, winners: winners, isGameFinished: true, language: language})
     }
   }
 
@@ -56,19 +82,48 @@ export default function GameMainScreen({ route, navigation }) {
       if(currentPlayer['id'] == player['id']) {currentPlayer['points'] += 1;}
     }
     // pick new player
-    var newPlayer = getNewPlayer()
+    var newPlayer = getNewPlayerNew()
 
     // show screen if game hasn't finished yet
     if (newPlayer != null){
-      navigation.navigate('GameYesScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: round + 1})
+      navigation.navigate('GameYesScreen', {cardset: cardset, player: newPlayer, players: players, totalAddedPlayers: totalAddedPlayers, round: round + 1, usedQuestions: allUsedQuestions, language: language})
     }
     else {
       // all players have played 3 times
       var mostPoints = players.reduce((acc, player) => acc = acc > player.points ? acc : player.points, 0);
       var winners = players.filter(function(player) { return player.points == mostPoints; });
-      navigation.navigate('GameYesScreen', {cardset: cardset, players: players, winners: winners, isGameFinished: true})
+      navigation.navigate('GameYesScreen', {cardset: cardset, players: players, winners: winners, isGameFinished: true, language: language})
     }
     
+  }
+
+  const getNewPlayerNew = () => {
+    //find player with lowest times played
+    //pick first player with that amount of times played
+    var lowestTimesPlayed = 3
+    for (var i = 0; i < players.length; i++) {
+      const player = players[i];
+      if (player['timesPlayed'] < lowestTimesPlayed){lowestTimesPlayed = player['timesPlayed']}
+    }
+
+
+
+    for (var i = 0; i < players.length; i++) {
+      const player = players[i];
+      if(player['timesPlayed'] < 3 && player['timesPlayed'] == lowestTimesPlayed){
+        //
+
+        player['timesPlayed'] += 1
+
+        // check if on last round
+        var maxRounds = players.length * 3
+        if (round == maxRounds){break}
+
+        return(player)
+      }
+    }
+    // navigation.navigate('GameFinishWinnerScreen', {winners: winners, cardset: cardset, players: players})
+    return null
   }
 
   const getNewPlayer = () => {
@@ -130,7 +185,8 @@ export default function GameMainScreen({ route, navigation }) {
     <View style={styles.container}>
 
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.navigate('GameMenuScreen', {cardset: cardset, question: cardText, player: player, round: round, players: players})} style={styles.settingsButton} activeOpacity={.7}>
+      <Text style={{fontFamily: 'Gilroy-ExtraBold', fontSize: 20, lineHeight: 24, color: 'white'}}>game of truth.</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('GameMenuScreen', {cardset: cardset, question: cardText, player: player, round: round, players: players, usedQuestions: allUsedQuestions})} style={styles.settingsButton} activeOpacity={.7}>
           <Image style={{width: 32, height: 32}} source={require('../assets/settingsButton.png')} />
         </TouchableOpacity>
       </View>
@@ -146,7 +202,7 @@ export default function GameMainScreen({ route, navigation }) {
       }
 
       <View style={styles.choice}>
-        <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 22, color: 'white'}}>Was the question answered?</Text>
+        <Text style={{fontFamily: 'Poppins', fontSize: 16, lineHeight: 22, color: 'white'}}>{translations[language]["Was the question answered?"]}</Text>
         <View style={styles.choiceButtonsContainer}>
           <TouchableOpacity onPress={() => onNoButtonPress()} style={styles.choiceButton} activeOpacity={.7}>
             <Image style={{width: 24, height: 24}} source={require('../assets/no.png')} />
@@ -173,8 +229,9 @@ const styles = StyleSheet.create({
     top: 72,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'flex-end',
-  },
+    justifyContent: 'space-between',
+    height: 31
+    },
   settingsButton: {
     position: 'absolute',
     top: 0,
