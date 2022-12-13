@@ -70,7 +70,7 @@ export default function AdjustPlayersScreen({ route, navigation }) {
     else {
       // check if player has been deleted
       if(players.includes(player)){
-        navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round, question: question, usedQuestions: usedQuestions})
+        navigation.navigate('GameMainScreen', {cardset: cardset, player: player, players: players, totalAddedPlayers: totalAddedPlayers, round: round, question: question, usedQuestions: usedQuestions, language: language})
       }
       else {
         // pick a new player

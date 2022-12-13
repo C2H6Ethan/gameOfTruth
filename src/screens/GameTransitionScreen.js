@@ -10,11 +10,11 @@ export default function GameTransitionScreen({ route, navigation }) {
   const { round } = route.params;
   const { totalAddedPlayers } = route.params;
   const { usedQuestions } = route.params;
-  const [language, setLanguage] = useState("en");
 
   useEffect(async() => {
+    var language = 'en'
     var newLanguage = await AsyncStorage.getItem('language')
-    if(newLanguage){setLanguage(newLanguage)}
+    if(newLanguage){language = newLanguage}
 
     // Start counting when the page is loaded
     const timeoutHandle = setTimeout(()=>{
