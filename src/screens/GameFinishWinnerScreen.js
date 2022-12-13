@@ -23,7 +23,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
   }, []);
 
   const endGame = (interstitial) => {
-    // if(!hasUpgraded) {interstitial.show()}
+    if(!hasUpgraded) {interstitial.show()}
 
     navigation.reset({
       index: 0,
@@ -32,7 +32,7 @@ export default function GameFinishWinnerScreen({ route, navigation }) {
   }
 
   const restartGame = (interstitial) => {
-    // if(!hasUpgraded) {interstitial.show()}
+    if(!hasUpgraded) {interstitial.show()}
 
     navigation.reset({
       index: 0,

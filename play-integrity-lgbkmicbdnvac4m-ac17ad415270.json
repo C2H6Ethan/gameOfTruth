@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "play-integrity-lgbkmicbdnvac4m",
+  "private_key_id": "ac17ad415270f8b76efef42e626ce9f4d08d7922",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7yVqFAlPN3mZA\n/jP5DjGvSGrT4yWMaenPKeubwXTjS0RhkPKXsmXnaxX1Inn9KQPN0NZPCij/441o\nQerMxWZ+/yxHfs9TuQgRJGYYNUZ3nsvI7+IU2AjlpBe/boJHuan7Zlg1eellKi7f\nIWkAZ1tmb6+Y91Bhlnt47cZJf/wcwU150uq7TASlnLYVixS4SMFPkA+rt4LV/czU\n/wgZHF9UziUtcLZSEhZDZ6Dt41cy2kXhFS0CkRP/ZGva52+FzwXDgVmTg5PoFcwI\nmNKKUxfHFv8FkvdaOrpeNAi6SWOsP1rIdZ+zvZ95tiTJWAfV/IRcTIHp1C1uTEUv\nvzgrQiKDAgMBAAECggEATjN/+rwJYkYnlxFFW4ZJspEZy7tgO6UvtRHkCCz8HFuP\n0oGmRP4J6eFyd28wFfkqmF9LoAa/JDEDBlPNEBF0qZZiPjPU6yy260yZJ6OoANCk\nVL1xDPUaX2eCbDn9DxmGbCcmvL5UL8jtVAZ5z607JuGD4tO7KaidKrL6TEl8GAzB\nEDVM9dOgMRQDM3TfU19oX31Gehrl7dDcjQQTEPT0QVnQzu45Bon1srgJ5kX9iuhO\nb05zzVvzoa1DN07ukRRnm37FNjUQrvqKxaCmpY9hZHhcQZE+2gwfS38OW5T5io9o\nl8Emzpqp1PRVS4FDtfgXKBU75gOKobfKocsy5d14YQKBgQDkK4vUQuvIkTJic8eJ\nnxZmH1a+aNmJj2XP+tUwrL7XvMMwXXpWXVsd86k5qv/AmSNDiKTIAH4BGHBzKebY\nx4+318H78vXGD1S155i02ZIEHH7J5Pu5qdZuiPJiOJpIPNfgBPG0OVAZwm6y9QTO\nRdTEq1/G2Bhtg/D/rfqfaJywTQKBgQDSsNvE6NsYIPuQiDZA/mtQbjEVAng4ALR7\nFwPoaQafIow7AWxNE32jDzFb+8oTiL0JjY8rYQC3mbDNUBFOJDyYsxHdrJ0yoBsn\n6XBC2ihN+V7VGFwa87ZqTY+//tuFPxHBAmH6Q3Ju8d2BEGiLLTdr8csc5DBuaO1C\nVyC9XroGDwKBgQDDGxluX+sOjlnvJeGyJH8axCGAoFej8SK2PV6fSJfIEnk1mjlK\nMHoBmqFR1o7rOgeVb/q3qvQUK7m8QFBNfhe+tJgDwTW4LtPY2DkULBdXvKYOLeey\nUzAxRJk+s/f5XU2bGZ805O1BmajfDfUWDVBq+7/iYFZDD1e8yiBMvz984QKBgQC4\nDlCvAE0GEyow5Q2gUaImLV0rYXDsW5FPRpffXICwXFns4h1eZ/yFiiwwkxHBZt7d\njZDY8HDT86uEcMHtZbKaIzUkVjstkrimcUPk4vf6xjKWLiWoVeexjfhaXaYgDSzR\nU+eL3YgGa7x5l3/8tY+I+T3bC21Txs4d+kdbp3kS+QKBgH4Zv/+p029rLW48bARj\nxC6CwigZaTDIAx1rExyydkdFnvbhcabzGp4swRJmf62oMaXry4zXB+Clk3ehcPJT\nOJCv1YEm0F18xcA7Vz0zzFurmx2kTv8jsGAD/hgKB1JOfM6R9iB8UDDR0PSMWgSS\nJOqFmGx0fr/mdLcPIZGTDZhT\n-----END PRIVATE KEY-----\n",
+  "client_email": "gameoftruth@play-integrity-lgbkmicbdnvac4m.iam.gserviceaccount.com",
+  "client_id": "117852660702547938972",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gameoftruth%40play-integrity-lgbkmicbdnvac4m.iam.gserviceaccount.com"
+}

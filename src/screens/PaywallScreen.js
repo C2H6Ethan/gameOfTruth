@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Linking } from 'react-native';
+import { StyleSheet, Modal, Text, View, Image, SafeAreaView, TouchableOpacity, Linking, Platform } from 'react-native';
 import CustomButton from '../components/CustomButton';
 import Constants from 'expo-constants';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -11,6 +11,8 @@ export default function PaywallScreen({ navigation }) {
   const [price, setPrice] = useState('');
   const [language, setLanguage] = useState("en");
 
+  var iapID = Platform.OS == 'ios'? 'com.gameOfTruth.premium': 'com.gameoftruth.premium'
+  
   useEffect(async() => {
     getIAPDetails()
     var language = await AsyncStorage.getItem('language')
@@ -23,7 +25,7 @@ export default function PaywallScreen({ navigation }) {
   
       await InAppPurchases.connectAsync();
   
-      var premium = await InAppPurchases.getProductsAsync(['com.gameOfTruth.premium'])
+      var premium = await InAppPurchases.getProductsAsync([iapID])
       setPrice(premium.results[0]['price'])
 
       await InAppPurchases.disconnectAsync();
@@ -38,9 +40,9 @@ export default function PaywallScreen({ navigation }) {
     try {
       await InAppPurchases.connectAsync();
 
-      await InAppPurchases.getProductsAsync(['com.gameOfTruth.premium'])
+      await InAppPurchases.getProductsAsync([iapID])
 
-      InAppPurchases.purchaseItemAsync('com.gameOfTruth.premium')
+      InAppPurchases.purchaseItemAsync(iapID)
 
       return await new Promise((resolve, reject) => {
         InAppPurchases.setPurchaseListener(async (result) => {
@@ -91,7 +93,7 @@ export default function PaywallScreen({ navigation }) {
 
       for (var i = 0; i < results.length; i++) {
         var result = results[i];
-        if(result.productId == "com.gameOfTruth.premium" && result.acknowledged) {
+        if(result.productId == iapID && result.acknowledged) {
           onSuccess()
           await InAppPurchases.disconnectAsync();
           return true

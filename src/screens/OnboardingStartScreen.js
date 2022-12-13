@@ -15,7 +15,7 @@ export default function OnboardingStartScreen({navigation}) {
   }
 
   useEffect(async () => {
-    if(Localization.locale == 'de'){
+    if(Localization.locale.startsWith('de')){
       setLanguage('de')
       await AsyncStorage.setItem('de')
     }

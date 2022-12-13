@@ -1,9 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Modal, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet, Dimensions, Text, View, Image, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 const questions = require('../questions.json');
 const translations = require('../translations.json');
 import GameQuestionCard from '../components/GameQuestionCard';
+
+const {height, width} = Dimensions.get("window");
 
 export default function GameMainScreen({ route, navigation }) {
   const { language } = route.params;
@@ -222,6 +224,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#111111',
     alignItems: 'center',
     justifyContent: 'center',
+    height: height
   },
   header: {
     position: 'absolute',

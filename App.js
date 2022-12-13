@@ -42,7 +42,7 @@ const adUnitIds = {
 const interstitialId = adUnitIds[Platform.OS];
 
 
-const interstitial = InterstitialAd.createForAdRequest(interstitialId, {
+const interstitial = InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL, {
   requestNonPersonalizedAdsOnly: true
 })
 export default class App extends Component {

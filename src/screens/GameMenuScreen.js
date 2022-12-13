@@ -26,7 +26,7 @@ export default function GameMenuScreen({ navigation, route }) {
   }, []);
 
   const endGame = (interstitial) => {
-    // if(!hasUpgraded) {interstitial.show()}
+    if(!hasUpgraded) {interstitial.show()}
     
     navigation.reset({
       index: 0,
