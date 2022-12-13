@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity, Button } from 'react-native';
 import CustomButton from '../components/CustomButton';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as Localization from 'expo-localization';
 const translations = require('../translations.json');
 
 export default function OnboardingStartScreen({navigation}) {
@@ -14,8 +15,10 @@ export default function OnboardingStartScreen({navigation}) {
   }
 
   useEffect(async () => {
-    var language = await AsyncStorage.getItem('language')
-    if(language){setLanguage(language)}
+    if(Localization.locale == 'de'){
+      setLanguage('de')
+      await AsyncStorage.setItem('de')
+    }
   }, []);
 
   return (

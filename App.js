@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import {
@@ -33,7 +34,15 @@ let customFonts = {
   'Poppins-SemiBold': require('./src/assets/fonts/Poppins-SemiBold.ttf')
 };
 
-const interstitial = InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL, {
+const adUnitIds = {
+  android: 'ca-app-pub-9310152642296392/1921443681',
+  ios: 'ca-app-pub-9310152642296392/9817079723',
+};
+
+const interstitialId = adUnitIds[Platform.OS];
+
+
+const interstitial = InterstitialAd.createForAdRequest(interstitialId, {
   requestNonPersonalizedAdsOnly: true
 })
 export default class App extends Component {
