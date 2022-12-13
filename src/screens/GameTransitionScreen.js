@@ -13,8 +13,8 @@ export default function GameTransitionScreen({ route, navigation }) {
   const [language, setLanguage] = useState("en");
 
   useEffect(async() => {
-    var language = await AsyncStorage.getItem('language')
-    if(language){setLanguage(language)}
+    var newLanguage = await AsyncStorage.getItem('language')
+    if(newLanguage){setLanguage(newLanguage)}
 
     // Start counting when the page is loaded
     const timeoutHandle = setTimeout(()=>{
