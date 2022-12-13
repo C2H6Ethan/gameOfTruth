@@ -78,12 +78,12 @@ export default function HomeScreen({ navigation }) {
         : null
         }
 
+        <Image style={styles.backgroundImage} source={require('../assets/background_bubble_home.png')} />
         <View style={styles.screenInfo}>
             <Text style={styles.mainText}>{translations[language]["Cardtypes"]}</Text>
             <Text style={styles.subText}>{translations[language]["Select your Gamemode"]}</Text>
         </View>
 
-        <Image style={styles.backgroundImage} source={require('../assets/background_bubble_home.png')} />
         <ScrollView bounces={true} showsHorizontalScrollIndicator={false} horizontal={true} style={styles.cardsetSelectionCardScrollView}>
             <View style={styles.cards}>
                 <CardsetSelectionCard

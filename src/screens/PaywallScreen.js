@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     height: 46,
     width: 46,
     marginTop: 60,
-    marginBottom: 24,
+    marginBottom: 20,
   },
   content: {
     width: '80%',
