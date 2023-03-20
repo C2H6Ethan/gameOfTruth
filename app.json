@@ -2,10 +2,8 @@
   "expo": {
     "name": "game of truth",
     "slug": "gameOfTruth",
-    "version": "1.0.7",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "version": "1.0.8",
+    "assetBundlePatterns": ["**/*"],
     "description": "",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
