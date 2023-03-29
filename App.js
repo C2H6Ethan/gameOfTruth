@@ -29,6 +29,7 @@ import {
   TestIds,
 } from "react-native-google-mobile-ads";
 import { MyContext } from "./src/context";
+import { getLocales } from "expo-localization";
 
 const Stack = createStackNavigator();
 
@@ -87,8 +88,6 @@ export default class App extends Component {
   };
 
   componentDidMount = async () => {
-    //await AsyncStorage.clear()
-    //await AsyncStorage.setItem('language', 'de')
     const unsubscribeInterstitalEvents = this.loadInterstital();
 
     this.loadFonts();
@@ -96,6 +95,11 @@ export default class App extends Component {
     if (hasBeenOnboarded == "true") {
       await this.setState({ hasBeenOnboarded: true });
     }
+
+    //get language
+    const locales = getLocales();
+    const languageCode = locales[0].languageCode;
+    await AsyncStorage.setItem(languageCode);
 
     return unsubscribeInterstitalEvents;
   };
