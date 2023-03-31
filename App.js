@@ -96,10 +96,13 @@ export default class App extends Component {
       await this.setState({ hasBeenOnboarded: true });
     }
 
-    //get language
-    const locales = getLocales();
-    const languageCode = locales[0].languageCode;
-    await AsyncStorage.setItem("language", languageCode);
+    //set device language if language setting hasn't been changed before
+    var language = await AsyncStorage.getItem("language");
+    if (!language) {
+      const locales = getLocales();
+      const languageCode = locales[0].languageCode;
+      await AsyncStorage.setItem("language", languageCode);
+    }
 
     return unsubscribeInterstitalEvents;
   };
