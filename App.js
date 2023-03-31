@@ -99,7 +99,7 @@ export default class App extends Component {
     //get language
     const locales = getLocales();
     const languageCode = locales[0].languageCode;
-    await AsyncStorage.setItem(languageCode);
+    await AsyncStorage.setItem("language", languageCode);
 
     return unsubscribeInterstitalEvents;
   };
