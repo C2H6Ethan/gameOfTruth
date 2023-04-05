@@ -52,38 +52,38 @@ export default function PaywallScreen({ navigation }) {
     const InAppPurchases = await import("expo-in-app-purchases"),
       { IAPResponseCode } = await import("expo-in-app-purchases");
 
-    try {
-      await InAppPurchases.connectAsync();
+    await InAppPurchases.connectAsync();
 
-      await InAppPurchases.getProductsAsync([iapID]);
+    await InAppPurchases.getProductsAsync([iapID]);
 
-      InAppPurchases.purchaseItemAsync(iapID);
+    InAppPurchases.purchaseItemAsync(iapID, {
+      accountIdentifiers: {
+        obfuscatedAccountId: null,
+        obfuscatedProfileId: null,
+      },
+    });
 
-      return await new Promise((resolve, reject) => {
-        InAppPurchases.setPurchaseListener(async (result) => {
-          switch (result.responseCode) {
-            case IAPResponseCode.OK:
-            case IAPResponseCode.DEFERRED:
-              await onSuccess();
-              await InAppPurchases.finishTransactionAsync(
-                result.results[0],
-                consumable
-              );
-              await InAppPurchases.disconnectAsync();
-              return resolve(true);
-            case IAPResponseCode.USER_CANCELED:
-              await InAppPurchases.disconnectAsync();
-              return resolve(false);
-            case IAPResponseCode.ERROR:
-              await InAppPurchases.disconnectAsync();
-              return reject(new Error("IAP Error: " + result.errorCode));
-          }
-        });
+    return await new Promise((resolve, reject) => {
+      InAppPurchases.setPurchaseListener(async (result) => {
+        switch (result.responseCode) {
+          case IAPResponseCode.OK:
+          case IAPResponseCode.DEFERRED:
+            await onSuccess();
+            await InAppPurchases.finishTransactionAsync(
+              result.results[0],
+              consumable
+            );
+            await InAppPurchases.disconnectAsync();
+            return resolve(true);
+          case IAPResponseCode.USER_CANCELED:
+            await InAppPurchases.disconnectAsync();
+            return resolve(false);
+          case IAPResponseCode.ERROR:
+            await InAppPurchases.disconnectAsync();
+            return reject(new Error("IAP Error: " + result.errorCode));
+        }
       });
-    } catch (e) {
-      await InAppPurchases.disconnectAsync();
-      throw e;
-    }
+    });
   };
 
   const onSuccess = async () => {

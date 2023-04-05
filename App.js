@@ -19,7 +19,6 @@ import {
   PaywallScreen,
   PremiumThankYou,
 } from "./src/screens";
-import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import "expo-dev-client";
@@ -30,8 +29,10 @@ import {
 } from "react-native-google-mobile-ads";
 import { MyContext } from "./src/context";
 import { getLocales } from "expo-localization";
+import * as SplashScreen from "expo-splash-screen";
 
 const Stack = createStackNavigator();
+SplashScreen.preventAutoHideAsync();
 
 let customFonts = {
   "Gilroy-ExtraBold": require("./src/assets/fonts/Gilroy-ExtraBold.ttf"),
@@ -103,7 +104,6 @@ export default class App extends Component {
       const languageCode = locales[0].languageCode;
       await AsyncStorage.setItem("language", languageCode);
     }
-
     return unsubscribeInterstitalEvents;
   };
 
@@ -120,7 +120,7 @@ export default class App extends Component {
     });
 
     if (!this.state.fontsLoaded) {
-      return <AppLoading />;
+      return null;
     }
 
     if (this.state.hasBeenOnboarded) {

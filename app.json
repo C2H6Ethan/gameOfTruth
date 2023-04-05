@@ -2,7 +2,7 @@
   "expo": {
     "name": "game of truth",
     "slug": "gameOfTruth",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "assetBundlePatterns": ["**/*"],
     "description": "",
     "orientation": "portrait",
@@ -35,6 +35,10 @@
         }
       ]
     ]
+  },
+  "splash": {
+    "image": "./src/assets/splashscreen.png",
+    "resizeMode": "cover"
   },
   "react-native-google-mobile-ads": {
     "android_app_id": "ca-app-pub-9310152642296392~8612890834",
