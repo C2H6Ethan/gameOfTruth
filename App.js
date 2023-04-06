@@ -29,6 +29,7 @@ import {
 } from "react-native-google-mobile-ads";
 import { MyContext } from "./src/context";
 import { getLocales } from "expo-localization";
+import * as SplashScreen from "expo-splash-screen";
 
 const Stack = createStackNavigator();
 let customFonts = {
@@ -86,6 +87,7 @@ export default class App extends Component {
   };
 
   componentDidMount = async () => {
+    SplashScreen.preventAutoHideAsync();
     const unsubscribeInterstitalEvents = this.loadInterstital();
 
     this.loadFonts();
@@ -117,22 +119,7 @@ export default class App extends Component {
     });
 
     if (!this.state.fontsLoaded) {
-      return (
-        <View
-          style={{
-            flex: 1,
-            backgroundColor: "#FFFFFF",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Image
-            style={{ width: "100%", height: "100%" }}
-            source={require("./src/assets/splashscreen.png")}
-            resizeMode="cover"
-          />
-        </View>
-      );
+      return null;
     }
 
     if (this.state.hasBeenOnboarded) {
