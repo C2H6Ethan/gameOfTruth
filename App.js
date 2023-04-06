@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Platform } from "react-native";
+import { Platform, View, Image, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import {
@@ -29,11 +29,8 @@ import {
 } from "react-native-google-mobile-ads";
 import { MyContext } from "./src/context";
 import { getLocales } from "expo-localization";
-import * as SplashScreen from "expo-splash-screen";
 
 const Stack = createStackNavigator();
-SplashScreen.preventAutoHideAsync();
-
 let customFonts = {
   "Gilroy-ExtraBold": require("./src/assets/fonts/Gilroy-ExtraBold.ttf"),
   Poppins: require("./src/assets/fonts/Poppins-Regular.ttf"),
@@ -120,7 +117,22 @@ export default class App extends Component {
     });
 
     if (!this.state.fontsLoaded) {
-      return null;
+      return (
+        <View
+          style={{
+            flex: 1,
+            backgroundColor: "#FFFFFF",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            style={{ width: "100%", height: "100%" }}
+            source={require("./src/assets/splashscreen.png")}
+            resizeMode="cover"
+          />
+        </View>
+      );
     }
 
     if (this.state.hasBeenOnboarded) {
