@@ -31,6 +31,10 @@ import { MyContext } from "./src/context";
 import { getLocales } from "expo-localization";
 import * as SplashScreen from "expo-splash-screen";
 
+SplashScreen.preventAutoHideAsync().catch((error) => {
+  console.log(error);
+});
+
 const Stack = createStackNavigator();
 let customFonts = {
   "Gilroy-ExtraBold": require("./src/assets/fonts/Gilroy-ExtraBold.ttf"),
@@ -87,7 +91,6 @@ export default class App extends Component {
   };
 
   componentDidMount = async () => {
-    SplashScreen.preventAutoHideAsync();
     const unsubscribeInterstitalEvents = this.loadInterstital();
 
     this.loadFonts();
